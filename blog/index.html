@@ -11,7 +11,11 @@ layout: default
   <div class="box article">
     <h2>{{ latest.date | date: "%A %b %d, %y"}}</h2>
     <h1><a href="{{ latest.url }}">{{latest.title}}</a></h1>
-    <img src="/img/{{latest.icon}}" />
+    {% if latest.image %}
+    <img src="/img/{{latest.image}}" />
+    {% elsif latest.icon_image %}
+    <img src="/img/{{latest.icon_image}}" />
+    {% endif %}
     {{latest.excerpt}}
   </div>
 
