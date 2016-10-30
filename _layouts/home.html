@@ -23,7 +23,9 @@ layout: default
           {% assign feature = match[0] %}
           {% assign pages = site.comics | where_exp: 'item', 'item.story == feature.title' %}
           {% assign link = pages.first.url %}
-          <a href="{{link}}" ><img src="{{ feature.poster_image }}"/>{{feature.title}}</a>
+          <a href="{{link}}" ><img src="{{ feature.poster_image }}"/>
+          <span>{{feature.title}}</span>
+          </a>
       </div>
       <div class="feature">
           <a href="" ><img src="{{ match[1].poster_image }}"/></a>
