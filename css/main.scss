@@ -190,6 +190,9 @@ body {
         width: 150px;
         height: 225px;
         margin-right: 8px;
+        img {
+            border: 1px solid black;
+        }
       }
 
       .feature:last-child {
