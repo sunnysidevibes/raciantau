@@ -190,8 +190,16 @@ body {
         width: 150px;
         height: 225px;
         margin-right: 8px;
-        img {
-            border: 1px solid black;
+        a {
+            display: block;
+            span {
+                font-family: "SingleSleeve";
+                color: white;
+                background-color: rgba(0,0,0,0.8);
+            }
+            img {
+                border: 1px solid black;
+            }
         }
       }
 
