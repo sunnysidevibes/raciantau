@@ -1,0 +1,83 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing these this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: RACIANTAU
+email: your-email@domain.com
+description: >
+  was born in early 2016 when a PRIMORDIAL SOUP of deep MELANCHOLY,
+  a pervading and explicitly late-20th-century-alt-inspired ENNUI, and CIGARETTE WITHDRAWALS was
+  shot with the LIGHTNING BOLT of INSPIRATION in the form of two CUTE CHARACTER DESIGNS. In
+  these pages we'll be exploring themes of ISOLATION, ALIENATION, the FUTURE of our SPECIES,
+  keeping to the CENTER, and YOUR MOM with a cute smile plastered over the unshakable sense that
+  our best days are <strike>behind us</strike> a LIE WE TELL OURSELVES. Welcome!
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://dev.raciantau.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+banners:
+  - Battlemon
+  - Collision 2016
+
+collections:
+  comics:
+    output: true
+    permalink: /comics/:path/
+
+  Collision 2016:
+    character: Antau
+    icon: "icons/collision.png"
+    description: "During a chaotic, fraught election season in a world different from but eerily similar to our own, one mercenary consultant-turned-campaign manager (Antau) sees an opportunity to give “The People” what they want: sweet release, in the form of a Giant Meteor presidency. Updates M-F."
+
+defaults:
+  -
+    scope:
+      type: comics
+    values:
+      layout: page
+      categories: updates
+  -
+    scope:
+      path: "_comics/battlemon"
+      type: comics
+    values:
+      story:
+        title: Battlemon
+        character: Racia
+        icon: "icons/battlemon.png"
+        banner: "banners/battlemon.png"
+        desc: "In a cheap but legally permissible knockoff world in the style of <em>Pokemon</em> or <em>Monster Rancher</em> we peek into the shared lives of a young woman (Racia) and her Battlemon partner (Bunners) as they navigate the expectations society has of them and they have of each other. 26 pages. Updates Tuesdays and Thursdays."
+  -
+    scope:
+      path: "_comics/collision"
+      type: comics
+    values:
+      story:
+        title: Collision 2016
+        character: Racia
+        icon: "icons/battlemon.png"
+        desc: "In a cheap but legally permissible knockoff world in the style of <em>Pokemon</em> or <em>Monster Rancher</em> we peek into the shared lives of a young woman (Racia) and her Battlemon partner (Bunners) as they navigate the expectations society has of them and they have of each other. 26 pages. Updates Tuesdays and Thursdays."
+
+
+
+# Build settings
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+markdown: kramdown
+gems:
+  - jekyll-feed
+  - jekyll-paginate
+exclude:
+  - Gemfile
+  - Gemfile.lock
