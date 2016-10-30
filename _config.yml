@@ -23,7 +23,7 @@ description: >
   keeping to the CENTER, and YOUR MOM with a cute smile plastered over the unshakable sense that
   our best days are <strike>behind us</strike> a LIE WE TELL OURSELVES. Welcome!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://dev.raciantau.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://raciantau.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 storys:
   - Battlemon
