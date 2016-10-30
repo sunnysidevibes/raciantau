@@ -195,12 +195,14 @@ body {
             position: relative;
             span {
                 position: absolute;
+                display: block;
                 font-family: "SingleSleeve";
                 color: white;
                 background-color: rgba(0,0,0,0.8);
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+                font-size: 2em;
             }
             img {
                 border: 1px solid black;
