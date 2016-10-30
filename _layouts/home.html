@@ -15,7 +15,7 @@ layout: default
   <div id="summary" class="panel">
     <div class="box">
       <h1>RACIANTAU</h1>
-      {{site.description}}
+      {{page.description_html}}
     </div>
     <div id= "featured" class="box">
     {% assign match = site.stories | where_exp: 'item', 'page.stories contains item.title' %}
