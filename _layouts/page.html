@@ -33,7 +33,7 @@ layout: default
         </a>
         <a title="Next" href="{{ next.url }}">
           <i id="next_arrow" class="icon material-icons {% if next %}active{% endif %}">arrow_forward</i>
-        </a>
+        </a>.
         <a title="Latest" href="{{ last.url }}">
           <i id="last_arrow" class="icon material-icons {% if last %}active{% endif %}">last_page</i>
         </a>
@@ -66,7 +66,7 @@ layout: default
         <h1 id="title">Page {{ page.slug }}</h1>
       </div>
       <div class="content">
-      <img src="{{ site.url }}/img/{{ page.icon }}" />{{ page.content }}</div>
+      <img src="{{ site.url }}/img/{{ page.icon_image }}" />{{ page.content }}</div>
     </div>
   </div>
 
@@ -76,7 +76,7 @@ layout: default
       </div>
 
   <div class="box blurb">
-    <img class="icon" src="{{ site.url }}/img/{{ page.story.icon }}" />
+    <img class="icon" src="{{ page.story.icon_image }}" />
     {{ page.story.desc | safeHTML }}
     <a href="">All Pages</a>
   </div>
