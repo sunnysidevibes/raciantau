@@ -39,5 +39,38 @@ layout: default
   <div class="box article">
     <h2>{{ latest.date | date: "%A %b %d, %y"}}</h2>
     <h1><a href="{{ latest.url }}">{{latest.title}}</a></h1>
-    {% if post.thumb %}
-    <img src="
+    {% if latest.thumb %}
+    <img src="{{latest.thumb}}" />
+    {% elsif latest.image %}
+    <img src="{{latest.image}}" />
+    {% elsif latest.icon_image %}
+    <img src="{{latest.icon_image}}" />
+    {% endif %}
+    {{latest.excerpt}}
+  </div>
+
+  <div class="adbox">
+    <div class="banner full">AD</div>
+    <div class="banner full">AD</div>
+  </div>
+
+  {% for post in news limit: 3 %}
+    <div class="box article">
+      <h2>{{ post.date | date: "%A %b %d, %y" }}</h2>
+      {% if post.story %}
+      <h1><a href="{{ post.url }}">Updated! {{post.story.title}} {{post.title}}</a></h1>
+      {% else %}
+      <h1><a href="{{ post.url }}">{{post.title}}</a></h1>
+      {% endif %}
+      {% if post.thumb %}
+      <img src="{{post.thumb}}" />
+      {% elsif post.image %}
+      <img src="{{post.image}}" />
+      {% elsif post.icon_image %}
+      <img src="{{post.icon_image}}" />
+      {% endif %}
+      {{post.excerpt}}
+    </div>
+  {% endfor %}
+  <div id="more"><a href="/blog">MORE NEWS</a></div>
+</div>
