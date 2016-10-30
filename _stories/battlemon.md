@@ -1,4 +1,5 @@
 ---
+_hide_content: true
 title: Battlemon
 character: Racia
 icon_image: /img/icons/battlemon.png
