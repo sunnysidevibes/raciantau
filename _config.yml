@@ -25,7 +25,7 @@ description: >
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://dev.raciantau.com" # the base hostname & protocol for your site, e.g. http://example.com
 
-storys:
+stories:
   - Battlemon
   - Collision 2016
   - Cabin Fever
