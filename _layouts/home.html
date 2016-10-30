@@ -19,8 +19,6 @@ layout: default
     </div>
     <div id= "featured" class="box">
     {% assign match = site.stories | where_exp: 'item', 'page.stories contains item.title' %}
-    {{ match | inspect }}
-  
       <h1>FEATURED STORIES</h1>
       <div class="feature">
           <img src="{{ match[0].poster_image }}"/>
