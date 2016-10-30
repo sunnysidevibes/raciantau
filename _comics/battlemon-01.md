@@ -1,4 +1,5 @@
 ---
+layout: page
 story: Battlemon
 alt: "\"Racia, what are you doing! The first rule of riding the subway is, “Don't make eye contact.\""
 image: /img/content/Battlemon 01JPG.JPG
