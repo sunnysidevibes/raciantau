@@ -18,13 +18,15 @@ layout: default
       {{site.description}}
     </div>
     <div id= "featured" class="box">
-        {{ page.stories | inspect }}
+    {% assign match = site.stories | where_exp: 'item', 'page.stories contains item' %}
+    {{ match | inspect }}
+  
       <h1>FEATURED STORIES</h1>
       <div class="feature">
-          <img src="{{ page.stories[0].poster_image }}"/>
+          <img src="{{ match[0].poster_image }}"/>
       </div>
       <div class="feature">
-          <img src="{{ page.stories[1].poster_image }}"/>
+          <img src="{{ match[1].poster_image }}"/>
       </div>
     </div>
   </div>
