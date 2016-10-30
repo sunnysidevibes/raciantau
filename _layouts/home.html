@@ -18,7 +18,7 @@ layout: default
       {{site.description}}
     </div>
     <div id= "featured" class="box">
-    {% assign match = site.stories | where_exp: 'item', 'page.stories contains item' %}
+    {% assign match = site.stories | where_exp: 'item', 'page.stories contains item.title' %}
     {{ match | inspect }}
   
       <h1>FEATURED STORIES</h1>
