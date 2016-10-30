@@ -1,4 +1,5 @@
 ---
+_hide_content: true
 title: Collision 2016
 character: Antau
 icon_image: /img/icons/collision.png
