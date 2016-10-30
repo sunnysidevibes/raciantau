@@ -41,9 +41,9 @@ layout: default
     <h1><a href="{{ latest.url }}">{{latest.title}}</a></h1>
       {% if post.thumb %}
       <img src="{{post.thumb}}" />
-      {% elsif post.img %}
+      {% elsif post.image %}
       <img src="{{post.image}}" />
-      {% elsif post.icon %}
+      {% elsif post.icon_image %}
       <img src="{{post.icon_image}}" />
       {% endif %}
     {{latest.excerpt}}
@@ -64,9 +64,9 @@ layout: default
       {% endif %}
       {% if post.thumb %}
       <img src="{{post.thumb}}" />
-      {% elsif post.img %}
+      {% elsif post.image %}
       <img src="{{post.image}}" />
-      {% elsif post.icon %}
+      {% elsif post.icon_image %}
       <img src="{{post.icon_image}}" />
       {% endif %}
       {{post.content}}
