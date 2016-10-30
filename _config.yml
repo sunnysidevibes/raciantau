@@ -25,49 +25,23 @@ description: >
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://dev.raciantau.com" # the base hostname & protocol for your site, e.g. http://example.com
 
-banners:
+storys:
   - Battlemon
   - Collision 2016
+  - Cabin Fever
 
 collections:
+  stories:
   comics:
     output: true
     permalink: /comics/:path/
-
-defaults:
-  -
-    scope:
-      type: comics
-    values:
-      layout: page
-      categories: updates
-  -
-    scope:
-      path: "_comics/battlemon"
-      type: comics
-    values:
-      story:
-        title: Battlemon
-        character: Racia
-        icon: "icons/battlemon.png"
-        banner: "banners/battlemon.png"
-        desc: "In a cheap but legally permissible knockoff world in the style of <em>Pokemon</em> or <em>Monster Rancher</em> we peek into the shared lives of a young woman (Racia) and her Battlemon partner (Bunners) as they navigate the expectations society has of them and they have of each other. 26 pages. Updates Tuesdays and Thursdays."
-  -
-    scope:
-      path: "_comics/collision"
-      type: comics
-    values:
-      story:
-        title: Collision 2016
-        character: Antau
-        icon: "icons/collision.png"
-        desc: "During a chaotic, fraught election season in a world different from but eerily similar to our own, one mercenary consultant-turned-campaign manager (Antau) sees an opportunity to give “The People” what they want: sweet release, in the form of a Giant Meteor presidency. Updates M-F."
-
 
 
 # Build settings
 paginate: 5
 paginate_path: "/blog/page:num/"
+
+uploads_dir: "img/content"
 
 markdown: kramdown
 gems:
