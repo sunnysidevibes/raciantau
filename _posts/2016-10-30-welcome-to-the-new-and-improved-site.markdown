@@ -6,7 +6,7 @@ categories:
   - updates
   - announcements
 icon_image: /img/content/ROCK.png
-story: 
+comic: 
 ---
 
 
