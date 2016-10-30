@@ -1,4 +1,5 @@
 ---
+_hide_content: true
 layout: home
 description_html: | 
     <h1>RACIANTAU</h1>
