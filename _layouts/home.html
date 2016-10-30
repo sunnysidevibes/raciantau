@@ -18,6 +18,7 @@ layout: default
       {{site.description}}
     </div>
     <div id= "featured" class="box">
+        {{ page.stories | inspect }}
       <h1>FEATURED STORIES</h1>
       <div class="feature">
           <img src="{{ page.stories[0].poster_image }}"/>
