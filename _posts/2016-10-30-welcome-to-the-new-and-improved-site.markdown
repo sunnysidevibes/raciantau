@@ -8,4 +8,5 @@ categories:
 icon_image: /img/content/ROCK.png
 ---
 
-To commemorate the conclusion of [Collision 2016]() and the introduction of Racia's new story [Cabin Fever]() we are happy to announce the launch of an improved website. We were using the Hugo satic site generator before, but we've moved to using the tried and tested Jekyll generator instead. It'll make updating the site a lot easier for myself and for Sal, so you can really be sure we'll update on a timely manner (yay!).
+
+To commemorate the conclusion of [Collision 2016](){: .cc-active} and the introduction of Racia’s new story [Cabin Fever](){: .cc-active} we are happy to announce the launch of an improved website. We were using the Hugo satic site generator before, but we’ve moved to using the tried and tested Jekyll generator instead. It’ll make updating the site a lot easier for myself and for the Bear, so you can really be sure we’ll update on a timely manner (yay!).
