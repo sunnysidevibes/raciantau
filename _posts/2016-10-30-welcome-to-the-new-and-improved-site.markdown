@@ -5,7 +5,8 @@ date: 2016-10-30 16:00:00
 categories:
   - updates
   - announcements
-icon_image: /img/content/ROCK.png
+image: /img/content/ROCK.png
+story: 
 ---
 
 
