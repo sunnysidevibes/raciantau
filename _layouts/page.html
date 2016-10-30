@@ -72,6 +72,7 @@ layout: default
 
   {% assign match = site.stories | where_exp: 'item', 'item.title == page.story' %}
   {% assign story = match.first %}
+  
   <div id="sidebar">
       <div id="story_banner">
         <img src="{{ story.banner_image }}" />
