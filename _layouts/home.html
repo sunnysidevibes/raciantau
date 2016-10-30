@@ -7,7 +7,7 @@ layout: default
   <div id="latest">
     {% assign featured = site.comics.last %}
     <a href="{{featured.url}}">
-      <img src="/img/{{featured.image}}" />
+      <img src="{{featured.image}}" />
       <div id="fog"></div>
       <div id="label">Latest Page:<span>{{featured.story.title}} {{featured.slug}}</span></div>
     </a>
@@ -39,7 +39,13 @@ layout: default
   <div class="box article">
     <h2>{{ latest.date | date: "%A %b %d, %y"}}</h2>
     <h1><a href="{{ latest.url }}">{{latest.title}}</a></h1>
-    <img src="/img/{{latest.icon}}" />
+    {% if latest.thumb %}
+    <img src="{{latest.thumb}}" />
+    {% elsif latest.image %}
+    <img src="{{latest.image}}" />
+    {% elsif latest.icon_image %}
+    <img src="{{latest.icon_image}}" />
+    {% endif %}
     {{latest.excerpt}}
   </div>
 
@@ -57,12 +63,14 @@ layout: default
       <h1><a href="{{ post.url }}">{{post.title}}</a></h1>
       {% endif %}
       {% if post.thumb %}
-      <img src="/img/{{post.thumb}}" />
-      {% elsif post.img %}
-      <img src="/img/{{post.img}}" />
-      {% elsif post.icon %}
-      <img src="/img/{{post.icon}}" />
+      <img src="{{post.thumb}}" />
+      {% elsif post.image %}
+      <img src="{{post.image}}" />
+      {% elsif post.icon_image %}
+      <img src="{{post.icon_image}}" />
       {% endif %}
-      {{post.content}}    </div>  {% endfor %}
+      {{post.excerpt}}
+    </div>
+  {% endfor %}
   <div id="more"><a href="/blog">MORE NEWS</a></div>
 </div>

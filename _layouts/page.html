@@ -17,7 +17,7 @@ layout: default
         {% assign last = allnext.last %}
 
     <div id="art">
-      <img title="{{ page.alt }}" src="{{ site.url }}/img/{{ page.img }}"  />
+      <img title="{{ page.alt }}" src="{{ page.image }}"  />
     </div>
 
     <div id="navigation" class="">
@@ -66,17 +66,19 @@ layout: default
         <h1 id="title">Page {{ page.slug }}</h1>
       </div>
       <div class="content">
-      <img src="{{ site.url }}/img/{{ page.icon }}" />{{ page.content }}</div>
+      <img src="{{ page.icon_image }}" />{{ page.content }}</div>
     </div>
   </div>
 
+  {% assign story = site.stories | where 'title', 'page.story' %}
+
   <div id="sidebar">
       <div id="story_banner">
-        <img src="{{ site.url }}/img/{{ page.story.banner }}" />
+        <img src="{{ page.story.banner_image }}" />
       </div>
 
   <div class="box blurb">
-    <img class="icon" src="{{ site.url }}/img/{{ page.story.icon }}" />
+    <img class="icon" src="{{ page.story.icon_image }}" />
     {{ page.story.desc | safeHTML }}
     <a href="">All Pages</a>
   </div>

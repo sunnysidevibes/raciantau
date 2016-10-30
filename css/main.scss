@@ -102,6 +102,10 @@ body {
   a:hover {
     color: #FF7F81;
   }
+  
+  .link.active {
+    color: #FF7F81;
+  }
 
   #rss_link {
     float: right;
