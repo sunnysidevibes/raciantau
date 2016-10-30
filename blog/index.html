@@ -30,10 +30,10 @@ layout: default
         {% endif %}
         {% if post.thumb %}
         <img src="/img/{{post.thumb}}" />
-        {% elsif post.img %}
-        <img src="/img/{{post.img}}" />
-        {% elsif post.icon %}
-        <img src="/img/{{post.icon}}" />
+        {% elsif post.image %}
+        <img src="/img/{{post.image}}" />
+        {% elsif post.icon_image %}
+        <img src="/img/{{post.icon_image}}" />
         {% endif %}
         {{post.content}}
     </div>
