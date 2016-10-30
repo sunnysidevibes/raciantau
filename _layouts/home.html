@@ -1,5 +1,8 @@
 ---
 layout: default
+stories: 
+    - Collision
+    - Cabin Fever
 ---
 
 
@@ -19,8 +22,12 @@ layout: default
     </div>
     <div id= "featured" class="box">
       <h1>FEATURED STORIES</h1>
-      <div class="feature"></div>
-      <div class="feature"></div>
+      <div class="feature">
+          <img src="{{ page.stories[0].poster_image }}"/>
+      </div>
+      <div class="feature">
+          <img src="{{ page.stories[1].poster_image }}"/>
+      </div>
     </div>
   </div>
 
