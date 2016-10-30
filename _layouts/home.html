@@ -57,12 +57,14 @@ layout: default
       <h1><a href="{{ post.url }}">{{post.title}}</a></h1>
       {% endif %}
       {% if post.thumb %}
-      <img src="/img/{{post.thumb}}" />
+      <img src="{{post.thumb}}" />
       {% elsif post.img %}
-      <img src="/img/{{post.img}}" />
+      <img src="{{post.img}}" />
       {% elsif post.icon %}
-      <img src="/img/{{post.icon}}" />
+      <img src="{{post.icon}}" />
       {% endif %}
-      {{post.content}}    </div>  {% endfor %}
+      {{post.content}}
+    </div>
+  {% endfor %}
   <div id="more"><a href="/blog">MORE NEWS</a></div>
 </div>
