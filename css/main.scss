@@ -190,6 +190,7 @@ body {
         width: 150px;
         height: 225px;
         margin-right: 8px;
+        border: 1px solid black;
         a {
             display: block;
             position: relative;
@@ -205,9 +206,7 @@ body {
                 font-size: 2em;
                 padding: 10px 0;
                 width: 100%;
-            }
-            img {
-                border: 1px solid black;
+                text-align: center;
             }
         }
       }
