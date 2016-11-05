@@ -1,6 +1,6 @@
 ---
 layout: page
-story: Battelmon
+story: Battlemon
 alt:
 image: /img/content/Battlemon 02JPG.JPG
 thumb_image: /img/content/battlemon-02jpg.jpg
