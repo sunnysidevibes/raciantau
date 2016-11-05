@@ -3,7 +3,7 @@ layout: page
 story: Battlemon
 alt: "\"Racia, what are you doing! The first rule of riding the subway is, “Don't make eye contact.\""
 image: /img/content/Battlemon-01JPG.jpg
-thumb: /img/content/thumbs/Battlemon-01JPG.jpg
+thumb_image: /img/content/thumbs/Battlemon-01JPG.jpg
 icon_image: /img/content/STANDARD.png
 date: 2016-07-19 16:00:00
 ---
