@@ -1,0 +1,17 @@
+
+<div class="box article">
+  <h2>{{ post.date | date: "%A %b %d, %y" }}</h2>
+  {% if post.story %}
+  <h1><a href="{{ post.url }}">Updated! {{post.story.title}} {{post.title}}</a></h1>
+  {% else %}
+  <h1><a href="{{ post.url }}">{{post.title}}</a></h1>
+  {% endif %}
+  {% if post.thumb %}
+  <img src="{{post.thumb}}" />
+  {% elsif post.image %}
+  <img src="{{post.image}}" />
+  {% elsif post.icon_image %}
+  <img src="{{post.icon_image}}" />
+  {% endif %}
+  {{post.excerpt}}
+</div>

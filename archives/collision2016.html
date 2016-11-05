@@ -1,0 +1,7 @@
+---
+layout: default
+permalink: /archives/collision2016/
+---
+{% assign stories = site.stories | where_exp: 'story', "story.title == 'Collision 2016'" %}
+{% assign story = stories[0] %}
+{% include archive.html %}

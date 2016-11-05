@@ -1,12 +1,12 @@
 ---
-layout: default
+layout: post
 title: 'Welcome to the New and Improved site!'
 date: 2016-10-30 16:00:00
 categories:
   - updates
   - announcements
 icon_image: /img/content/ROCK.png
-comic: 
+comic:
 ---
 
 

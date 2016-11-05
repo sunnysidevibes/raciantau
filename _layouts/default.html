@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="/css/main.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </head>
   <body>
     {% include banner.html %}
@@ -31,4 +33,24 @@
       window.addEventListener('load',pw_load,false);}})();
   </script>
   <!-- End Project Wonderful Ad Box Loader -->
+  <script type="text/javascript">
+    $(function (){
+      document.onkeydown = checkKey;
+
+        function checkKey(e) {
+
+            e = e || window.event;
+
+            if (e.keyCode == '37') {
+               // left arrow
+               document.getElementById('prev').click();
+            }
+            else if (e.keyCode == '39') {
+               // right arrow
+               document.getElementById('next').click();
+            }
+
+        }
+    });
+  </script>
 </html>

@@ -39,24 +39,8 @@ layout: default
         </a>
     </div>
 
-    <div class="ad">
-      <!-- Project Wonderful Ad Box Code -->
-      <div style="text-align:center;"><div style="display:inline-block;" id="pw_adbox_79418_1_0"></div></div>
-      <script type="text/javascript"></script>
-      <noscript><div style="text-align:center;"><div style="display:inline-block;"><map name="admap79418" id="admap79418"><area href="http://www.projectwonderful.com/out_nojs.php?r=0&c=0&id=79418&type=1" shape="rect" coords="0,0,468,60" title="" alt="" target="_blank" /></map>
-      <table cellpadding="0" cellspacing="0" style="width:468px;border-style:none;background-color:#ffffff;"><tr><td><img src="http://www.projectwonderful.com/nojs.php?id=79418&type=1" style="width:468px;height:60px;border-style:none;" usemap="#admap79418" alt="" /></td></tr><tr><td style="background-color:#ffffff;" colspan="1"><center><a style="font-size:10px;color:#0000ff;text-decoration:none;line-height:1.2;font-weight:bold;font-family:Tahoma, verdana,arial,helvetica,sans-serif;text-transform: none;letter-spacing:normal;text-shadow:none;white-space:normal;word-spacing:normal;" href="http://www.projectwonderful.com/advertisehere.php?id=79418&type=1" target="_blank">Ads by Project Wonderful!  Your ad here, right now: $0</a></center></td></tr></table></div></div>
-      </noscript>
-      <!-- End Project Wonderful Ad Box Code -->
-    </div>
-    <div class="mobile ad">
-      <!-- Project Wonderful Ad Box Code -->
-      <div style="text-align:center;"><div style="display:inline-block;" id="pw_adbox_79419_6_0"></div></div>
-      <script type="text/javascript"></script>
-      <noscript><map name="admap79419" id="admap79419"><area href="http://www.projectwonderful.com/out_nojs.php?r=0&c=0&id=79419&type=6" shape="rect" coords="0,0,234,60" title="" alt="" target="_blank" /></map>
-      <table cellpadding="0" cellspacing="0" style="width:234px;border-style:none;background-color:#ffffff;"><tr><td><img src="http://www.projectwonderful.com/nojs.php?id=79419&type=6" style="width:234px;height:60px;border-style:none;" usemap="#admap79419" alt="" /></td></tr><tr><td style="background-color:#ffffff;" colspan="1"><center><a style="font-size:10px;color:#0000ff;text-decoration:none;line-height:1.2;font-weight:bold;font-family:Tahoma, verdana,arial,helvetica,sans-serif;text-transform: none;letter-spacing:normal;text-shadow:none;white-space:normal;word-spacing:normal;" href="http://www.projectwonderful.com/advertisehere.php?id=79419&type=6" target="_blank">Ads by Project Wonderful!  Your ad here, right now: $0</a></center></td></tr></table>
-      </noscript>
-      <!-- End Project Wonderful Ad Box Code -->
-    </div>
+    {% include ads01.html %}
+
   <div class="flow">
     <div class="commentary">
 
@@ -68,11 +52,24 @@ layout: default
       <div class="content">
       <img src="{{ page.icon_image }}" />{{ page.content }}</div>
     </div>
+
+
+    <div class="post_nav">
+      {% if prev %}
+      <a  id="prev" href="{{prev.url}}" >Previous</a>
+      {% endif %}
+      {% if next %}
+      <a  id="next" href="{{next.url}}" >Next</a>
+      {% endif %}
+      <div class="arrow_alert">Use your arrow keys for convenient navigation!</div>
+    </div>
+
+
   </div>
 
   {% assign match = site.stories | where_exp: 'item', 'item.title == page.story' %}
   {% assign story = match.first %}
-  
+
   <div id="sidebar">
       <div id="story_banner">
         <img src="{{ story.banner_image }}" />

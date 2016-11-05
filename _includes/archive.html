@@ -1,0 +1,32 @@
+
+<div class="archive">
+<h1>{{story.title}}</h1>
+{% include ads01.html %}
+{{ story.desc_html }}
+<p>Click <a href="/archives/{{story.title | url_encode }}_all">here</a> to read the whole story in a single, scrollable page.</p>
+<img class="archive_icon" src="{{ story.icon_image }}" />
+
+<div id="dash">
+  {% assign battlemon = site.comics | where_exp: "page", "page.story == 'Battlemon'" %}
+  {% for page in site.comics %}
+  {% if page.story == story.title %}
+  <div>
+    <a href="{{ page.url }}">
+      <img src="{{ page.thumb }}" />
+    </a>
+  </div>
+  {% endif %}
+  {% endfor %}
+  <div class="placeholder"></div>
+  <div class="placeholder"></div>
+  <div class="placeholder"></div>
+  <div class="placeholder"></div>
+
+
+</div>
+    <div class="ad skyscraper left">
+    </div>
+
+    <div class="ad skyscraper right">
+    </div>
+</div>

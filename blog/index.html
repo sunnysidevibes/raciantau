@@ -3,6 +3,7 @@ _hide_content: true
 layout: default
 ---
 
+{% include ads01.html %}
 
 <div id="blog">
   {% assign all = paginator.posts | sort: 'date' | reverse %}
@@ -19,11 +20,6 @@ layout: default
     {% endif %}
     {{latest.excerpt}}
   </div>
-
-    <div class="adbox">
-      <div class="banner full">AD</div>
-      <div class="banner full">AD</div>
-    </div>
 
     {% for post in news %}
       <div class="box article">

@@ -5,8 +5,4 @@ description_html: "<h1>RACIANTAU</h1><p>was born in early 2016 when a PRIMORDIAL
 stories:
   - Battlemon
   - Collision 2016
-  - Cabin Fever
-  -
 ---
-
-
