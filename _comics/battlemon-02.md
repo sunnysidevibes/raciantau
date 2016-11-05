@@ -9,3 +9,5 @@ date: 2016-07-21 00:00:00
 ---
 
 
+
+I was going to draw more extras in the background as silhouettes but decided against it because I worried it might detract from the intent of the page, which was to suggest an overbearing sense of social pressure against Racia. I shouldn't tell you these things, though. I should let the work speak for itself. Or, wait … is this blurb part of the work, too? Is all that matters in the consumption of art the <em>experience</em> of that consumption? Wow, these are big questions. I don't have any answers, though. If you're looking for answers you're looking in the <em>wrooong</em> place, my friend.<br><br>Oh, oh goodness. Was that … too soon? Are we … do you think we could be friends?<br><br>Oh no, I'm blushing, I have to stop. <strong>Ahhh!</strong>
