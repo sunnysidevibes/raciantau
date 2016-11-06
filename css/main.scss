@@ -332,7 +332,10 @@ body {
   color: black;
   margin: 15px 0;
   text-align: left;
-  padding: 20px;
+  padding: 2px;
+  @include media(">=desktop") {
+    padding: 20px;
+  }
   padding-top: 5px;
   font-size: 10pt;
 
@@ -554,9 +557,11 @@ body {
   position: relative;
   padding: 30px;
   background-color: darkgray;
-  width: 300px;
   flex-grow: 0;
   flex-shrink: 0;
+  @include media(">=desktop") {
+    width: 360px;
+  }
 }
 
   input.donate_bear {
@@ -710,25 +715,41 @@ body {
   font-family: "SingleSleeve";
   width: 100%;
   position: relative;
-  margin: 30px 0;
+
+  @include media(">=desktop") {
+    margin: 30px 0;
+  }
 
     h1 {
       display: block;
-      font-size: 10em;
+      font-size: 5em;
       margin: 0 auto;
       text-align: center;
+
+      @include media(">=desktop") {
+        font-size: 10em;
+      }
     }
 
     .categories {
       display: flex;
       justify-content: space-between;
-      font-size: 5em;
+      font-size: 3em;
       text-decoration: underline;
+      margin: 0 20px;
+
+      @include media(">=desktop") {
+        font-size: 5em;
+        margin: 0;
+      }
     }
 
     .phase {
-      font-size: 4em;
+      font-size: 2.8em;
       text-align: center;
+      @include media(">=desktop") {
+        font-size: 4em;
+      }
     }
 
     .phase.soon {
@@ -738,6 +759,10 @@ body {
     .stories {
       display: flex;
       justify-content: space-between;
+      flex-direction: column;
+      @include media(">=desktop") {
+        flex-direction: row;
+      }
     }
 
     .story {
@@ -748,37 +773,57 @@ body {
         display: block;
       }
       .soon {
-        width: 150px;
-        height: 225px;
         background-color: darkgray;
         font-size: 2em;
         text-align: center;
         color: gray;
         margin: 0 auto;
+        @include media(">=desktop") {
+          width: 150px;
+          height: 225px;
+        }
       }
     }
 
     .racia {
       text-align: left;
+      align-self: flex-start;
+      @include media(">=desktop") {
+        align-self: auto;
+      }
     }
 
     .antau {
       text-align: right;
+      align-self: flex-end;
+      @include media(">=desktop") {
+        align-self: auto;
+      }
     }
 
     .raciantau {
       flex-grow: 5;
+      align-self: center;
+      @include media(">=desktop") {
+        align-self: auto;
+      }
     }
 
 }
 
 .archive {
   position: relative;
+  h1 {
+    font-size: 5em;
+  }
   img {
     display: block;
     margin: auto;
   }
   p {
-    margin: 30px 130px;
+    margin: 0px 15px 10px;
+    @include media(">=desktop") {
+      margin: 30px 130px;
+    }
   }
 }

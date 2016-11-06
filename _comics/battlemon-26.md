@@ -5,7 +5,7 @@ alt:
 image: /img/content/Battlemon-26JPG.jpg
 thumb_image: /img/content/thumbs/Battlemon-26JPG.jpg
 icon_image: /img/content/SHAFTTILT.png
-date: 2016-10-18 00:00:00
+date: 2016-10-18 00:00:01
 ---
 
 This page updated with the page before it, so make sure you read that one, too!
