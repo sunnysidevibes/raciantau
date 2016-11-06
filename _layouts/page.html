@@ -23,19 +23,19 @@ layout: default
     <div id="navigation" class="">
 
         <a href="{{ first.url }}">
-          <i id="first_arrow" title="First" class="icon material-icons {% if first %}active{% endif %}">first_page</i>
+          <i id="first_arrow" title="First" class="fa fa-angle-double-left {% if first %}active{% endif %}"></i>
         </a>
         <a title="Previous" href="{{ prev.url }}">
-          <i id="prev_arrow" class="icon material-icons {% if prev %}active{% endif %}">arrow_back</i>
+          <i id="prev_arrow" class="fa fa-angle-left {% if prev %}active{% endif %}"></i>
         </a>
         <a title="Page List" href="{{ site.url }}/comics/{{ page.collection }}">
-          {{ page.title }} / {{ total_str }}
+          {{ page.title | slice: -2, 2 }} / {{ total_str }}
         </a>
         <a title="Next" href="{{ next.url }}">
-          <i id="next_arrow" class="icon material-icons {% if next %}active{% endif %}">arrow_forward</i>
+          <i id="next_arrow" class="fa fa-angle-right {% if next %}active{% endif %}"></i>
         </a>
         <a title="Latest" href="{{ last.url }}">
-          <i id="last_arrow" class="icon material-icons {% if last %}active{% endif %}">last_page</i>
+          <i id="last_arrow" class="fa fa-angle-double-right {% if last %}active{% endif %}"></i>
         </a>
     </div>
 
@@ -61,7 +61,6 @@ layout: default
       {% if next %}
       <a  id="next" href="{{next.url}}" >Next</a>
       {% endif %}
-      <div class="arrow_alert">Use your arrow keys for convenient navigation!</div>
     </div>
 
 

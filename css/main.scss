@@ -27,6 +27,9 @@
 @mixin stroke($stroke, $color) {
   text-shadow: stroke($stroke, $color);
 }
+
+@import "include_media";
+
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
@@ -50,6 +53,12 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+$breakpoints: (
+  'tiny': 300px,
+  'phone': 414px,
+  'tablet': 768px,
+  'desktop': 1024px
+  );
 // Minima also includes a mixin for defining media queries.
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -76,16 +85,30 @@ body {
   font-family: "Montserrat";
 }
 
+.wrap {
+  margin: 0 auto;
+
+  @include media(">=tablet", "landscape") {
+  }
+  @include media(">=desktop") {
+    width: 1100px;
+  }
+}
+
 .flow {
   display: flex;
   justify-content: flex-start;
-  flex-direction: row;
+  flex-direction: column;
+  @include media(">=desktop") {
+    flex-direction: row;
+  }
 }
 
 #banner {
-  width: 1100px;
+  position: relative;
   margin: 0 auto;
   background-color: black;
+  overflow: visible;
 
   #home {
     display: inline-block;
@@ -93,7 +116,10 @@ body {
   }
 
   .link {
-    display: inline-block;
+    display: none;
+    @include media(">=desktop") {
+      display: inline-block;
+    }
     color: white;
     font-family: "SingleSleeve";
     font-size: 3.5em;
@@ -111,31 +137,92 @@ body {
   #rss_link {
     float: right;
 
+    display: none;
+
+    @include media(">=desktop") {
+      display: block;
+    }
+
     img {
       height: 100px;
     }
+
+  }
+
+  @include media(">=desktop") {
+    width: 1100px;
+  }
+
+  i {
+    position: absolute;
+    display: inline-block;
+    color: white;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    @include media(">=desktop") {
+      display: none;
+    }
+  }
+
+  i:hover {
+    color: #FF7F81;
   }
 }
 
-#main {
-  width: 1100px;
-  margin: auto;
+#menu {
+  width: 100%;
+  background-color: #FF7F81;
+  display: none;
+  z-index: 100;
+  padding: 15px;
+
+  .link {
+    display: block;
+    color: white;
+    font-family: "SingleSleeve";
+    font-size: 3.5em;
+    margin: 0 0 0 30px;
+  }
+
+  a:hover {
+    color: #FF7F81;
+    @include stroke(3,#FFFFFF);
+  }
+
+  .link.active {
+    color: #FF7F81;
+    @include stroke(3,#FFFFFF);
+  }
 }
+
 
 #exhibit {
   font-family: "SingleSleeve";
   width: 100%;
   position: relative;
-  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  @include media(">=desktop") {
+    flex-direction: row;
+  }
 
   #latest {
     position: relative;
     display: inline-block;
-    width: 720px;
-    height: 600px;
     background-color: white;
     vertical-align: top;
     overflow: hidden;
+    height: 400px;
+
+    @include media(">=desktop") {
+      width: 720px;
+      height: auto;
+      align-self: stretch;
+    }
 
     #fog {
       position: absolute;
@@ -159,7 +246,7 @@ body {
       @include stroke(3,#FFFFFF);
       position: absolute;
       font-family: "SingleSleeve";
-      font-size: 3em;
+      font-size: 2em;
       left: 50%;
       top: 50%;
       -webkit-transform: translateY(-50%) translateX(-50%);
@@ -174,60 +261,54 @@ body {
 
   #summary {
     float: right;
-    display: inline-block;
-    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0;
-    margin-left: 0px;
-    height: 600px;
     vertical-align: top;
 
-            .box {
-              padding-top: 0;
-            }
+    @include media(">=desktop") {
+      width: 360px;
+    }
 
-    #featured {
-      height: 275px;
+    .box {
+      padding-top: 15px;
+    }
+
+    #featured.box {
+        margin-bottom: 0 !important;
 
       .feature {
         display: inline-block;
         vertical-align: top;
         background-color: gray;
-        width: 150px;
         margin-right: 4px;
         border: 1px solid black;
         overflow: hidden;
         a {
+          display: block;
+          position: relative;
+          img {
             display: block;
-            position: relative;
-            img {
+          }
+          span {
+              position: absolute;
               display: block;
-            }
-            span {
-                position: absolute;
-                display: block;
-                font-family: "SingleSleeve";
-                color: white;
-                background-color: rgba(0,0,0,0.8);
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                font-size: 2em;
-                padding: 10px 0;
-                width: 100%;
-                text-align: center;
-            }
+              font-family: "SingleSleeve";
+              color: white;
+              background-color: rgba(0,0,0,0.8);
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              font-size: 2em;
+              padding: 10px 0;
+              width: 100%;
+              text-align: center;
+          }
         }
-
       }
-
     }
-
-    :first-child {
-      margin-top: 0;
-    }
-
   }
-
 }
 
 #blog {
@@ -292,9 +373,14 @@ body {
     margin-bottom: -10px;
   }
   img {
-    float: left;
-    margin: 30px;
-    width: 150px;
+    float: right;
+    margin: 10px;
+    width: 75px;
+    @include media(">=desktop") {
+      float: left;
+      margin: 30px;
+      width: 150px;
+    }
   }
   p {
     font-size: 1.2em;
@@ -309,9 +395,12 @@ body {
   }
 
   img {
-    max-width: 100%;
-    margin-left: 0;
-    margin-right: 50px;
+    width: 120px;
+    margin-left: 5px;
+    margin-right: 0;
+    @include media(">=desktop") {
+      margin-right: 50px;
+    }
   }
 
   p {
@@ -330,21 +419,16 @@ body {
   display: none;
 }
 
-    @media only screen
-and (min-device-width : 320px)
-and (max-device-width : 568px) {
-  .ad {
-    display: none;
-  }
-  .ad.mobile {
-    display: block;
-  }
-}
 
 .adbox {
-  display: flex;
   justify-content: space-between;
   text-align: right;
+
+  display: none;
+
+  @include media(">=desktop") {
+    display: flex;
+  }
 
   .banner {
     height: 50px;
@@ -364,7 +448,11 @@ and (max-device-width : 568px) {
 }
 
 .ad.skyscraper {
-  display: block;
+  display: none;
+
+    @include media(">=desktop") {
+      display: block;
+    }
 
   position: absolute;
 
@@ -387,26 +475,31 @@ and (max-device-width : 568px) {
 }
 
 #footer {
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 30px;
-  padding: 10px 0;
   background-color: black;
+  .wrap {
+  margin: 30px auto;
+  margin-bottom: 0;
+  padding: 10px 0;
 
   .box {
-    margin: 20px auto;
+    margin: 20px;
     position: relative;
-    width: 1058px;
     background-color: gray;
     border: 1px solid white;
 
     img {
       position: absolute;
-      width: 80px;
+      width: 40px;
       margin: 15px;
       bottom: -20px;
       z-index: 100;
+      right: 20px;
+
+      @include media(">=desktop") {
+        width: 80px;
+      }
     }
+  }
   }
 }
 
@@ -546,8 +639,6 @@ and (max-device-width : 568px) {
 .post_nav {
   font-family: "SingleSleeve";
   text-align: center;
-  border-top: 1px dashed black;
-  border-bottom: 1px dashed black;
   margin: 30px;
 
   a {

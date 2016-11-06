@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=max-device-width, initial-scale=1.0">
     <title>RACIANTAU</title>
     <link rel="stylesheet" href="/css/main.css" type="text/css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -12,7 +13,9 @@
   <body>
     {% include banner.html %}
     <div id="main">
-    {{content}}
+      <div class="wrap">
+        {{content}}
+      </div>
     </div>
     {% include footer.html %}
   </body>
@@ -34,23 +37,24 @@
   </script>
   <!-- End Project Wonderful Ad Box Loader -->
   <script type="text/javascript">
+
+        function show_menu() {
+          $('#menu').css('display', 'block');
+        }
+
     $(function (){
       document.onkeydown = checkKey;
 
-        function checkKey(e) {
+      function checkKey(e) {
+          e = e || window.event;
+          if (e.keyCode == '37') {
+             document.getElementById('prev').click();
+          }
+          else if (e.keyCode == '39') {
+             document.getElementById('next').click();
+          }
+      }
 
-            e = e || window.event;
-
-            if (e.keyCode == '37') {
-               // left arrow
-               document.getElementById('prev').click();
-            }
-            else if (e.keyCode == '39') {
-               // right arrow
-               document.getElementById('next').click();
-            }
-
-        }
     });
   </script>
 </html>

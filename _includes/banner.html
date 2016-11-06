@@ -10,4 +10,11 @@
   <div id="rss_link">
     <img src="/img/RSS_BANNER_150px.png" />
   </div>
+  <a onclick="show_menu();"><i class="fa fa-bars fa-3x"></i></a>
+</div>
+
+<div id="menu">
+  <a class="link {% if page.url contains 'blog' %}active{% endif %}" href='/blog'><div>News</div></a>
+  <a class="link {% if page.url contains 'archives' %}active{% endif %}" href='/archives'><div>Archives</div></a>
+  <span class="link " href='/about' style="color: rgba(255,255,255,0.5);"><div>About</div></span>
 </div>
