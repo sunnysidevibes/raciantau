@@ -2,13 +2,14 @@
 layout: page
 story: Collision 2016
 alt:
-image: /img/content/Collision2016_09JPG.jpg
-thumb_image: /img/content/thumbs/Collision2016_09JPG.jpg
+image: /img/content/COLLISION2016_09JPG.JPG
+thumb_image: /img/content/thumbs/COLLISION2016_09JPG.JPG
 icon_image: /img/content/GRUMPY.png
 date: 2016-10-27 00:00:00
 ---
 
-A politician and its campaign organs following through on a promise? Incredible. <em>Actually</em> incredible. Who would take this seriously? What a joke. Luckily this is a gag comic and thus full of jokes. And luckily there's one more strip to go before the saga of Antau Vacuo and the Giant Meteor is complete.
+
+A politician and its campaign organs following through on a promise? Incredible. *Actually* incredible. Who would take this seriously? What a joke. Luckily this is a gag comic and thus full of jokes. And luckily there's one more strip to go before the saga of Antau Vacuo and the Giant Meteor is complete.
 
 Building that electromag rail gun was probably a great public works program. But then, what will it be used for after this? I guess the idea might have been that, if this ends up being successful, there's no real issue with finding another use for it. Ha.
 
