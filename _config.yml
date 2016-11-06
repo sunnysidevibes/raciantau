@@ -22,7 +22,7 @@ description: >
   these pages we'll be exploring themes of ISOLATION, ALIENATION, the FUTURE of our SPECIES,
   keeping to the CENTER, and YOUR MOM with a cute smile plastered over the unshakable sense that
   our best days are <strike>behind us</strike> a LIE WE TELL OURSELVES. Welcome!
-baseurl: "/ra-studios/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://raciantau.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 collections:

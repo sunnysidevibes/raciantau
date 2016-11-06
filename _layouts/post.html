@@ -20,26 +20,4 @@ layout: default
   {% endif %}
 </div>
 
-  <div id="summary" class="panel">
-    <div id= "featured" class="box">
-    {% assign home = site.pages | where_exp: 'item', 'item.name == "index.md"' %}
-    {% assign match = site.stories | where_exp: 'item', 'home[0].stories contains item.title' %}
-      <h1>FEATURED STORIES</h1>
-      <div class="feature">
-          {% assign feature = match[0] %}
-          {% assign pages = site.comics | where_exp: 'item', 'item.story == feature.title' %}
-          {% assign link = pages.first.url %}
-          <a href="{{link}}" ><img src="{{ feature.poster_image }}"/>
-          <span>{{feature.title}}</span>
-          </a>
-      </div>
-      <div class="feature">
-          {% assign feature = match[1] %}
-          {% assign pages = site.comics | where_exp: 'item', 'item.story == feature.title' %}
-          {% assign link = pages.first.url %}
-          <a href="{{link}}" ><img src="{{ feature.poster_image }}"/>
-          <span>{{feature.title}}</span>
-          </a>
-      </div>
-    </div>
-  </div>
+{% include reminders.html %}
