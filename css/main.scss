@@ -55,7 +55,7 @@ $on-laptop:        800px;
 
 $breakpoints: (
   'tiny': 300px,
-  'phone': 414px,
+  'phone': 360px,
   'tablet': 768px,
   'desktop': 1024px
   );
@@ -259,8 +259,9 @@ body {
     }
   }
 
+}
+
   #summary {
-    float: right;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -273,6 +274,7 @@ body {
 
     .box {
       padding-top: 15px;
+      margin-top: 0 !important;
     }
 
     #featured.box {
@@ -290,6 +292,10 @@ body {
           position: relative;
           img {
             display: block;
+            width: 140px;
+            @include media(">=phone") {
+              width: auto;
+            }
           }
           span {
               position: absolute;
@@ -309,7 +315,6 @@ body {
       }
     }
   }
-}
 
 #blog {
   #more {
@@ -323,6 +328,7 @@ body {
   h1 {
     font-size: 3em;
     text-decoration: underline;
+    margin-bottom: 15px;
   }
 }
 
@@ -331,8 +337,9 @@ body {
 	font-family: "Montserrat", sans-serif;
   color: black;
   margin: 15px 0;
+  margin-top: 0;
   text-align: left;
-  padding: 2px;
+  padding: 10px;
   @include media(">=desktop") {
     padding: 20px;
   }
@@ -447,6 +454,14 @@ body {
 
   .full {
     width: 468px;
+  }
+}
+
+.adbox.mobile {
+  display: flex;
+  justify-content: space-around;
+  @include media(">=desktop") {
+    display: none;
   }
 }
 
@@ -745,8 +760,10 @@ body {
     }
 
     .phase {
+      border: 1px solid black;
       font-size: 2.8em;
       text-align: center;
+      margin: 10px 0;
       @include media(">=desktop") {
         font-size: 4em;
       }

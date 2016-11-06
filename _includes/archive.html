@@ -5,6 +5,10 @@
 {{ story.desc_html }}
 <p>Click <a href="/archives/{{story.title | url_encode }}_all">here</a> to read the whole story in a single, scrollable page.</p>
 
+  <div class="adbox mobile">
+    <div class="banner half">AD</div>
+  </div>
+
 <div id="dash">
   {% assign battlemon = site.comics | where_exp: "page", "page.story == 'Battlemon'" %}
   {% for page in site.comics %}
