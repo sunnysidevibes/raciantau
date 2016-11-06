@@ -427,19 +427,11 @@ body {
 
 }
 
-.ad {
-  text-align: center;
-  margin: 10px;
-}
-
-.ad.mobile {
-  display: none;
-}
-
 
 .adbox {
   justify-content: space-between;
   text-align: right;
+    margin: 10px;
 
   display: none;
 
@@ -462,6 +454,7 @@ body {
   .full {
     width: 468px;
   }
+
 }
 
 .adbox.mobile {
@@ -472,7 +465,7 @@ body {
   }
 }
 
-.ad.skyscraper {
+.adbox.skyscraper {
   display: none;
 
     @include media(">=desktop") {
@@ -481,21 +474,16 @@ body {
 
   position: absolute;
 
-  width: 160px;
-  height: 600px;
-  background-color: gray;
-  margin: 5px;
-  padding: 0px;
   color: white;
 
   top: 0;
 }
 
-.ad.skyscraper.left {
+.adbox.skyscraper.left {
   left: -200px;
 }
 
-.ad.skyscraper.right {
+.adbox.skyscraper.right {
   right: -200px;
 }
 
@@ -568,11 +556,20 @@ body {
 }
 
 #art {
+  position: relative;
   img {
     display: block;
     width: calc(100% - 10px);
     border: 5px solid gray;
   }
+
+  .adbox {
+    img {
+      border: none;
+      width: auto;
+    }
+  }
+
 }
 
 

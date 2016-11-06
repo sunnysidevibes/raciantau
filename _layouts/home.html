@@ -14,9 +14,7 @@ layout: default
     </a>
   </div>
 
-  <div class="adbox mobile">
-    <div class="banner half">AD</div>
-  </div>
+  {% include ad-mobile.html id="pw_adbox_79419_6_0" %}
 
   <div id="summary" class="panel">
     <div class="box">
@@ -44,16 +42,12 @@ layout: default
     </div>
   </div>
 
-  <div class="ad skyscraper left">
-  </div>
+{% include ad-skyscraper.html side="left" id="pw_adbox_79458_3_0" %}
+{% include ad-skyscraper.html side="right" id="pw_adbox_79458_3_1" %}
 
-  <div class="ad skyscraper right">
-  </div>
 </div>
 
-  <div class="adbox mobile">
-    <div class="banner half">AD</div>
-  </div>
+{% include ad-mobile.html id="pw_adbox_79419_6_1" %}
 
 <div id="blog">
   {% assign all = site.posts | sort: 'date' | reverse %}

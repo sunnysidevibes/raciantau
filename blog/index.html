@@ -4,6 +4,7 @@ layout: default
 ---
 
 {% include ads01.html %}
+{% include ad-mobile.html id="pw_adbox_79419_6_0" %}
 
 <div id="blog">
   {% assign all = paginator.posts | sort: 'date' | reverse %}
@@ -12,9 +13,6 @@ layout: default
 
     {% include post.html %}
 
-    <div class="adbox mobile">
-      <div class="banner half">AD</div>
-    </div>
 
     {% for post in news %}
       {% include post.html %}
