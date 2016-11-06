@@ -2,11 +2,12 @@
 layout: page
 story: Battlemon
 alt:
-image: /img/content/Battlemon-11JPG.jpg
+image: /img/content/Battlemon-11JPG.JPG
 thumb_image: /img/content/thumbs/Battlemon-11JPG.jpg
 icon_image: /img/content/GRUMPY.png
 date: 2016-08-23 00:00:00
 ---
+
 
 I had the idea for this page's layout early in storyboarding, and the layout of Racia's apartment was one of the first assets to be produced. Even then, it wasn't until I got around to working on this page that I realized what a happy accident it turned out to be, with the "home is where the heart is" decoration enjoying a position of prominence.
 
