@@ -2,7 +2,7 @@
 layout: default
 ---
 <section id="main">
-        {% assign posts = site.comics | where_exp: "item", "item.story.title == page.story.title" %}
+        {% assign posts = site.comics | where_exp: "item", "item.story == page.story" %}
         {% assign total = posts | size %}
         {% capture total_str %}
         {% if total < 10 %}0{% endif %}{{ total }}
@@ -76,9 +76,8 @@ layout: default
       </div>
 
   <div class="box blurb">
-    <img class="icon" src="{{ story.icon_image }}" />
     {{ story.desc_html | safeHTML }}
-    <a href="">All Pages</a>
+    <a href="/archives/{{story.title | url_encode}}">All Pages</a>
   </div>
     <div class="box blurb">
       <strong>RACIANTAU</strong> is supported by <strong>BLIND OPTIMISM</strong>, the <strong>HOPES</strong> and <strong>DREAMS</strong> of <strong>COUNTLESS CHILDREN</strong>, and <strong>YOUR DONATIONS</strong>:
@@ -93,4 +92,6 @@ layout: default
 
   </div>
     </div>
+
+      <img class="archive_icon" src="{{ story.icon_image }}" />
 </section>
