@@ -325,10 +325,10 @@ body {
     margin-bottom: 20px;
   }
 
-  h1 {
+  h1.top {
     font-size: 3em;
     text-decoration: underline;
-    margin-bottom: 15px;
+      margin-bottom: 15px;
   }
 }
 
@@ -375,12 +375,19 @@ body {
     text-align: left;
     font-size: 3.8em;
     margin: 0px;
+    margin-bottom: -5px;
   }
   h2 {
     font-size: 2em;
     font-family: "SingleSleeve";
     margin: 0;
     margin-bottom: -10px;
+  }
+  h3 {
+    font-size: 2em;
+    font-family: "SingleSleeve";
+    margin: 0;
+    color: gray;
   }
   img {
     float: right;

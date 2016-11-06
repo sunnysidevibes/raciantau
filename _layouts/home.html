@@ -54,11 +54,11 @@ layout: default
   <div class="adbox mobile">
     <div class="banner half">AD</div>
   </div>
-  
+
 <div id="blog">
   {% assign all = site.posts | sort: 'date' | reverse %}
 
-  <h1>Latest News:</h1>
+  <h1 class="top">Latest News:</h1>
 
   {% for post in all limit: 3 %}
     {% include post.html %}

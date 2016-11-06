@@ -7,6 +7,7 @@ categories:
   - announcements
 icon_image: /img/content/ROCK.png
 comic:
+author: that rock
 ---
 
 
