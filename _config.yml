@@ -14,7 +14,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: RACIANTAU
-email: your-email@domain.com
+email: gabriel@raciantau.com
+author: That Rock
 description: >
   was born in early 2016 when a PRIMORDIAL SOUP of deep MELANCHOLY,
   a pervading and explicitly late-20th-century-alt-inspired ENNUI, and CIGARETTE WITHDRAWALS was
@@ -23,7 +24,7 @@ description: >
   keeping to the CENTER, and YOUR MOM with a cute smile plastered over the unshakable sense that
   our best days are <strike>behind us</strike> a LIE WE TELL OURSELVES. Welcome!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://dev.raciantau.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://raciantau.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 collections:
   stories:
