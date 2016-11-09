@@ -2,14 +2,21 @@
 layout: page
 story: Cabin Fever
 alt:
-image: /img/content/CABIN_FEVER_04JPG.jpg
-thumb_image: /img/content/thumbs/CABIN_FEVER_04JPG.jpg
-icon_image: /img/content/HAPPY.png
-date: 2016-11-07 12:00:00
+image: /img/content/cabin-fever-05jpg.jpg
+thumb_image: /img/content/cabin-fever-05jpg.jpg
+icon_image: /img/content/GROSSOUT.png
+date: 2016-11-09 00:00:00
 ---
 
-A fun page to draw. The eyes in the left column remind me of the full-screen color faces from Nick Jr. Gosh, I remember Nick Jr. What a time to be alive.
 
-I guess they probably still do that. I dunno. It has, believe it or not, been a <em>while</em> since I watched Nick Jr.
+I had one real nagging issue as I approached the end of “Battlemon” production: although I knew who Racia was and so, by extension, understood what she was thinking and feeling throughout the text, I realized that to someone who [ital]didn't[/ital] know these things it could possibly feel as though Racia wasn't [bold]doing[/bold] much in the story.
 
-I heard some feedback that the top half of this page is a little confusing – the order you're meant to read the panels in isn't entirely clear. I thought that myself, when I was staring at the finished product. Then I tried the first three orders that naturally came to mind and basically felt all those interpretations did the work I needed that part of the page to do. So, left it as is. Note to aspiring artists: never give yourself more work than you need to.
+And yeah, that's not the sort of thing I could go back to “fix” - it's also not something I'd consider worth “fixing,” because I don't think it's “broken.” That's the sort of story “Battlemon” was [ital]intended[/ital] to be.
+
+That said I'm happy to be following up that story on Racia's side with this one, because it does a great job of showing who Racia truly is: someone who, on the inside, never stops thinking. It also shows that thought process to be somewhat disjointed, making wild leaps and bounds, with a slightly pessimistic edge and an obsession with facing difficult issues.
+
+Is that a spoiler? I don't think so, though it could possibly be “telling you how to feel about the character.” I don't think it's that, either, though … it's more just a summary of what should be pretty obvious by this point in the text.
+
+“Cabin Fever” is also much more representative of the Racia stories to come, so this won't be a one-off sort of thing. Looking forward to that day.
+
+Page is pretty dark, hunh? Yeesh.
