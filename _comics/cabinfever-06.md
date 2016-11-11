@@ -2,21 +2,17 @@
 layout: page
 story: Cabin Fever
 alt:
-image: /img/content/cabin-fever-05jpg.jpg
-thumb_image: /img/content/cabin-fever-05jpg.jpg
-icon_image: /img/content/GROSSOUT.png
-date: 2016-11-09 00:00:00
+image: /img/content/CABIN FEVER 06JPG.jpg
+thumb_image: /img/content/CABIN FEVER 06JPG.jpg
+icon_image: /img/content/STANDARD.png
+date: 2016-11-11 00:00:00
 ---
 
 
-I had one real nagging issue as I approached the end of “Battlemon” production: although I knew who Racia was and so, by extension, understood what she was thinking and feeling throughout the text, I realized that to someone who [ital]didn't[/ital] know these things it could possibly feel as though Racia wasn't [bold]doing[/bold] much in the story.
+The bottom half of this page was the first art I did for Cabin Fever, mostly completed in a foggy haze of inspiration. That made it sort of annoying when I finally got around to completing this page, since the layers and folders were a mess without any sort of ordering logic. Took about thirty minutes just cleaning up the file before I could get to work on the top half.
 
-And yeah, that's not the sort of thing I could go back to “fix” - it's also not something I'd consider worth “fixing,” because I don't think it's “broken.” That's the sort of story “Battlemon” was [ital]intended[/ital] to be.
+Now might be a neat time to talk about my feelings on sex and violence. Put simply, I don't understand our society's overwrought concerns about sexuality in media. That said I wouldn't really push against “the mainstream” on that – by and large I think Western society isn't all that Puritanical anymore, and anyway if you're smart you can find whatever sorta sexy literature or visual stuff you'd like. I think it doesn't need to be so censored in* everything*, but by now no one's really hurting to find *something*&nbsp;they'd like.
 
-That said I'm happy to be following up that story on Racia's side with this one, because it does a great job of showing who Racia truly is: someone who, on the inside, never stops thinking. It also shows that thought process to be somewhat disjointed, making wild leaps and bounds, with a slightly pessimistic edge and an obsession with facing difficult issues.
+Instead my big issue is with violence and how casually it's presented. It always bugs me. Not in the sense of, “Oh, ew, don't show gore!” Not even in the sense of, “Wow, all this wanton destruction is so trivialized!” If I had to put it into words, it's the way that a character can be shown as murdering scores and scores of people to establish them as having a “hard edge,” and yet what truly makes them a “bad person” is how they end up treating our “main characters.” That bugs me. It strikes me as an odd willingness to ignore the humanity of “extras” and “cannon fodder” that feels hypocritical coming from us, since we are all so many extras and cannon fodder ourselves.
 
-Is that a spoiler? I don't think so, though it could possibly be “telling you how to feel about the character.” I don't think it's that, either, though … it's more just a summary of what should be pretty obvious by this point in the text.
-
-“Cabin Fever” is also much more representative of the Racia stories to come, so this won't be a one-off sort of thing. Looking forward to that day.
-
-Page is pretty dark, hunh? Yeesh.
+I don't want to censor violence or have less violent characters; I would just like death to be treated with some sort of gravity. Death ought to *mean*&nbsp;something. It ain't pretty, and violent death is even worse. But it happens and people ought to be aware of that. Too often I think we ignore the reality and *brutality*&nbsp;of death with a sort of glib sense that it's **okay**&nbsp;that we ignore death since it isn't coming for *us*.
