@@ -2,20 +2,17 @@
 layout: page
 story: Cabin Fever
 alt:
-image: /img/content/CABIN FEVER 08JPG.jpg
-thumb_image: /img/content/CABIN FEVER 08JPG.jpg
+image: /img/content/cabin-fever-09jpg.jpg
+thumb_image: /img/content/cabin-fever-09jpg.jpg
 icon_image: /img/content/STANDARD.png
-date: 2016-11-16 00:00:00
+date: 2016-11-19 00:00:00
 ---
 
 
-This is what a “normal” page of *RACIANTAU*&nbsp;looked like, back when “Battlemon,” was being published. Even through “Collision 2016,” I bet.
+That top panel came about pretty late in production (that is to say, the storyboard for this page looked rather different). Never be afraid to change course midstream if that's what your gut tells you to do! I won't say why I think this move was correct, though. That's partly because you don't know what the original storyboard was so it'd be lost on y'all, and partly because I'm learning how to not hold an audience's hand so much.
 
-It's a dream of mine, and I guess more importantly a goal I'm actually working toward, to not really *have*&nbsp;a “normal page of *RACIANTAU*,” though. I want to keep pushing myself with *RACIANTAU*; I'd like to be doing something new or at least exciting in every story, as much as possible on every page, and it'd be great to look back and conclude that I was doing that even in every *panel*.
+See, this is what folks tune in for. The *character growth*.
 
-It's good to aspire, good to recognize you probably won't reach goals fully, good to not stop trying. There was a quote from Thoreau (one of my favorite thinkers and writers) I'm reminded of. Hold on one second, I'll find it. Don't worry. It might take me a few minutes but you won't notice. Okay, back. Here you go:
+I love the bottom panel. We used a similar angle in the very last panel of “Battlemon,” you may recall (if you don't, have you reread “Battlemon” recently? It's always a great time to reread “Battlemon”).
 
-> *“Men cannot conceive of a state of things so fair that it cannot be realized. Can any man honestly consult his experience and say it is so? […] Did you ever hear of a man who had striven all his life faithfully and singly toward an object and in no measure obtained it? […] My actual life is a fact in view of which I have no occasion to congratulate myself, but for my faith and aspiration I have respect.”*
->
->
-> &nbsp;27 March (1848): Henry David Thoreau to Harrison Blake
+Loving that sorta angle is a blessing and a curse, yeah? It's fun to come up with new things to do with a visual tool you love, exciting to see how you can keep your passions fresh, but it's also very tempting to fall into ruts. These are things we all have to avoid. As best we can, mm-hm, mm-hm.
