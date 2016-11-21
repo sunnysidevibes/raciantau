@@ -1,20 +1,36 @@
 ---
 layout: page
-story: Cabin Fever
+story: Nature Calls
 alt:
-image: /img/content/cabin-fever-12jpg.JPG
-thumb_image: /img/content/cabin-fever-12jpg.JPG
-icon_image: /img/content/THOUGHTFUL.png
-date: 2016-11-25 00:00:00
+image: /img/content/nature-calls-01jpg.JPG
+thumb_image: /img/content/nature-calls-01jpg.JPG
+icon_image: /img/content/HAPPY.png
+date: 2016-11-28 00:00:00
 ---
 
 
-I was sorely tempted to use James Joyce's [thunderclap onomatopoeia](http://www.huffingtonpost.com/paul-anthony-jones/17-words-invented-by-james-joyce_b_6866424.html)&nbsp;in the last panel of this page but ultimately decided doing so would be too douchey. I'm pretty sure I've admitted in these blurbs before that “douchey” is something I sorta like in some of my favorite artistic works, and that's still true, but if you've clicked through to that link up there you'll see what stayed my hand here.
+Welcome to “Nature Calls,” *RACIANTAU*'s second Antau story and, for those of you who've peeked at the Archives section of this new site, the last “solo” story before our two titular characters meet up in the forthcoming “Desperate Times”! But that's getting a bit ahead of ourselves, and it's important to center oneself – in the moment and in the body. Which, you know, reminds me ...
 
-Well, that's it! “Cabin Fever” is complete, and I won't take up as much of your time in this blurb as I did in the final blurbs of &nbsp;["Battlemon"](/comics/battlemon-01/)&nbsp;and ["Collision 2016"](/comics/collision+2016_01/)&nbsp;(although I'll take this moment to say that, in light of the results of America's 2016 presidential election and aftermath, I think “Collision 2016” stands as incredibly prescient, and I'm even more proud of it now than I was when it finished publishing). I think “Cabin Fever” is a better “webcomic” than its two predecessors in terms of each page standing completely on their own, but it's still nice to be able to read through it in one go now.
+Since launching *RACIANTAU*&nbsp;and by extension the *RACIANTAU*&nbsp;blurb, I've worried now and then if the phrase “keeping to the **CENTER**” might be misunderstood by some. Writing this now, I realize that was a silly worry; of **course**&nbsp;some will misunderstand what we meant by that, it is *literally impossible*&nbsp;that that wouldn't be the case. Well, since art ought to stand on its own, let's take this time to instead tease out the philosophical concept *RACIANTAU*'s trying to explore. Don't worry – it's useful to know these things going into all these stories, but especially this one.
 
-I also think we did a better job throughout these blurbs in avoiding holding the audience's hands or talking about how the story “should” be interpreted. Nevertheless I'll indulge myself a little here. During production of this story, someone suggested that it could be published as a complete and coherent text after Page 08. I think they were probably right, but only in the sense that it would have been **a**&nbsp;coherent text. Pages 09 through 12 were important for the *"goal"*&nbsp;of “Cabin Fever,” insofar as we had one at all.&nbsp;
+Modern Western cultures have a certain idea of what it means to be “moderate” and “center” and it usually means “between the political/cultural right and left, either borrowing ideas from both or taking a position of compromise betwixt.” And that's fine, sure, makes sense, whatever. But when we here at *RACIANTAU*&nbsp;use words like “moderation” or “holding to the center,” we mean something closer this passage from one of my favorite translations of the [*Tao Te Ching*](http://acc6.its.brooklyn.cuny.edu/~phalsall/texts/taote-v3.html#59):
 
-I won't say anything more than that and maybe I should trust the audience to believe everything on the page is there for a reason. But I remember my own critical background, and I know critics sometimes worry they're “overthinking” a text. I'll probably never be able to stop repeating and reiterating this: that shouldn't be a worry coming into *RACIANTAU*. There's meaning on these pages. There's *supposed* to be **multiple**.
+> **59**
+>
+>
+> [...]
+>
+>
+> The mark of a moderate man
+> <br>is freedom from his own ideas.
+> <br>Tolerant like the sky,
+> <br>all-pervading like sunlight,
+> <br>firm like a mountain,
+> <br>supple like a tree in the wind,
+> <br>he has no destination in view
+> <br>and makes use of anything
+> <br>life happens to bring his way.
 
-Anyway, as always, thank you so much for tuning in! The *RACIANTAU*&nbsp;train isn't slowing down this time; we're picking up immediately next Monday (November 28th) with the next Antau story. It's entitled “Nature Calls,” and it will be published Mondays and Thursdays; this one is 7 pages long. We hope to see you there and then! Take care of yourself as best you can. If “Cabin Fever” had any argument, it's that we're never in control; but you can plan ahead, and you have options. One of them is showing up next week; we hope you will!
+Here it's probably useful to say this translation of the *Tao Te Ching*&nbsp;is not without its critics. I'd suggest you go read what they have to say. I'd also suggest you read multiple translations of any text not originally written in your native tongue. More than anything, though, I'd suggest you let go of any faith or allegiance to authority and tradition. You're alone in this world. Trust and focus inward and on yourself. You can find something like real freedom and peace that way.
+
+Thanks again for showing up! And tune in this Thursday for Page 02!
