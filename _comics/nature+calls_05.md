@@ -9,8 +9,11 @@ date: 2016-12-08 00:00:00
 ---
 
 
-This page excites me.
+“Talk of mysteries! - Think of our life in nature, - daily to be shown matter, to come in contact with it, - rocks, trees, wind on our cheeks! The [i]solid[/i] earth! the [i]actual[/i] world! the [i]common sense! Contact! Contact! Who[/i] are we? [i]where[/i] are we?”
+<br>-Thoreau, The Maine Woods, Ktaadn Pt 6
 
-The storyboards for it were very exciting, and so was scripting it and working on it. But I don't want to talk about the art in particular. I don't have much to say about it. In fact the art on this page isn't even close to my favorite art for “Nature Calls,” if I had to make an ordered list of each panel. But I won't go into that. I still feel something for this page that isn't love or loyalty or pride and maybe has no name. Still it drives me to speak about it, still it hides itself from me.
+What is there to say? Words feel hollow.
 
-We can talk about philosophy some other time. I've quoted lots leading up to this moment and I'll go back to quoting in the next pages. No, if you're here to listen to me, please scroll back up and read the page again. For once let's both let the art speak.
+I want you to laugh. More than that, too. Something lonely.
+
+Matsuo Basho wrote something like, “Sabi is the color of the poem. It does not necessarily refer to the poem that describes a lonely scene. If a man goes to war wearing stout armour or to a party dressed up in gay clothes, and if this man happens to be an old man, there is something lonely about him. Sabi is something like that.”
