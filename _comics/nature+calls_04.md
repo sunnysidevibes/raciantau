@@ -2,17 +2,15 @@
 layout: page
 story: Nature Calls
 alt:
-image: /img/content/nature-calls-03jpg.jpg
-thumb_image: /img/content/nature-calls-03jpg.jpg
-icon_image: /img/content/THOUGHTFUL.png
-date: 2016-12-05 00:00:00
+image: /img/content/nature-calls-04jpg.JPG
+thumb_image: /img/content/nature-calls-04jpg.JPG
+icon_image: /img/content/STANDARD.png
+date: 2016-12-08 00:00:00
 ---
 
 
-Albert Camus said, *“A novel is never anything but a philosophy put into images. And in a good novel, the whole of the philosophy has passed into the images. But if once the philosophy overflows the characters and action, and therefore looks like a label stuck on the work, the plot loses its authenticity and the novel its life. Nevertheless, a work that is to last cannot dispense with profound ideas.”*
+This page excites me.
 
-Or at least something similar. The man wrote in French, after all.
+The storyboards for it were very exciting, and so was scripting it and working on it. But I don't want to talk about the art in particular. I don't have much to say about it. In fact the art on this page isn't even close to my favorite art for “Nature Calls,” if I had to make an ordered list of each panel. But I won't go into that. I still feel something for this page that isn't love or loyalty or pride and maybe has no name. Still it drives me to speak about it, still it hides itself from me.
 
-It's here I should continue my previous words on trusting blindly in authority and the past, since here Camus is quite obviously and simple wrong. A novel is self-evidently a philosophy put into *words*&nbsp;and for a philosophy put into **images&nbsp;**one has to look to comics, which already existed during Camus' time and thus he is left with no excuse. This should be profoundly embarrassing to Camus were he alive, but from what I know of the man I'd wager he wouldn't be embarrassed and might even laugh at the whole thing, which is where my respect for the man returns.
-
-Everything is on the page and in the frame for a reason, and that goes double this time. It says a lot about Antau that he dragged, among other things, a toilet stand with an empty roll of toilet paper out into the middle of the woods. But exactly **what**&nbsp;it says is, as it always has been, entirely up to you.
+We can talk about philosophy some other time. I've quoted lots leading up to this moment and I'll go back to quoting in the next pages. No, if you're here to listen to me, please scroll back up and read the page again. For once let's both let the art speak.
