@@ -2,35 +2,18 @@
 layout: page
 story: Nature Calls
 alt:
-image: /img/content/nature-calls-01jpg.JPG
-thumb_image: /img/content/nature-calls-01jpg.JPG
+image: /img/content/nature-calls-02jpg.jpg
+thumb_image: /img/content/nature-calls-02jpg.jpg
 icon_image: /img/content/HAPPY.png
-date: 2016-11-28 00:00:00
+date: 2016-12-01 00:00:00
 ---
 
 
-Welcome to “Nature Calls,” *RACIANTAU*'s second Antau story and, for those of you who've peeked at the Archives section of this new site, the last “solo” story before our two titular characters meet up in the forthcoming “Desperate Times”! But that's getting a bit ahead of ourselves, and it's important to center oneself – in the moment and in the body. Which, you know, reminds me ...
+I've mentioned before that the guiding desire behind&nbsp;*RACIANTAU*&nbsp;is to do things that are new and exciting for me and relative to past works of mine. For those of you who've read a few of these stories so far or already, you can probably guess that the “project” for “Nature Calls” was to practice and work with natural settings and backgrounds.
 
-Since launching *RACIANTAU*&nbsp;and by extension the *RACIANTAU*&nbsp;blurb, I've worried now and then if the phrase “keeping to the **CENTER**” might be misunderstood by some. Writing this now, I realize that was a silly worry; of **course**&nbsp;some will misunderstand what we meant by that, it is *literally impossible*&nbsp;that that wouldn't be the case. Well, since art ought to stand on its own, let's take this time to instead tease out the philosophical concept *RACIANTAU*'s trying to explore. Don't worry – it's useful to know these things going into all these stories, but especially this one.
+The story's also largely silent, although I'm not sure if I'd call it a “silent comic”; although they haven't shown up yet there are SFX later on in “Nature Calls,” and I'm not sure if I consider those “cheating” or not. Either way, this story does try to operate on movement and framing more than anything else. But as usual, that's getting ahead of ourselves.
 
-Modern Western cultures have a certain idea of what it means to be “moderate” and “center” and it usually means “between the political/cultural right and left, either borrowing ideas from both or taking a position of compromise betwixt.” And that's fine, sure, makes sense, whatever. But when we here at *RACIANTAU*&nbsp;use words like “moderation” or “holding to the center,” we mean something closer this passage from one of my favorite translations of the [*Tao Te Ching*](http://acc6.its.brooklyn.cuny.edu/~phalsall/texts/taote-v3.html#59):
+As before, so again … I'm more invested than usual in seeing “Nature Calls” survive on the merits of its art and nothing else. So let's talk a little more about philosophy, why don't we? In the upcoming blurbs I'll try to slide into the philosophizing a little more quickly. It'll be easier then, too, because the “point” of “Nature Calls,” such as it is, should be clearer by then. For now, I think I'll follow up on the end of last update's blurb (calling the audience to reject authority and trust in themselves) with some words from Lin Chi, a Zen master whose teachings I'm fond of.
 
-> **59**
->
->
-> [...]
->
->
-> The mark of a moderate man
-> <br>is freedom from his own ideas.
-> <br>Tolerant like the sky,
-> <br>all-pervading like sunlight,
-> <br>firm like a mountain,
-> <br>supple like a tree in the wind,
-> <br>he has no destination in view
-> <br>and makes use of anything
-> <br>life happens to bring his way.
-
-Here it's probably useful to say this translation of the *Tao Te Ching*&nbsp;is not without its critics. I'd suggest you go read what they have to say. I'd also suggest you read multiple translations of any text not originally written in your native tongue. More than anything, though, I'd suggest you let go of any faith or allegiance to authority and tradition. You're alone in this world. Trust and focus inward and on yourself. You can find something like real freedom and peace that way.
-
-Thanks again for showing up! And tune in this Thursday for Page 02!
+> **13.**
+> <br>The Master instructed the group, saying: "Followers of the Way, the Dharma of the buddhas calls for no special undertakings. Just act ordinary, without trying to do anything particular. Move your bowels, piss, get dressed, eat your rice, and if you get tired, then lie down. Fools may laugh at me, but wise men will know what I mean. […] [F]ollowers of the Way, if they have really keen eyes, will thrust aside buddhas and devils alike. While you love sages and loath common mortals, you're still bobbing up and down in the sea of birth and death."
