@@ -32,7 +32,6 @@ collections:
     output: true
     permalink: /comics/:path/
 
-future: true
 repository: ra-rock/ra-studios
 
 # Build settings
