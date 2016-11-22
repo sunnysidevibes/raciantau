@@ -39,6 +39,7 @@ paginate: 5
 paginate_path: "/blog/page:num/"
 
 uploads_dir: "img/content"
+future: false
 
 markdown: kramdown
 gems:
