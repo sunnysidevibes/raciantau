@@ -11,3 +11,7 @@ author: a bear costume
 [Wednesday's update's out now!](/comics/cabin+fever_11/)
 
 Holy crudcakes, guys! This is the second-to-last update! Cabin Fever ends on Friday!
+
+Also, we're still having lots of technical difficulties in the back over here. Pay no attention to the giant head behind the curtain. We hope you'll continue to bear with us.
+
+BEAR with us, haha, I see what I did there.
