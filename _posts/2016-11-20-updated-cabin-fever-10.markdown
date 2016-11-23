@@ -3,11 +3,13 @@ layout: post
 title: 'Updated! Cabin Fever 10'
 date: 2016-11-21 00:00:00
 icon_image: /img/content/STANDARD.png
-image: /img/content/cabin-fever-11jpg.jpg
+image:
 author: a bear costume
 ---
 
 
-[Wednesday's update's out now!](/comics/cabin+fever_11/)
+[Monday's update's out now!](/comics/cabin+fever_10/)
 
-Holy crudcakes, guys! This is the second-to-last update! Cabin Fever ends on Friday!
+After today, only two more updates to go! Wow! Time flies!
+
+!!!!!!!
