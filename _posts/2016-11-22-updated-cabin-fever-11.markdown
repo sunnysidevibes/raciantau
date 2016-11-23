@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 'Updated! Cabin Fever 10'
-date: 2016-11-21 00:00:00
+title: 'Updated! Cabin Fever 11'
+date: 2016-11-23 00:00:00
 icon_image: /img/content/STANDARD.png
 image: /img/content/cabin-fever-11jpg.jpg
 author: a bear costume
