@@ -8,7 +8,7 @@ author: a bear costume
 ---
 
 
-[Holy shoot! No brakes on this train! Nature Calls is starting!](/comics/nature+calls_01/)
+[Holy shoot! No brakes on this train! "Nature Calls" is starting!](/comics/nature+calls_01/)
 
 Really proud of this one. Lots of nature scenes! That was the point!
 
