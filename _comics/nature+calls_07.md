@@ -11,7 +11,7 @@ date: 2016-12-15 00:00:00
 
 And that's all there is for “Nature Calls.” We end on a poem and another color page.
 
-If you've been looking at the Archives, you'll know Phase One is called “Protasis” and you'll *also*&nbsp;know it's just about done. There's one more story to go, "Desperate Times." (I call those Phase-ending joint Racia and Antau stories "capstones"). It's the first true *RACIANTAU*&nbsp;story; Antau's shown up in Racia's first story, “Battlemon,” but we never heard him speak **while**&nbsp;seeing his face other there. That'll be different in the next story, where both of them take the lead; hence, “RACIANTAU.”
+If you've been looking at the [Archives](/archives/), you'll know Phase One is called “Protasis” and you'll *also*&nbsp;know it's just about done. There's one more story to go, "Desperate Times." (I call those Phase-ending joint Racia and Antau stories "capstones"). It's the first true *RACIANTAU*&nbsp;story; Antau's shown up in Racia's first story, “Battlemon,” but we never heard him speak **while**&nbsp;seeing his face other there. That'll be different in the next story, where both of them take the lead; hence, “RACIANTAU.”
 
 When Phase Two starts up they'll be going their separate ways again to head their solo stories before meeting up again for a much longer story. But that's *really&nbsp;*getting ahead of ourselves.
 
