@@ -10,6 +10,6 @@ author: a bear costume
 
 [Monday's update is out!](/comics/nature+calls_05/)
 
-I'm proud of this page. I'm proud my entire life and career hasb een building up to publishing this page.
+I'm proud of this page. I'm proud my entire life and career has been building up to publishing this page.
 
 Thanks for reading!
