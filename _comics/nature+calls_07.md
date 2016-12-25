@@ -1,6 +1,6 @@
 ---
 layout: page
-story:
+story: Nature Calls
 alt:
 image: /img/content/nature-calls-07jpg.jpg
 thumb_image: /img/content/nature-calls-07jpg.jpg
