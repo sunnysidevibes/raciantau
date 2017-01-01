@@ -1,9 +1,11 @@
 ---
 _hide_content: true
-title: Collision 2016
-character: Antau
-icon_image: /img/icons/collision.png
-banner_image: /img/banners/collision.png
-poster_image: /img/content/poster02-collision.png
-desc_html: '<p>During a chaotic, fraught election season in a world different from but eerily similar to our own, one mercenary consultant-turned-campaign manager (Antau) sees an opportunity to give &ldquo;The People&rdquo; what they want: sweet release, in the form of a Giant Meteor presidency.</p>'
+title: Desperate Times
+character: RACIANTAU
+icon_image:
+banner_image:
+poster_image: /img/content/POSTER01e DESPERATE TIMES.png
+desc_html: '<p>Stranded in the woods after a canoe trip gone wrong, Scouts Racia and Antau struggle to find their way back to civilization. Tensions rise as the sun sets. 6 pages. Updates M/Th.</p>'
 ---
+
+
