@@ -2,11 +2,11 @@
 layout: page
 story: desperate+times
 alt:
-image: /img/content/DESPERATE TIMES 03.jpg
-thumb_image: /img/content/DESPERATE TIMES 03.jpg
+image: /img/content/DESPERATE TIMES 04.jpg
+thumb_image: /img/content/DESPERATE TIMES 04.jpg
 icon_image: /img/content/STANDARD.png
 date: 2017-01-09 13:55:00
 ---
 
 
-Ah, the plot reveals itself, slowly but surely. Antau, as we've seen before, remains a jackass. Racia, as always, remains long-suffering. And yet it's a surprisingly volatile combination.
+You wouldn't believe me if I told you how much fun it was to write, and then storyboard, and then draw this page. So I won't.
