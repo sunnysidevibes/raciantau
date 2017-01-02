@@ -3,12 +3,12 @@
   <h2>{{ post.date | date: "%A %b %d, %y" }}</h2>
   <h1><a href="{{ post.url }}">{{post.title}}</a></h1>
   <h3>by: {{post.author}}</h3>
-  {% if post.thumb %}
-  <img class="thumb" src="{{post.thumb}}" />
-  {% elsif post.image %}
-  <img class="thumb" src="{{post.image}}" />
-  {% elsif post.icon_image %}
+  {% if post.icon_image %}
   <img class="thumb" src="{{post.icon_image}}" />
+  {% elseif post.thumb %}
+  <img class="thumb" src="{{post.thumb}}" />
+  {% elseif post.image %}
+  <img class="thumb" src="{{post.image}}" />
   {% endif %}
   {{post.content}}
 </div>
