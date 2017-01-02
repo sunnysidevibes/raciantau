@@ -1,7 +1,6 @@
 ---
 layout: page
 story: Desperate Times
-alt:
 image: /img/content/DESPERATE TIMES 01.jpg
 thumb_image: /img/content/DESPERATE TIMES 01.jpg
 icon_image: /img/content/STANDARD.png
