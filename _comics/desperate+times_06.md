@@ -1,6 +1,6 @@
 ---
 layout: page
-story: desperate+times
+story: Desperate Times
 alt:
 image: /img/content/desperate-times-06.jpg
 thumb_image: /img/content/desperate-times-06.jpg
