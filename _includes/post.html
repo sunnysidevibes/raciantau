@@ -5,8 +5,10 @@
   <h3>by: {{post.author}}</h3>
   {% if post.icon_image %}
   <img class="thumb" src="{{post.icon_image}}" />
-  {% elseif post.thumb %}
+  {% elsif post.thumb %}
   <img class="thumb" src="{{post.thumb}}" />
+  {% elsif post.image %}
+  <img class="thumb" src="{{post.image}}" />
   {% endif %}
   {{post.content}}
 </div>
