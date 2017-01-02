@@ -874,6 +874,7 @@ body {
     }
 
     .raciantau {
+      text-align: center;
       flex-grow: 5;
       align-self: center;
       @include media(">=desktop") {
