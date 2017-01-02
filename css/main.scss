@@ -442,7 +442,7 @@ body {
     margin: 0;
     color: gray;
   }
-  img {
+  img.thumb {
     float: right;
     margin: 10px;
     width: 75px;
@@ -843,6 +843,7 @@ body {
       font-size: 0.6em;
       img {
         display: block;
+	margin: auto;
       }
       .soon {
         background-color: darkgray;
