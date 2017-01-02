@@ -1,5 +1,4 @@
 ---
-_hide_content: true
 title: Desperate Times
 character: RACIANTAU
 icon_image: /img/content/ICON01e-DESPERATE-TIMES.png
