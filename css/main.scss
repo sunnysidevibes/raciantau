@@ -28,6 +28,26 @@
   text-shadow: stroke($stroke, $color);
 }
 
+@mixin rotate() {
+
+    -webkit-transform: rotate(90deg);
+    -webkit-transform-origin: left top;
+    -moz-transform: rotate(90deg);
+    -moz-transform-origin: left top;
+    -ms-transform: rotate(90deg);
+    -ms-transform-origin: left top;
+    -o-transform: rotate(90deg);
+    -o-transform-origin: left top;
+    transform: rotate(90deg);
+    transform-origin: left top;
+
+    padding-left: 20px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    white-space: nowrap;
+}
+
 @import "include_media";
 
 // Our variables
@@ -67,7 +87,6 @@ $breakpoints: (
 //         padding-left: $spacing-unit / 2;
 //     }
 // }
-
 a {
   color: #FF7F81;
 }
@@ -79,10 +98,14 @@ div {
 }
 
 body {
-  padding: 0;
-  margin: 0;
+  padding: 0 !important;
+  margin: 0 !important;
   background-color: lightgrey;
   font-family: "Montserrat";
+}
+
+#main {
+  padding-top: 104px;
 }
 
 .wrap {
@@ -105,7 +128,8 @@ body {
 }
 
 #banner {
-  position: relative;
+  position: fixed;
+  
   margin: 0 auto;
   background-color: black;
   overflow: visible;
@@ -151,6 +175,8 @@ body {
 
   @include media(">=desktop") {
     width: 1100px;
+    left: 50%;
+    margin-left: -550px;
   }
 
   i {
@@ -757,6 +783,8 @@ body {
 
 	align-items: flex-start;
   -webkit-align-items: flex-start;
+
+  padding: 0 130px 0 0;
   div {
   	width: 150px;
   	margin: 10px;
@@ -782,7 +810,7 @@ body {
   display: block;
   margin: 20px auto;
 }
-#archives {
+#anthology {
   font-family: "SingleSleeve";
   width: 100%;
   position: relative;
@@ -802,25 +830,23 @@ body {
       }
     }
 
-    .categories {
-      display: flex;
-      justify-content: space-between;
-      font-size: 3em;
-      text-decoration: underline;
-      margin: 0 20px;
-
-      @include media(">=desktop") {
-        font-size: 5em;
-        margin: 0;
-      }
-    }
-
     .phase {
       font-size: 2.8em;
+      background-color: #FFCCCE;
       text-align: center;
       margin: 10px 0;
+      position: relative;
+      min-height: 200px;
+
       @include media(">=desktop") {
         font-size: 4em;
+      }
+
+      .title {
+        font-size: 2em;
+        color: white;
+        @include rotate();
+        @include stroke(4,#000);
       }
     }
 
@@ -829,56 +855,48 @@ body {
     }
 
     .stories {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-      @include media(">=desktop") {
-        flex-direction: row;
-      }
+
     }
 
     .story {
+      text-align: left;
       display: block;
       padding: 15px;
-      font-size: 0.6em;
-      img {
-        display: block;
+      font-size: 1em;
+      color: #FF7F81;
+
+      img.icon {
+        display: inline-block;
+        width: 67px;
+      }
+      div.story_title {
+        display: inline-block;
+        @include stroke(3, #fff);
       }
       .soon {
-        background-color: darkgray;
-        font-size: 2em;
-        text-align: center;
-        color: gray;
-        margin: 0 auto;
+        color: #999;
+        @include stroke(3, #ddd);
+      }
+
+      p {
+        font-family: "Montserrat";
+        font-size: 0.25em;
+        text-align: left;
+        color: black;
+        margin: 0px 15px 10px;
         @include media(">=desktop") {
-          width: 150px;
-          height: 225px;
+          margin: 30px 200px 30px 10px;
         }
       }
     }
 
     .racia {
-      text-align: left;
-      align-self: flex-start;
-      @include media(">=desktop") {
-        align-self: auto;
-      }
     }
 
     .antau {
-      text-align: right;
-      align-self: flex-end;
-      @include media(">=desktop") {
-        align-self: auto;
-      }
     }
 
     .raciantau {
-      flex-grow: 5;
-      align-self: center;
-      @include media(">=desktop") {
-        align-self: auto;
-      }
     }
 
 }
@@ -892,10 +910,11 @@ body {
     display: block;
     margin: auto;
   }
-  p {
-    margin: 0px 15px 10px;
-    @include media(">=desktop") {
-      margin: 30px 130px;
-    }
+}
+
+.about {
+  width: 100%;
+  img {
+	width: 100%;
   }
 }
