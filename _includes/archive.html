@@ -1,15 +1,34 @@
 
 <div class="archive">
-<p>{{ story.desc_html }} <a href="/archives/{{story.title | url_encode }}_all">Read all.</a></p>
+<h1>{{story.title}}</h1>
+{% include ads01.html %}
+{{ story.desc_html }}
+<p>Click <a href="/archives/{{story.title | url_encode }}_all">here</a> to read the whole story in a single, scrollable page.</p>
+
+{% include ad-mobile.html id="pw_adbox_79419_6_0" %}
 
 <div id="dash">
   {% assign battlemon = site.comics | where_exp: "page", "page.story == 'Battlemon'" %}
   {% for page in site.comics %}
-
+  {% if page.story == story.title %}
+  <div>
+    <a href="{{ page.url }}">
+      <img src="{{ page.thumb_image }}" />
+    </a>
+  </div>
+  {% endif %}
   {% endfor %}
   <div class="placeholder"></div>
   <div class="placeholder"></div>
   <div class="placeholder"></div>
   <div class="placeholder"></div>
+
+
 </div>
+{% include ad-skyscraper.html side="left" id="pw_adbox_79458_3_0" %}
+{% include ad-skyscraper.html side="right" id="pw_adbox_79458_3_1" %}
 </div>
+
+<img class="archive_icon" src="{{ story.icon_image }}" />
+
+{% include reminders.html %}
