@@ -183,7 +183,7 @@ body {
     position: absolute;
     display: inline-block;
     color: white;
-    top: 50%;
+    top: 50px;
     right: 20px;
     transform: translateY(-50%);
     @include media(">=desktop") {
