@@ -862,7 +862,6 @@ body {
       text-align: left;
       display: block;
       padding: 15px;
-<<<<<<< HEAD
       font-size: 1em;
       color: #FF7F81;
 
@@ -873,12 +872,6 @@ body {
       div.story_title {
         display: inline-block;
         @include stroke(3, #fff);
-=======
-      font-size: 0.6em;
-      img {
-        display: block;
-	margin: auto;
->>>>>>> 2580cda4292a410c2a6c241f7b40e0710f6ecbe4
       }
       .soon {
         color: #999;
