@@ -1,0 +1,7 @@
+---
+layout: default
+permalink: /archives/Desperate+Times/
+---
+{% assign stories = site.stories | where_exp: 'story', "story.title == 'Desperate Times'" %}
+{% assign story = stories[0] %}
+{% include archive.html %}
