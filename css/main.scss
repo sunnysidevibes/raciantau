@@ -129,7 +129,7 @@ body {
 
 #banner {
   position: fixed;
-  
+  z-index: 1000;
   margin: 0 auto;
   background-color: black;
   overflow: visible;
@@ -919,8 +919,83 @@ body {
 }
 
 .about {
+  background-color: black;
   width: 100%;
   img {
-	width: 100%;
+    z-index: 200;
+    display: block;
+  	width: 100%;
+  }
+  .back {
+    z-index: 50;
+  }
+  .container {
+    position: relative;
+    img {
+      position: absolute;
+      top: 0;
+    }
+  }
+  .inner {
+    z-index: 100;
+     position: absolute;
+     top: 0;
+     width: 1100px;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+   }
+  .starring {
+    height: 474px;
+    .inner {
+      background-image: url("/img/about_starring_names.png");
+      background-size: 1100px 474px;
+      background-position: center;
+    }
+  }
+  .violence {
+    height: 497px;
+    .inner {
+      background-image: url("/img/about_violence.png");
+      background-size: 1100px 497px;
+      background-position: center bottom;
+    }
+  }
+  .impermanence {
+    height: 497px;
+    .inner {
+      background-image: url("/img/about_impermanence.png");
+      background-size: 1100px 497px;
+      background-position: center bottom;
+    }
   }
 }
+
+.archive_icon { display: block; margin: 20px auto; }
+
+#archives { font-family: "SingleSleeve"; width: 100%; position: relative; }
+@media (min-width: 1024px) { #archives { margin: 30px 0; } }
+#archives h1 { display: block; font-size: 5em; margin: 0 auto; text-align: center; }
+@media (min-width: 1024px) { #archives h1 { font-size: 10em; } }
+#archives .categories { display: flex; justify-content: space-between; font-size: 3em; text-decoration: underline; margin: 0 20px; }
+@media (min-width: 1024px) { #archives .categories { font-size: 5em; margin: 0; } }
+#archives .phase { font-size: 2.8em; text-align: center; margin: 10px 0; }
+@media (min-width: 1024px) { #archives .phase { font-size: 4em; } }
+#archives .phase.soon { color: gray; }
+#archives .stories { display: flex; justify-content: space-between; flex-direction: column; }
+@media (min-width: 1024px) { #archives .stories { flex-direction: row; } }
+#archives .story { display: block; padding: 15px; font-size: 0.6em; }
+#archives .story img { display: block; margin: auto; }
+#archives .story .soon { background-color: darkgray; font-size: 2em; text-align: center; color: gray; margin: 0 auto; }
+@media (min-width: 1024px) { #archives .story .soon { width: 150px; height: 225px; } }
+#archives .racia { text-align: left; align-self: flex-start; }
+@media (min-width: 1024px) { #archives .racia { align-self: auto; } }
+#archives .antau { text-align: right; align-self: flex-end; }
+@media (min-width: 1024px) { #archives .antau { align-self: auto; } }
+#archives .raciantau { text-align: center; flex-grow: 5; align-self: center; }
+@media (min-width: 1024px) { #archives .raciantau { align-self: auto; } }
+
+.archive { position: relative; }
+.archive h1 { font-size: 5em; }
+.archive img { display: block; margin: auto; }
+.archive p { margin: 0px 15px 10px; }
+@media (min-width: 1024px) { .archive p { margin: 30px 130px; } }
