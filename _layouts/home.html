@@ -10,52 +10,32 @@ layout: default
     <a href="{{featured.url}}">
       <img src="{{featured.image}}" />
       <div id="fog"></div>
-      <div id="label">Latest Page:<span>{{featured.story.title}} {{featured.title}}</span></div>
+      <div id="label">READ THE LATEST!</div>
     </a>
   </div>
 
-  {% include ad-mobile.html id="pw_adbox_79419_6_0" %}
 
   <div id="summary" class="panel">
-    <div class="box">
-      {{page.description_html}}
-    </div>
-    <div id= "featured" class="box">
-    {% assign match = site.stories | where_exp: 'item', 'page.stories contains item.title' %}
-      <h1>FEATURED STORIES</h1>
-      <div class="feature">
-          {% assign feature = match[0] %}
-          {% assign pages = site.comics | where_exp: 'item', 'item.story == feature.title' %}
-          {% assign link = pages.first.url %}
-          <a href="{{link}}" ><img src="{{ feature.poster_image }}"/>
-          <span>{{feature.title}}</span>
-          </a>
+    <a href="/about/" id= "featured" class="">
+      <img src="/img/NEWREADERbutton.png" />
+    </a>
+      <div class="box">
+        {{page.description_html}}
       </div>
-      <div class="feature">
-          {% assign feature = match[1] %}
-          {% assign pages = site.comics | where_exp: 'item', 'item.story == feature.title' %}
-          {% assign link = pages.first.url %}
-          <a href="{{link}}" ><img src="{{ feature.poster_image }}"/>
-          <span>{{feature.title}}</span>
-          </a>
-      </div>
-    </div>
   </div>
 
-{% include ad-skyscraper.html side="left" id="pw_adbox_79458_3_0" %}
-{% include ad-skyscraper.html side="right" id="pw_adbox_79458_3_1" %}
+  {% include ad-skyscraper.html side="left" id="pw_adbox_79458_3_0" %}
+  {% include ad-skyscraper.html side="right" id="pw_adbox_79458_3_1" %}
 
 </div>
-
-{% include ad-mobile.html id="pw_adbox_79419_6_1" %}
 
 <div id="blog">
   {% assign all = site.posts | sort: 'date' | reverse %}
 
   <h1 class="top">Latest News:</h1>
 
-  {% for post in all limit: 3 %}
-    {% include post.html %}
+  {% for post in all limit: 1 %}
+    {% include excerpt.html %}
   {% endfor %}
   <div id="more"><a href="/blog">MORE NEWS</a></div>
 </div>

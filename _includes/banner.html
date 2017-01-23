@@ -1,20 +1,25 @@
 <div id="banner">
+  <div id="banner_main">
   <div id="home">
     <a href="/">
-      <img src="/img/RACIANTAU_BANNER_TOP_80px.png" height=60/>
+      <div id="logo"> </div>
     </a>
   </div>
-  <a class="link {% if page.url contains 'anthology' %}active{% endif %}" href='/archives'><div>Archives</div></a>
+  <a class="link {% if page.url contains 'about' %}active{% endif %}" href='/about'><div>New Readers</div></a>
+  <a class="link {% if page.url contains 'archives' %}active{% endif %}" href='/archives'><div>All Stories</div></a>
   <a class="link {% if page.url contains 'blog' %}active{% endif %}" href='/blog'><div>Blog</div></a>
-  <span class="link " href='/about' style="color: darkgray;"><div>About</div></span>
-  <div id="rss_link">
-    <a href="/feed.xml"><img src="/img/RSS_BANNER_150px.png" /></a>
-  </div>
-  <a onclick="show_menu();"><i class="fa fa-bars fa-3x"></i></a>
-</div>
 
-<div id="menu">
-  <a class="link {% if page.url contains 'blog' %}active{% endif %}" href='/blog'><div>News</div></a>
-  <a class="link {% if page.url contains 'archives' %}active{% endif %}" href='/archives'><div>Archives</div></a>
-  <span class="link " href='/about' style="color: rgba(255,255,255,0.5);"><div>About</div></span>
+  <div class="social">
+    <a href="https://twitter.com/racia_antau"><div class="icon" id="twitter"> </div></a>
+    <a href="https://www.instagram.com/smsgomez/"><div class="icon" id="instagram"> </div></a>
+    <a href="/"><div class="icon" id="patreon"> </div></a>
+  </div>
+
+  <a class="samich"><i  onclick="show_menu();"class="fa fa-bars fa-3x"></i></a>
+</div>
+    <div id="menu">
+    <a class="link {% if page.url contains 'about' %}active{% endif %}" href='/about'><div>New Readers</div></a>
+    <a class="link {% if page.url contains 'archives' %}active{% endif %}" href='/archives'><div>All Stories</div></a>
+      <a class="link {% if page.url contains 'blog' %}active{% endif %}" href='/blog'><div>Blog</div></a>
+    </div>
 </div>

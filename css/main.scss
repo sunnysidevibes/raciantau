@@ -68,10 +68,10 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    755px;
 
 $on-palm:          600px;
-$on-laptop:        800px;
+$on-laptop:        755px;
 
 $breakpoints: (
   'tiny': 300px,
@@ -102,6 +102,7 @@ body {
   margin: 0 !important;
   background-color: lightgrey;
   font-family: "Montserrat";
+
 }
 
 // #main {
@@ -110,11 +111,13 @@ body {
 
 .wrap {
   margin: 0 auto;
+  margin-top: 120px;
 
   @include media(">=tablet", "landscape") {
   }
   @include media(">=desktop") {
-    width: 1100px;
+    width: 755px;
+    margin-top: 120px;
   }
 }
 
@@ -128,16 +131,72 @@ body {
 }
 
 #banner {
-  //position: fixed;
+  position: fixed;
   z-index: 1000;
   margin: 0 auto;
   background-color: black;
   overflow: visible;
+  #banner_main {
+    padding: 17px 0;
+  }
+  width: 100%;
 
   #home {
     display: inline-block;
-    padding: 20px;
+
+      #logo {
+        height: 60px;
+        width: 294px;
+        background-image: url("/img/LOGOwhite.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+
+      }
+
+      a:hover #logo {
+        background-image: url("/img/LOGOwhitepink.png");
+      }
   }
+
+
+  div.social {
+    @include media(">=desktop") {
+      display: inline-block;
+    }
+    display: none;
+    float:right;
+    margin-right: 30px;
+    .icon {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+    }
+    #instagram {
+      background-image: url("/img/INSTAGRAMwhite.png");
+      background-size: contain;
+    }
+    #instagram:hover {
+      background-image: url("/img/INSTAGRAMwhitepink.png");
+    }
+    #twitter {
+      background-image: url("/img/TWITTERwhite.png");
+      background-size: contain;
+    }
+    #twitter:hover {
+      background-image: url("/img/TWITTERwhitepink.png");
+    }
+    #patreon {
+      background-image: url("/img/PATREONwhite.png");
+      background-size: contain;
+      opacity: 0.3;
+      cursor: default;
+    }
+    #patreon:hover {
+      //background-image: url("/img/PATREONwhitepink.png");
+    }
+  }
+
 
   .link {
     display: none;
@@ -146,39 +205,34 @@ body {
     }
     color: white;
     font-family: "SingleSleeve";
-    font-size: 3.5em;
+    font-size: 3em;
     margin: 0 0 0 30px;
   }
-
   a:hover {
-    color: #FF7F81;
+    color: white;
+    @include stroke(3,#FF7F81);
   }
+
 
   .link.active {
     color: #FF7F81;
+      @include stroke(3,white);
   }
 
-  #rss_link {
-    float: right;
-
-    display: none;
-
-    @include media(">=desktop") {
-      display: block;
-    }
-
-    img {
-      height: 100px;
-    }
-
+  .link.active:hover {
+    color: white;
+    @include stroke(3,#FF7F81);
   }
 
+margin-top: -120px;
   @include media(">=desktop") {
-    width: 1100px;
+    width: 100%;
+    margin-top: -120px;
     //left: 50%;
     //margin-left: -550px;
   }
 
+a.samich {display: inline-block;}
   i {
     position: absolute;
     display: inline-block;
@@ -191,13 +245,9 @@ body {
     }
   }
 
-  i:hover {
-    color: #FF7F81;
-  }
 }
 
 #menu {
-  width: 100%;
   background-color: #FF7F81;
   display: none;
   z-index: 100;
@@ -242,12 +292,14 @@ body {
     background-color: white;
     vertical-align: top;
     overflow: hidden;
-    height: 400px;
+    height: 300px;
 
     @include media(">=desktop") {
-      width: 720px;
+      width: 556px;
       height: auto;
       align-self: stretch;
+      margin-right: 20px;
+
     }
 
     #fog {
@@ -259,35 +311,48 @@ body {
       height: 100%;
     }
 
+
     img {
       position: absolute;
-      width: 1100px;
+      width: 650px;
       left: 50%;
       top: 50%;
       -webkit-transform: translateY(-50%) translateX(-50%);
     }
 
     #label {
-      color: #FF7F81;
-      @include stroke(3,#FFFFFF);
+      color: #FFF;
+      @include stroke(3,#FF7F81);
       position: absolute;
       font-family: "SingleSleeve";
       font-size: 2em;
       left: 50%;
       top: 50%;
       -webkit-transform: translateY(-50%) translateX(-50%);
-      text-decoration: underline;
+      width: 100%;
+      text-align: center;
 
       span {
         display: block;
         font-size: 2em;
       }
           @include media(">=desktop") {
-          font-size: 3em;
+          font-size: 5em;
           }
     }
-  }
 
+  }
+#latest:hover {
+      #label {
+          @include media(">=desktop") {
+          font-size: 6em;
+          @include stroke(4,#FF7F81);
+          }
+      }
+      #fog {
+        background-image: url('/img/fog pink.png');
+      }
+    }
 }
 
 .box.subscribe {
@@ -295,11 +360,12 @@ body {
     background-color: #FF7F81;
     color: #FF7F81;
     margin-bottom: 0 !important;
+    padding: 7px;
     p {
       font-family: "Montserrat";
       color: white;
       margin: 0;
-      margin-bottom: 10px;
+      margin-bottom: 7px;
     }
     #mc_embed_signup {
         background-color: #FF7F81;
@@ -317,6 +383,9 @@ body {
       font-size: 3em;
       @include stroke(2, white);
       margin-bottom: 0;
+    }
+    #mc-embedded-subscribe-form {
+      padding: 0;
     }
 }
 
@@ -350,51 +419,17 @@ body {
 
     .box {
       padding-top: 15px;
-      margin-top: 0 !important;
+      margin-top: 20px !important;
     }
 
 
-
-    #featured.box {
-    margin-bottom: 0 !important;
-
-      .feature {
-        display: inline-block;
-        vertical-align: top;
-        background-color: gray;
-        margin-right: 4px;
-        border: 1px solid black;
-        overflow: hidden;
-        a {
-          display: block;
-          position: relative;
-          img {
-            display: block;
-            width: 140px;
-            @include media(">=phone") {
-              width: auto;
-            }
-          }
-          span {
-              position: absolute;
-              display: block;
-              font-family: "SingleSleeve";
-              color: white;
-              background-color: rgba(0,0,0,0.8);
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              font-size: 2em;
-              padding: 10px 0;
-              width: 100%;
-              text-align: center;
-          }
-        }
-      }
+    #featured {
+    margin: 0 auto;
     }
   }
 
 #blog {
+  position: relative;
   #more {
     text-align: center;
     font-size: 2em;
@@ -443,7 +478,7 @@ body {
 }
 
 .article {
-  font-size: 10pt;
+  font-size: 8pt;
   padding: 10px 25px;
   position: relative;
   overflow: auto;
@@ -468,6 +503,9 @@ body {
     margin: 0;
     color: gray;
   }
+  img {
+    max-width: 80%;
+  }
   img.thumb {
     float: right;
     margin: 10px;
@@ -476,6 +514,11 @@ body {
       float: left;
       margin: 30px;
       width: 150px;
+    }
+  }
+  img.thumb.small {
+    @include media(">=desktop") {
+      width: 100px;
     }
   }
   p {
@@ -508,23 +551,15 @@ body {
 
 
 .adbox {
-  justify-content: space-between;
-  text-align: right;
-    margin: 10px;
+    margin: 10px auto;
+    margin-top: 0;
 
   display: none;
 
   @include media(">=desktop") {
-    display: flex;
+    display: block;
   }
 
-  .banner {
-    height: 50px;
-    background-color: gray;
-    margin: 15px 0;
-    padding: 5px;
-    color: white;
-  }
 
   .half {
     width: 234px;
@@ -535,8 +570,13 @@ body {
   }
 
 }
+.adbox.banner {
+      width: 728px;
+      margin-top: 10px;
+  }
 
 .adbox.mobile {
+margin-top: 10px;
   display: flex;
   justify-content: space-around;
   @include media(">=desktop") {
@@ -654,17 +694,21 @@ body {
 
 #sidebar {
   position: relative;
-  padding: 30px;
+  padding:7px;
   padding-bottom: 0px;
   background-color: darkgray;
   flex-grow: 0;
   flex-shrink: 0;
-  @include media(">=desktop") {
-    width: 360px;
-  }
       .box.subscribe {
         min-width: auto;
       }
+            @include media(">=desktop") {
+              width: 250px;
+            }
+
+            .box.subscribe {
+              margin-bottom: 10px !important;
+            }
 }
 
   input.donate_bear {
@@ -673,13 +717,13 @@ body {
 
 
 #sidebar .box {
-  margin: 20px 10px;
+  margin: 10px 7px;
   margin-bottom: 15px;
 }
 
 #sidebar .blurb {
   position: relative;
-  padding: 15px;
+  padding: 7px;
   font-size: 10pt;
 
   a {
@@ -715,7 +759,8 @@ body {
 
 #story_banner {
   img {
-    width: 100%;
+    width: calc(100% - 14px);
+    padding: 7px;
   }
 }
 
@@ -784,7 +829,7 @@ body {
 	align-items: flex-start;
   -webkit-align-items: flex-start;
 
-  padding: 0 130px 0 0;
+  padding: 0;
   div {
   	width: 150px;
   	margin: 10px;
@@ -805,11 +850,40 @@ body {
     border: 1px solid black;
   }
 }
+.archive_icon { display: block; margin: 20px auto; }
 
-.archive_icon {
-  display: block;
-  margin: 20px auto;
+#archives { font-family: "SingleSleeve"; width: 100%; position: relative; }
+@media (min-width: 1024px) { #archives { margin: 30px 0; } }
+#archives h1 { display: block; font-size: 5em; margin: 0 auto; text-align: center; }
+@media (min-width: 1024px) { #archives h1 { font-size: 7em; } }
+#archives .categories { display: flex; justify-content: space-between; font-size: 3em; text-decoration: underline; margin: 0 20px; }
+@media (min-width: 1024px) { #archives .categories { font-size: 4em; margin: 0; } }
+#archives .phase { font-size: 2.8em; text-align: center; margin: 10px 0; }
+@media (min-width: 1024px) { #archives .phase { font-size: 3em; } }
+#archives .phase.soon { color: gray; }
+#archives .stories { display: flex; justify-content: space-between; flex-direction: column; }
+@media (min-width: 1024px) { #archives .stories { flex-direction: row; } }
+#archives .story { display: block; padding: 15px; font-size: 0.6em; max-width: 120px;}
+#archives a.story:hover {
+  color: white;
+    @include stroke(3,#FF7F81);
 }
+#archives .story img { display: block; margin: auto; width: 110px; }
+@media (min-width: 1024px) { #archives .story img { width: 110px; } }
+#archives .story .soon { background-color: darkgray; font-size: 2em; text-align: center; color: gray; margin: 0 auto; width: 110px;height: 165px; }
+@media (min-width: 1024px) { #archives .story .soon { width: 110px; height: 165px; } }
+#archives .racia { text-align: left; align-self: flex-start; }
+@media (min-width: 1024px) { #archives .racia { align-self: auto; } }
+#archives .antau { text-align: right; align-self: flex-end; }
+@media (min-width: 1024px) { #archives .antau { align-self: auto; } }
+#archives .raciantau { text-align: center; flex-grow: 5; align-self: center; }
+@media (min-width: 1024px) { #archives .raciantau { align-self: auto; } }
+
+.archive { position: relative; }
+.archive h1 { font-size: 5em; }
+.archive img { display: block; margin: auto; }
+.archive p { margin: 0px 15px 10px; }
+@media (min-width: 1024px) { .archive p { margin: 30px 130px; } }
 #anthology {
   font-family: "SingleSleeve";
   width: 100%;
@@ -821,12 +895,12 @@ body {
 
     h1 {
       display: block;
-      font-size: 5em;
+      font-size: 1em;
       margin: 0 auto;
       text-align: center;
 
       @include media(">=desktop") {
-        font-size: 10em;
+        font-size: 1em;
       }
     }
 
@@ -839,7 +913,7 @@ body {
       min-height: 200px;
 
       @include media(">=desktop") {
-        font-size: 4em;
+        font-size: 2em;
       }
 
       .title {
@@ -862,7 +936,7 @@ body {
       text-align: left;
       display: block;
       padding: 15px;
-      font-size: 1em;
+      font-size: 2em;
       color: #FF7F81;
 
       img.icon {
@@ -907,95 +981,52 @@ body {
 
 }
 
-.archive {
-  position: relative;
-  h1 {
-    font-size: 5em;
-  }
-  img {
-    display: block;
-    margin: auto;
-  }
-}
 
 .about {
-  background-color: black;
   width: 100%;
+  position: relative;
   img {
-    z-index: 200;
-    display: block;
-  	width: 100%;
+    width: 100%;
   }
-  .back {
-    z-index: 50;
-  }
-  .container {
-    position: relative;
-    img {
-      position: absolute;
-      top: 0;
+  .startout {
+    width: 100%;
+    background-color: black;
+    font-family: "SingleSleeve";
+    color: white;
+    font-size: 3.2em;
+    @include media(">=desktop") {
+      padding: 20px;
     }
-  }
-  .inner {
-    z-index: 100;
-     position: absolute;
-     top: 0;
-     width: 1100px;
-     background-attachment: fixed;
-     background-repeat: no-repeat;
-   }
-  .starring {
-    height: 474px;
-    .inner {
-      background-image: url("/img/about_starring_names.png");
-      background-size: 1100px 474px;
-      background-position: center;
+    text-align: center;
+    .links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include media(">=desktop") {
+        flex-direction: row;
+      }
     }
-  }
-  .violence {
-    height: 497px;
-    .inner {
-      background-image: url("/img/about_violence.png");
-      background-size: 1100px 497px;
-      background-position: center bottom;
+    a {
+      color: white;
     }
-  }
-  .impermanence {
-    height: 497px;
-    .inner {
-      background-image: url("/img/about_impermanence.png");
-      background-size: 1100px 497px;
-      background-position: center bottom;
+    a:hover {
+      color: #FF7F81;
+        @include stroke(3,white);
+    }
+    .story {
+      font-size: .8em;
+      width: 220px;
+      padding: 10px;
+      div {
+        margin: 2px;
+      }
+      .subtitle {
+        font-size: .7em;
+      }
+      img {
+        width: 180px;
+      }
     }
   }
 }
-
-.archive_icon { display: block; margin: 20px auto; }
-
-#archives { font-family: "SingleSleeve"; width: 100%; position: relative; }
-@media (min-width: 1024px) { #archives { margin: 30px 0; } }
-#archives h1 { display: block; font-size: 5em; margin: 0 auto; text-align: center; }
-@media (min-width: 1024px) { #archives h1 { font-size: 10em; } }
-#archives .categories { display: flex; justify-content: space-between; font-size: 3em; text-decoration: underline; margin: 0 20px; }
-@media (min-width: 1024px) { #archives .categories { font-size: 5em; margin: 0; } }
-#archives .phase { font-size: 2.8em; text-align: center; margin: 10px 0; }
-@media (min-width: 1024px) { #archives .phase { font-size: 4em; } }
-#archives .phase.soon { color: gray; }
-#archives .stories { display: flex; justify-content: space-between; flex-direction: column; }
-@media (min-width: 1024px) { #archives .stories { flex-direction: row; } }
-#archives .story { display: block; padding: 15px; font-size: 0.6em; }
-#archives .story img { display: block; margin: auto; }
-#archives .story .soon { background-color: darkgray; font-size: 2em; text-align: center; color: gray; margin: 0 auto; }
-@media (min-width: 1024px) { #archives .story .soon { width: 150px; height: 225px; } }
-#archives .racia { text-align: left; align-self: flex-start; }
-@media (min-width: 1024px) { #archives .racia { align-self: auto; } }
-#archives .antau { text-align: right; align-self: flex-end; }
-@media (min-width: 1024px) { #archives .antau { align-self: auto; } }
-#archives .raciantau { text-align: center; flex-grow: 5; align-self: center; }
-@media (min-width: 1024px) { #archives .raciantau { align-self: auto; } }
-
-.archive { position: relative; }
-.archive h1 { font-size: 5em; }
-.archive img { display: block; margin: auto; }
-.archive p { margin: 0px 15px 10px; }
-@media (min-width: 1024px) { .archive p { margin: 30px 130px; } }

@@ -5,29 +5,38 @@ permalink: /about/
 ---
 
 <div class="about">
-	<div class="intro">
-		<img src="/img/about_intro.png" />
-	</div>
-	<div class="title">
-		<img src="/img/about_title.png" />
-	</div>
-	<div class="container starring">
-		<div class="inner starring"></div>
-			<img class="back" src="/img/about_starring_drawing.png" />
-	</div>
-	<div class="cuties">
-		<img src="/img/about_cuties.png" />
-	</div>
-	<div class="container violence">
-		<img class="back" src="/img/about_impermanence_back.png" />
-		<div class="inner violence"></div>
-		<img src="/img/about_violence_word.png" />
-	</div>
-	<div class="container impermanence">
-		<img class="back" src="/img/about_impermanence_back.png" />
-		<div class="inner impermanence"></div>
-		<img src="/img/about_impermanence_word.png" />
-	</div>
+{% include ads01.html %}
+{% include ad-mobile.html id="pw_adbox_79419_6_0" %}
+
+ <img src="/img/ABOUT.png" />
+<div class="startout">
+	Links to start out!
+  <div class="links">
+    <a href="/archives/Battlemon">
+    <div class="story">
+      <div class="title">Battlemon</div>
+      <img src="/img/content/poster01-bmon.png" />
+      <div class="subtitle">The First Racia Story</div>
+    </div>
+    </a>
+      <a href="/archives/Desperate+Times">
+    <div class="story">
+      <div class="title">Desperate Times</div>
+      <img src="/img/content/POSTER01e-DESPERATE-TIMES.png" />
+      <div class="subtitle">The First "RACINATAU" Story</div>
+    </div>
+    </a>
+      <a href="/archives/Collision+2016">
+    <div class="story">
+      <div class="title">COLLISION 2016</div>
+      <img src="/img/content/poster02-collision.png" />
+      <div class="subtitle">The First Antau Story</div>
+    </div>
+    </a>
+  </div>
+</div>
+	 {% include ad-skyscraper.html side="left" id="pw_adbox_79458_3_0" %}
+	 {% include ad-skyscraper.html side="right" id="pw_adbox_79458_3_1" %}
 </div>
 
 <script>

@@ -8,6 +8,29 @@
     <link rel="stylesheet" href="/css/main.css" type="text/css">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript">
+
+          function show_menu() {
+            $('#menu').css('display', 'block');
+            $('.wrap').css('margin-top', '343px');
+            $('#banner').css('margin-top', '-343px');
+          }
+
+      $(function (){
+        document.onkeydown = checkKey;
+
+        function checkKey(e) {
+            e = e || window.event;
+            if (e.keyCode == '37') {
+               document.getElementById('prev').click();
+            }
+            else if (e.keyCode == '39') {
+               document.getElementById('next').click();
+            }
+        }
+
+      });
+    </script>
 <script>
 (function(d,t,p){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='http'+(d.location.protocol=='https:'?'s':'')+'://www.comic-rocket.com/metrics.js#'+(p||"");s.parentNode.insertBefore(g,s);
 })(document,'script','key=f33v');
@@ -25,44 +48,6 @@
     </div>
     {% include footer.html %}
   </body>
-  <!-- Project Wonderful Ad Box Loader -->
-  <script type="text/javascript">
-     (function(){function pw_load(){
-        if(arguments.callee.z)return;else arguments.callee.z=true;
-        var d=document;var s=d.createElement('script');
-        var x=d.getElementsByTagName('script')[0];
-        s.type='text/javascript';s.async=true;
-        s.src='//www.projectwonderful.com/pwa.js';
-        x.parentNode.insertBefore(s,x);}
-     if (window.attachEvent){
-      window.attachEvent('DOMContentLoaded',pw_load);
-      window.attachEvent('onload',pw_load);}
-     else{
-      window.addEventListener('DOMContentLoaded',pw_load,false);
-      window.addEventListener('load',pw_load,false);}})();
-  </script>
-  <!-- End Project Wonderful Ad Box Loader -->
-  <script type="text/javascript">
-
-        function show_menu() {
-          $('#menu').css('display', 'block');
-        }
-
-    $(function (){
-      document.onkeydown = checkKey;
-
-      function checkKey(e) {
-          e = e || window.event;
-          if (e.keyCode == '37') {
-             document.getElementById('prev').click();
-          }
-          else if (e.keyCode == '39') {
-             document.getElementById('next').click();
-          }
-      }
-
-    });
-  </script>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -73,4 +58,21 @@
   ga('send', 'pageview');
 
 </script>
+<!-- Project Wonderful Ad Box Loader -->
+<script type="text/javascript">
+   (function(){function pw_load(){
+      if(arguments.callee.z)return;else arguments.callee.z=true;
+      var d=document;var s=d.createElement('script');
+      var x=d.getElementsByTagName('script')[0];
+      s.type='text/javascript';s.async=true;
+      s.src='//www.projectwonderful.com/pwa.js';
+      x.parentNode.insertBefore(s,x);}
+   if (window.attachEvent){
+    window.attachEvent('DOMContentLoaded',pw_load);
+    window.attachEvent('onload',pw_load);}
+   else{
+    window.addEventListener('DOMContentLoaded',pw_load,false);
+    window.addEventListener('load',pw_load,false);}})();
+</script>
+<!-- End Project Wonderful Ad Box Loader -->
 </html>
