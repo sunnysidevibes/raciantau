@@ -3,7 +3,7 @@ layout: post
 title: 'Senseless Town Page 02 Update!'
 date: 2017-01-25 14:00:00
 icon_image: /img/content/STANDARD.png
-image: /img/content/SENSELESS TOWN 02JPG.JPG
+image: /img/content/SENSELESS_TOWN_02JPG.JPG
 author: a bear costume
 ---
 
