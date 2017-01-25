@@ -2,8 +2,8 @@
 layout: page
 story: senseless
 alt:
-image: /img/content/SENSELESS TOWN 02JPG.JPG
-thumb_image: /img/content/SENSELESS TOWN 02JPG.JPG
+image: /img/content/SENSELESS_TOWN_02JPG.JPG
+thumb_image: /img/content/SENSELESS_TOWN_02JPG.JPG
 icon_image: /img/content/STANDARD.png
 date: 2017-01-25 14:00:00
 ---
