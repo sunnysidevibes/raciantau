@@ -1,6 +1,6 @@
 ---
 layout: page
-story:
+story: senseless
 alt:
 image: /img/content/SENSELESS_TOWN_03JPG.JPG
 thumb_image: /img/content/SENSELESS_TOWN_03JPG.JPG
@@ -9,4 +9,4 @@ date: 2017-01-27 14:00:00
 ---
 
 
-This was the second *idea* for a *RACIANTAU* strip we ever came up with, although in its original iteration it looked basically nothing like this. Hey! Guess what! We've launched a [Patreon campaign](https://www.patreon.com/fabelaro), and if you pledge, you can get access to those sorts of behind-the-scenes tidbits!
+When we realized we basically hadn't used dot-tones as shading since [Battlemon](/comics/battlemon-01/) (we used lines for shading in [Nature Calls](/comics/nature+calls_01/) but ... but ... anyway) we told our editor, "Hey, we're gonna bring back dot-tones for shading in 'Senseless Town'." And they were like, "Cool." How's that for a peek behind the curtain?
