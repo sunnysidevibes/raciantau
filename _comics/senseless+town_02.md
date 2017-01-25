@@ -1,6 +1,6 @@
 ---
 layout: page
-story: nature+calls
+story: senseless
 alt:
 image: /img/content/SENSELESS TOWN 02JPG.JPG
 thumb_image: /img/content/SENSELESS TOWN 02JPG.JPG
