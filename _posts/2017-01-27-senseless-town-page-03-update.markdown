@@ -8,6 +8,6 @@ author: a bear costume
 ---
 
 
-"[I Live in a Senseless Town"'s third page is out!](/comics/desperate+times_06/)
+["I Live in a Senseless Town"'s third page is out!](/comics/desperate+times_06/)
 
 And this page marks the "true" return of some fun lighting choices! We're gonna be seeing lots and lots of those in the coming weeks. Hooooboy.
