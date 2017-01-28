@@ -9,8 +9,8 @@ date: 2017-02-15 14:00:00
 ---
 
 
-And now an allusion to&nbsp;[*The Garden of Earthly Delights*](https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights)! Goodness, but Racia has a wild and broad imagination.
+And now an allusion to&nbsp;[*The Garden of Earthly Delights*](https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights)! Gracious, Racia has quite the imagination on her. In her? Well, she has one, at least.
 {: .present-before-paste}
 
-But if this is indeed an allusion, isn't there something missing?
+But isn't there something missing?
 {: .present-before-paste}
