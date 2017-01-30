@@ -5,7 +5,7 @@ alt:
 image: /img/content/SENSELESS_TOWN_08JPG.JPG
 thumb_image: /img/content/SENSELESS_TOWN_08JPG.JPG
 icon_image: /img/content/STANDARD.png
-date: 2017-02-08 14:00:00
+date: 2017-02-08 14:00:00 -0500
 ---
 
 
