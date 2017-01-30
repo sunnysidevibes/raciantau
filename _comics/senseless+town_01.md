@@ -1,6 +1,6 @@
 ---
 layout: page
-story: senseless
+story: Senseless Town
 alt:
 image: /img/content/SENSELESS_TOWN_01JPG.JPG
 thumb_image: /img/content/SENSELESS_TOWN_01JPG.JPG
