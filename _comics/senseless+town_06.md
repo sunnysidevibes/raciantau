@@ -1,6 +1,6 @@
 ---
 layout: page
-story: I Live in a Senseless Town
+story: I Live In A Senseless Town
 alt:
 image: /img/content/SENSELESS_TOWN_06JPG.JPG
 thumb_image: /img/content/SENSELESS_TOWN_06JPG.JPG
