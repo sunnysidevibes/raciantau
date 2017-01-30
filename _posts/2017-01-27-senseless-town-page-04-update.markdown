@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Senseless Town Page 04 Update!'
-date: 2017-01-27 14:00:00
+date: 2017-01-27 13:30:00
 icon_image: /img/content/STANDARD.png
 image: /img/content/SENSELESS_TOWN_04JPG.jpg
 author: a bear costume
