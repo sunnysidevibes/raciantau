@@ -2,7 +2,7 @@
 layout: post
 title: 'Senseless Town Page 09 Update!'
 date: 2017-02-10 12:00:00 -500
-icon_image: /img/content/STANDARD.png
+icon_image: /img/content/ROCK.png
 image: /img/content/SENSELESS_TOWN_09JPG.JPG
 author: rock
 ---
