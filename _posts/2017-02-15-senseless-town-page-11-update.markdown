@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 'Senseless Town Page 10 Update!'
+title: 'Senseless Town Page 11 Update!'
 date: 2017-02-15 14:00:00
 icon_image: /img/content/STANDARD.png
-image: /img/content/SENSELESS_TOWN_11JPG.JPG
+image: /img/content/SENSELESS_TOWN_11JPG.jpg
 author: a bear costume
 ---
 
