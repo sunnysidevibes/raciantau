@@ -23,7 +23,7 @@ permalink: /about/
     <div class="story">
       <div class="title">Desperate Times</div>
       <img src="/img/content/POSTER01e-DESPERATE-TIMES.png" />
-      <div class="subtitle">The First "RACINATAU" Story</div>
+      <div class="subtitle">The First "RACIANTAU" Story</div>
     </div>
     </a>
       <a href="/archives/Collision+2016">
