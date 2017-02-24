@@ -12,25 +12,25 @@ permalink: /about/
 <div class="startout">
 	Links to start out!
   <div class="links">
-    <a href="/archives/Battlemon">
+    <a href="/comics/cabin+fever_01/">
     <div class="story">
-      <div class="title">Battlemon</div>
-      <img src="/img/content/poster01-bmon.png" />
-      <div class="subtitle">The First Racia Story</div>
+      <div class="title">Cabin Fever</div>
+      <img src="/img/content/poster03-cabinfever.png" />
+      <div class="subtitle">A Racia Story</div>
     </div>
     </a>
       <a href="/archives/Desperate+Times">
     <div class="story">
       <div class="title">Desperate Times</div>
       <img src="/img/content/POSTER01e-DESPERATE-TIMES.png" />
-      <div class="subtitle">The First "RACIANTAU" Story</div>
+      <div class="subtitle">A "RACIANTAU" Story</div>
     </div>
     </a>
       <a href="/archives/Collision+2016">
     <div class="story">
       <div class="title">COLLISION 2016</div>
       <img src="/img/content/poster02-collision.png" />
-      <div class="subtitle">The First Antau Story</div>
+      <div class="subtitle">An Antau Story</div>
     </div>
     </a>
   </div>
