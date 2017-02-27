@@ -933,14 +933,16 @@ margin-top: 10px;
 @media (min-width: 1024px) { #archives .raciantau { align-self: auto; } }
 
 #archives .border {
-  display: flex; justify-content: center; flex-direction: row;
+  display: flex; justify-content: column; flex-direction: row;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   margin: 5px;
+  a {
+    padding-top: 0px;
+  }
 }
 #archives .border.three.raciantau {
-  color: #ff0000;
-  flex-direction: column;
+  color: #ff0000;flex-direction: column;
   p {
     margin: 10px;
     margin-bottom: 25px;
@@ -950,9 +952,33 @@ margin-top: 10px;
 }
 #archives .mfc {
   color: black;
-  display: flex; justify-content: space-between; flex-direction: column;
+  display: flex; justify-content: center; flex-direction: row;
+  .story {
+    padding: 5px;
+    margin-top: 0;
+      padding-top: 0px;
+  }
 }
-@media (min-width: 1024px) { #archives .mfc { flex-direction: row; } }
+
+
+#archives .mfc.title {
+  display: none;
+  font-size: .7em;
+  color: #ff0000;
+  text-align: center;
+  margin-top: 5px;
+}
+#archives .mfc.title.mobile {
+  display: block;
+}
+@media (min-width: 1024px) { #archives .mfc.title { display: block;  } #archives .mfc.title.mobile{ display: none;}}
+
+#archives .mfc.part {
+  display: block;
+  font-size: .7em;
+  color: #ff0000;
+  text-align: center;
+}
 
 .archive { position: relative; }
 .archive h1 { font-size: 5em; }
