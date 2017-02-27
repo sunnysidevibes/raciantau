@@ -885,11 +885,24 @@ margin-top: 10px;
 }
 .archive_icon { display: block; margin: 20px auto; }
 
+.categories .racia {
+  color: white;
+  @include stroke(3,#FF7F81);
+}
+.categories .antau {
+  color: white;
+  @include stroke(3,#800000);
+}
+.categories .raciantau {
+  color: white;
+  @include stroke(3,#ff0000);
+}
+
 #archives { font-family: "SingleSleeve"; width: 100%; position: relative; }
 @media (min-width: 1024px) { #archives { margin: 30px 0; } }
 #archives h1 { display: block; font-size: 5em; margin: 0 auto; text-align: center; }
 @media (min-width: 1024px) { #archives h1 { font-size: 7em; } }
-#archives .categories { display: flex; justify-content: space-between; font-size: 3em; text-decoration: underline; margin: 0 20px; }
+#archives .categories { display: flex; justify-content: space-between; font-size: 3em; margin: 0 20px; }
 @media (min-width: 1024px) { #archives .categories { font-size: 4em; margin: 0; } }
 #archives .phase { font-size: 2.8em; text-align: center; margin: 10px 0; }
 @media (min-width: 1024px) { #archives .phase { font-size: 3em; } }
@@ -926,22 +939,11 @@ margin-top: 10px;
   margin: 5px;
 }
 @media (min-width: 1024px) { #archives .border { flex-direction: row; } }
-#archives .border.two.racia {
-  background-image: url("/img/00_RACIAborder2x.png");
-
-}
 #archives .border.one.raciantau {
   justify-content: center;
-  background-image: url("/img/00_RACIANTAUborder1x.png");
-}
-#archives .border.two.antau {
-  background-image: url("/img/00_ANTAUborder2x.png");
-}
-#archives .border.one.racia {
-  background-image: url("/img/00_RACIAborder1x.png");
 }
 #archives .border.three.raciantau {
-  background-image: url("/img/00_RACIANTAUborder3x.png");
+  color: #ff0000;
   flex-direction: column;
   p {
     margin: 10px;
@@ -951,12 +953,10 @@ margin-top: 10px;
   }
 }
 #archives .mfc {
+  color: black;
   display: flex; justify-content: space-between; flex-direction: column;
 }
 @media (min-width: 1024px) { #archives .mfc { flex-direction: row; } }
-#archives .border.one.antau {
-  background-image: url("/img/00_ANTAUborder1x.png");
-}
 
 .archive { position: relative; }
 .archive h1 { font-size: 5em; }
