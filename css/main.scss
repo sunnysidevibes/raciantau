@@ -925,22 +925,18 @@ margin-top: 10px;
 @media (min-width: 1024px) { #archives .story img { width: 110px; } }
 #archives .story .soon { background-color: darkgray; font-size: 2em; text-align: center; color: gray; margin: 0 auto; width: 110px;height: 165px; }
 @media (min-width: 1024px) { #archives .story .soon { width: 110px; height: 165px; } }
-#archives .racia { text-align: left; align-self: flex-start;}
+#archives .racia { text-align: center; align-self: center;}
 @media (min-width: 1024px) { #archives .racia { align-self: auto; } }
-#archives .antau { text-align: right; align-self: flex-end; a { color: #800000; }}
+#archives .antau { text-align: center; align-self: center; a { color: #800000; }}
 @media (min-width: 1024px) { #archives .antau { align-self: auto; } }
 #archives .raciantau { text-align: center; flex-grow: 5; align-self: center; a {color: #ff0000; }}
 @media (min-width: 1024px) { #archives .raciantau { align-self: auto; } }
 
 #archives .border {
-  display: flex; justify-content: space-between; flex-direction: column;
+  display: flex; justify-content: center; flex-direction: row;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   margin: 5px;
-}
-@media (min-width: 1024px) { #archives .border { flex-direction: row; } }
-#archives .border.one.raciantau {
-  justify-content: center;
 }
 #archives .border.three.raciantau {
   color: #ff0000;
