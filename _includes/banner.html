@@ -8,6 +8,7 @@
   <a class="link {% if page.url contains 'about' %}active{% endif %}" href='/about'><div>New Readers</div></a>
   <a class="link {% if page.url contains 'archives' %}active{% endif %}" href='/archives'><div>All Stories</div></a>
   <a class="link {% if page.url contains 'blog' %}active{% endif %}" href='/blog'><div>Blog</div></a>
+  <a class="link {% if page.url contains site.comic.last.url %}active{% endif %}" href='{{site.comics.last.url}}'><div>Latest!</div></a>
 
   </div>
   <div class="social">
