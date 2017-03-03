@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'His Story Page 02 Update!'
+title: 'His Story Page 03 Update!'
 date: 2017-03-03 09:00:00
 icon_image: /img/content/STANDARD.png
 image: /img/content/HSRI/7xPlstj2l2DGSXqh.JPG
