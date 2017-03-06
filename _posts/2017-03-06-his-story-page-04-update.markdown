@@ -2,7 +2,7 @@
 layout: post
 title: 'His Story Page 04 Update!'
 date: 2017-03-06 09:00:00
-icon_image: /img/content/STANDARD.png
+icon_image: /img/content/ROCK.png
 image: /img/content/HSRI/WNTLdhGBGG0UHSuo.JPG
 author: rock
 ---
