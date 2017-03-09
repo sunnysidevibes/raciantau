@@ -16,12 +16,7 @@
       </div>
 
   </div>
-
-
-  <a class="samich"><i  onclick="show_menu();"class="fa fa-bars fa-3x"></i></a>
-    <div id="menu">
-    <a class="link {% if page.url contains 'about' %}active{% endif %}" href='/about'><div>New Readers</div></a>
-    <a class="link {% if page.url contains 'archives' %}active{% endif %}" href='/archives'><div>All Stories</div></a>
-      <a class="link {% if page.url contains 'blog' %}active{% endif %}" href='/blog'><div>Blog</div></a>
-    </div>
+<div class="alert">
+	<span><a href="{{site.comics.last.url}}">Check out the latest comic update!</a></span>
+</div>
 </div>

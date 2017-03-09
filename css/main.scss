@@ -102,7 +102,6 @@ body {
   margin: 0 !important;
   background-color: white;
   font-family: "Montserrat";
-
 }
 
 #disqus_thread {
@@ -111,12 +110,13 @@ body {
 	
 .wrap {
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 105px;
 
   @include media(">=tablet", "landscape") {
   }
   @include media(">=desktop") {
-    width: 756px;
+	width: calc(100% - 400px);
+    max-width: 756px;
     margin-top: 95px;
   }
 }
@@ -135,54 +135,45 @@ body {
   position: fixed;
   z-index: 1000;
   margin: 0 auto;
-  margin-bottom: 10px;
   background-color: #FF7F81;
   overflow: visible;
-  padding-top: 17px;
+  
   #banner_main {
     @include media(">=desktop") {
-      padding: 10px 0;
-      height: 60px;
-      line-height: 60px;
 	  width: 100%;
 	  float: left;
     }
+	margin: 10px 0;
   }
   width: 100%;
 
-    @include media(">=desktop") {
-      padding: 0;
-    }
   #home {
     position: relative;
     display: inline-block;
     vertical-align: middle;
 
       #logo {
-        height: 60px;
-          @include media(">=desktop") {
-            height: 60px;
-          }
-        width: 244px;
+        height: 50px;
+		margin-left: 20px;
+        width: 200px;
         background-image: url("/img/LOGOwhite.png");
         background-size: contain;
-        background-position: center;
+        background-position: left;
         background-repeat: no-repeat;
 
       }
 
       a:hover #logo {
-        background-image: url("/img/LOGOwhitepink.png");
+        background-image: url("/img/re-design/LOGOpinkwhite.png");
       }
   }
 
   
     .updates {
+      vertical-align: middle;
     @include media(">=desktop") {
       display: inline-block;
-      vertical-align: middle;
     }
-    margin-top: 10px;
     margin-right: 20px;
 	line-height: 0.8;
     float: right;
@@ -193,14 +184,12 @@ body {
     }
 
   div.social {
-    @include media(">=desktop") {
+    @include media(">=tablet") {
       display: inline-block;
     }
     display: none;
     float: right;
-    margin-right: 30px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-right: 20px;
     .icon {
       display: inline-block;
       width: 50px;
@@ -211,32 +200,32 @@ body {
       background-size: contain;
     }
     #instagram:hover {
-      background-image: url("/img/INSTAGRAMwhitepink.png");
+      background-image: url("/img/re-design/INSTAGRAMpinkwhite.png");
     }
     #twitter {
       background-image: url("/img/TWITTERwhite.png");
       background-size: contain;
     }
     #twitter:hover {
-      background-image: url("/img/TWITTERwhitepink.png");
+      background-image: url("/img/re-design/TWITTERpinkwhite.png");
     }
     #patreon {
       background-image: url("/img/PATREONwhite.png");
       background-size: contain;
     }
     #patreon:hover {
-      background-image: url("/img/PATREONwhitepink.png");
+      background-image: url("/img/re-design/PATREONpinkwhite.png");
     }
 	a { line-height: normal; }
   }
 
 
   .link {
-    display: none;
-    @include media(">=desktop") {
+    @include media(">=tablet") {
       display: inline-block;
-      vertical-align: middle;
     }
+    display: none;
+  vertical-align: middle;
     color: white;
     font-family: "SingleSleeve";
     font-size: 3em;
@@ -258,7 +247,7 @@ body {
     @include stroke(3,black);
   }
 
-margin-top: -100px;
+margin-top: -105px;
   @include media(">=desktop") {
     width: 100%;
     //left: 50%;
@@ -266,23 +255,21 @@ margin-top: -100px;
 margin-top: -95px;
   }
 
-a.samich {display: inline-block;@include media(">=desktop") {
-      display: none;
-    }}
-  i {
-    position: absolute;
-    display: inline-block;
-    color: white;
-    top: 50px;
-    right: 20px;
-    transform: translateY(-50%);
-    @include media(">=desktop") {
-      display: none;
-    }
-  }
-
+  
 }
 
+.alert {
+	background-color: black;
+	color: white;
+	text-decoration: underline;
+	padding: 5px;
+	text-align: center;
+	font-size: .9em;
+	margin-top: 10px;
+  @include media(">=tablet") {
+	display: none;
+  }
+}
 #menu {
   background-color: #FF7F81;
   display: none;
@@ -313,7 +300,10 @@ a.samich {display: inline-block;@include media(">=desktop") {
 		position: relative;
 		text-align: center;
 		#titlecard {
-		width: 100%;
+			width: 70%;
+			@include media(">=tablet") {
+				width: 100%;
+			}
 		}
 	}
 	text-align: center;
@@ -322,28 +312,39 @@ a.samich {display: inline-block;@include media(">=desktop") {
 	}
 	p {
 		font-size: 1.2em;
-		margin: 10px;
+		margin: 10px 0;
 	}
 	.themes {
-		font-size: 1.75em;
+		width: 100%;
+		font-size: 1.25em;
+		@include media(">=tablet") {
+			font-size: 1.75em;
+		}
 		font-family: "SingleSleeve";
 		display: flex;
 		flex-direction: column;
 		.squares {
 			display: flex;
 			flex-direction: row;
-			width: 100%;
+			max-width: 100%;
+			flex-wrap: wrap;
 			div {
-				width: 189px; 
-				height: 155px;
+				flex-shrink: 0;
+				width: 50%; 
+				@include media(">=tablet") {
+					width: 25%;
+				}
 				img {
-					width: 189px;
+					width: 100%;
 				}
 				.theme {
 					display: table;
 					text-align: center;		
 					width: 100%;
-					height: 60px;
+					height: 40px;
+					@include media(">=tablet") {
+						height: 60px;
+					}
 					span {
 						display: table-cell;
 						vertical-align: middle;
@@ -382,12 +383,6 @@ a.samich {display: inline-block;@include media(">=desktop") {
 			font-weight: normal;
 			font-style: italic;
 		}
-		.icon {
-			display: inline-block;
-			vertical-align: baseline;
-			width: auto;
-			height: 1em;
-		}
 		p {
 			font-size: 0.45em;
 		}
@@ -400,20 +395,58 @@ a.samich {display: inline-block;@include media(">=desktop") {
 				color: white;
 				@include stroke(3,black); 
 			}
+			margin: 10px;
 			margin-bottom: 20px;
-			.clip {
-				width: 140px;
-				height: 140px;
-				margin-right: 20px;
-				flex-shrink: 0;
-			}
 			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
 			text-align: left;
 			h3, h4, p {
 				margin: 0;
+			}
+			.clip {
+				width: 110px;
+				margin-right: 10px;
+				flex-shrink: 0;
+			}
+			.right { 
+				width: calc(100% - 110px - 20px);
+				h4, .icon { display: none; }
+			}
+			h4 { 
 				margin-bottom: 5px;
 			}
-			
+			.icons { 
+				margin-right: 10px;
+				text-align: right; 
+			}
+			.icon {
+				display: inline-block;
+				vertical-align: baseline;
+				width: auto;
+				height: 0.75em;
+			}
+			@include media(">=tablet") {
+				margin: 20px;
+				.clip, .icons {
+					margin-right: 20px;
+				}
+				.clip {
+					width: 140px;
+				}
+				.left h4, .left .icon {
+					display: none;
+				}
+				.right h4 {
+					display: block;
+				}
+				.right .icon { 
+					display: inline-block;
+				}
+				.right { 
+					width: calc(100% - 140px - 40px);
+				}
+			}
 		}
 	}
 }
@@ -672,7 +705,7 @@ margin-top: 10px;
 }
 
 #footer {
-  background-color: black;
+  background-color: #FF7F81;
   .wrap {
   margin: 30px auto;
   margin-bottom: 0;
@@ -681,8 +714,7 @@ margin-top: 10px;
   .box {
     margin: 20px;
     position: relative;
-    background-color: gray;
-    border: 1px solid white;
+    background-color: white;
 
     img {
       position: absolute;
