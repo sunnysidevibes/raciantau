@@ -55,6 +55,7 @@ layout: default
     <div class="article">
       <div class="side">
         <h1>{{ page.date | date: "%A %b %d, %y" }}</h1>
+        <a href="{{ page.url }}#disqus_thread">Second article</a>
       </div>
       <div class="content">
       <img src="{{ page.icon_image }}" />{{ page.content }}</div>
@@ -87,10 +88,12 @@ layout: default
 
                           {% include signup.html %}
             </div>
-  </div>                  
+  </div>
 </section>
 
   <div id="disqus_thread"></div>
+
+<script id="dsq-count-scr" src="//raciantau.disqus.com/count.js" async></script>
 <script>
 
 /**
@@ -110,4 +113,3 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-              

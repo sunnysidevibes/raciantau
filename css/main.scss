@@ -98,6 +98,8 @@ div {
 }
 
 body {
+  position: relative;
+  min-width: 300px;
   padding: 0 !important;
   margin: 0 !important;
   background-color: white;
@@ -160,6 +162,9 @@ body {
         background-size: contain;
         background-position: left;
         background-repeat: no-repeat;
+      @include media("<300px") {
+        width: 100px;
+      }
 
       }
 
@@ -387,11 +392,12 @@ margin-top: -95px;
 		}
 		.story {
 			a {
-				color: black;
+        color: #FF7F81;
 				text-decoration: underline;
 			}
 			a:hover {
-        color: #FF7F81;
+        color: white;
+        @include stroke(3, #FF7F81);
 			}
 			margin: 10px;
 			margin-bottom: 20px;
@@ -645,7 +651,8 @@ margin-top: -95px;
     font-family: "Montserrat";
   }
 
-  .article h1 { color: black; margin-bottom: 30px; }
+  .article h1 { color: black; }
+  .article .side {  margin-bottom: 30px; }
   .content img { float: left; }
 }
 
