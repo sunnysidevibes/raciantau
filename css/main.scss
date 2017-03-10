@@ -107,7 +107,7 @@ body {
 #disqus_thread {
 	margin: 20px;
 }
-	
+
 .wrap {
   margin: 0 auto;
   margin-top: 105px;
@@ -137,7 +137,7 @@ body {
   margin: 0 auto;
   background-color: #FF7F81;
   overflow: visible;
-  
+
   #banner_main {
     @include media(">=desktop") {
 	  width: 100%;
@@ -168,7 +168,7 @@ body {
       }
   }
 
-  
+
     .updates {
       vertical-align: middle;
     @include media(">=desktop") {
@@ -255,7 +255,7 @@ margin-top: -105px;
 margin-top: -95px;
   }
 
-  
+
 }
 
 .alert {
@@ -296,7 +296,7 @@ margin-top: -95px;
 }
 
 .home {
-	.intro { 
+	.intro {
 		position: relative;
 		text-align: center;
 		#titlecard {
@@ -330,7 +330,7 @@ margin-top: -95px;
 			flex-wrap: wrap;
 			div {
 				flex-shrink: 0;
-				width: 50%; 
+				width: 50%;
 				@include media(">=tablet") {
 					width: 25%;
 				}
@@ -339,7 +339,7 @@ margin-top: -95px;
 				}
 				.theme {
 					display: table;
-					text-align: center;		
+					text-align: center;
 					width: 100%;
 					height: 40px;
 					@include media(">=tablet") {
@@ -360,7 +360,7 @@ margin-top: -95px;
 					color: #FF7F81;
 				}
 			}
-		} 
+		}
 	}
 	.void {
 		width: 100%;
@@ -368,14 +368,13 @@ margin-top: -95px;
 		color: white;
 		padding: 20px 0;
 	}
-	
+
 	.archives {
 		font-size: 2em;
 		h2, h3 {
 			font-family: SingleSleeve;
 		}
 		h2 {
-			text-decoration: underline;
 			margin-top: 20px;
 		}
 		h4 {
@@ -387,13 +386,12 @@ margin-top: -95px;
 			font-size: 0.45em;
 		}
 		.story {
-			a { 
-				color: black; 
-				text-decoration: none;
+			a {
+				color: black;
+				text-decoration: underline;
 			}
-			a:hover { 
-				color: white;
-				@include stroke(3,black); 
+			a:hover {
+        color: #FF7F81;
 			}
 			margin: 10px;
 			margin-bottom: 20px;
@@ -409,16 +407,20 @@ margin-top: -95px;
 				margin-right: 10px;
 				flex-shrink: 0;
 			}
-			.right { 
+      .clip:hover {
+        outline: 4px solid #FF7F81;
+        outline-offset: -4px;
+      }
+			.right {
 				width: calc(100% - 110px - 20px);
 				h4, .icon { display: none; }
 			}
-			h4 { 
+			h4 {
 				margin-bottom: 5px;
 			}
-			.icons { 
+			.icons {
 				margin-right: 10px;
-				text-align: right; 
+				text-align: right;
 			}
 			.icon {
 				display: inline-block;
@@ -440,10 +442,10 @@ margin-top: -95px;
 				.right h4 {
 					display: block;
 				}
-				.right .icon { 
+				.right .icon {
 					display: inline-block;
 				}
-				.right { 
+				.right {
 					width: calc(100% - 140px - 40px);
 				}
 			}
@@ -642,7 +644,7 @@ margin-top: -95px;
     margin-top: 0;
     font-family: "Montserrat";
   }
-  
+
   .article h1 { color: black; margin-bottom: 30px; }
   .content img { float: left; }
 }
