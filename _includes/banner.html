@@ -5,26 +5,18 @@
       <div id="logo"> </div>
     </a>
   </div>
-  <a class="link {% if page.url contains 'about' %}active{% endif %}" href='/about'><div>New Readers</div></a>
-  <a class="link {% if page.url contains 'archives' %}active{% endif %}" href='/archives'><div>All Stories</div></a>
-  <a class="link {% if page.url contains 'blog' %}active{% endif %}" href='/blog'><div>Blog</div></a>
   <a class="link {% if page.url contains site.comic.last.url %}active{% endif %}" href='{{site.comics.last.url}}'><div>Latest!</div></a>
-
-  </div>
   <div class="social">
     <a href="https://twitter.com/racia_antau"><div class="icon" id="twitter"> </div></a>
     <a href="https://www.instagram.com/smsgomez/"><div class="icon" id="instagram"> </div></a>
     <a href="https://www.patreon.com/fabelaro"><div class="icon" id="patreon"> </div></a>
-      <div class="updates">
-        Updates M W F!
-      </div>
   </div>
+      <div class="updates">
+        Updates<br />M W F!
+      </div>
 
-
-  <a class="samich"><i  onclick="show_menu();"class="fa fa-bars fa-3x"></i></a>
-    <div id="menu">
-    <a class="link {% if page.url contains 'about' %}active{% endif %}" href='/about'><div>New Readers</div></a>
-    <a class="link {% if page.url contains 'archives' %}active{% endif %}" href='/archives'><div>All Stories</div></a>
-      <a class="link {% if page.url contains 'blog' %}active{% endif %}" href='/blog'><div>Blog</div></a>
-    </div>
+  </div>
+<div class="alert">
+	<span><a href="{{site.comics.last.url}}">Check out the latest comic update!</a></span>
+</div>
 </div>
