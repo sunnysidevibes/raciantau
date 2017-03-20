@@ -5,7 +5,7 @@ alt:
 image: /img/content/HSRI/8oItngDAmrl6M2M7.JPG
 thumb_image: /img/content/HSRI/8oItngDAmrl6M2M7.JPG
 icon_image: /img/content/STANDARD.png
-date: 2017-03-20 09:00:00 -0500
+date: 2017-03-20 09:00:00 US/Eastern
 ---
 Poor future-Antau. Why's everyone else always so self-obsessed, right?
 
