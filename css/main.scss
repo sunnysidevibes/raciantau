@@ -119,7 +119,6 @@ body {
   @include media(">=desktop") {
 	width: calc(100% - 400px);
     max-width: 756px;
-    margin-top: 95px;
   }
 }
 
