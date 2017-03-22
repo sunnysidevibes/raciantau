@@ -127,6 +127,7 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  width: 100%;
   @include media(">=desktop") {
     flex-direction: row;
   }
@@ -632,7 +633,7 @@ margin-top: -95px;
 
 .commentary {
   background-color: white;
-
+  flex-grow: 2;
   .side {
       margin-right: 30px;
   }
