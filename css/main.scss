@@ -272,7 +272,7 @@ margin-top: -105px;
 	
 	a:hover {
 	    color: white;
-	    @include stroke(0,#FFFFFF);
+	    text-shadow: none;
 	}
 }
 #menu {
