@@ -257,7 +257,6 @@ margin-top: -105px;
     width: 100%;
     //left: 50%;
     //margin-left: -550px;
-margin-top: -95px;
   }
 
 
@@ -271,6 +270,11 @@ margin-top: -95px;
 	text-align: center;
 	font-size: .9em;
 	margin-top: 10px;
+	
+	a:hover {
+	    color: white;
+	    @include stroke(0,#FFFFFF);
+	}
 }
 #menu {
   background-color: #FF7F81;
@@ -732,7 +736,6 @@ margin-top: 10px;
       right: -10px;
 
       @include media(">=desktop") {
-        width: 95px;
       }
     }
   }
