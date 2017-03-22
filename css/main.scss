@@ -144,7 +144,6 @@ body {
   #banner_main {
     @include media(">=desktop") {
 	  width: 100%;
-	  float: left;
     }
 	margin: 10px 0;
   }
