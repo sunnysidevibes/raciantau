@@ -15,14 +15,7 @@
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <script type="text/javascript">
-      function showMailingPopUp() {
-        document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-        require(["mojo/signup-forms/Loader"], function(L) { L.start(
-          {"baseUrl":"mc.us8.list-manage.com","uuid":"a56ce2128001bdcb7974e9ea2","lid":"1d4c16bd94"}
-          ) })
-      };
-      document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
-      
+
       function show_menu() {
         $('#menu').css('display', 'block');
         $('.wrap').css('margin-top', '343px');
@@ -91,6 +84,15 @@ var google_remarketing_only = true;
   ga('send', 'pageview');
 
 </script>
+<script type="text/javascript">
+        function showMailingPopUp() {
+        document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+        require(["mojo/signup-forms/Loader"], function(L) { L.start(
+          {"baseUrl":"mc.us8.list-manage.com","uuid":"a56ce2128001bdcb7974e9ea2","lid":"1d4c16bd94"}
+          ) })
+      };
+      document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+</script>      
 <!-- Project Wonderful Ad Box Loader -->
 <script type="text/javascript">
    (function(){function pw_load(){
