@@ -5,7 +5,7 @@ alt:
 image: /img/content/HSRI/HHFmmaoVQIr0S8lr.jpg
 thumb_image: /img/content/HSRI/HHFmmaoVQIr0S8lr.jpg
 icon_image: /img/content/STANDARD.png
-date: 2017-03-31 09:00:00 -0500
+date: 2017-03-31 09:00:00 US/Eastern
 ---
 What goes around comes around.
 
