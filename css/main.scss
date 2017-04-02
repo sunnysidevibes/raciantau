@@ -269,7 +269,7 @@ margin-top: -105px;
 	text-align: center;
 	font-size: .9em;
 	margin-top: 10px;
-	
+
 	a:hover {
 	    color: white;
 	    text-shadow: none;
@@ -376,6 +376,9 @@ margin-top: -105px;
 
 	.archives {
 		font-size: 2em;
+    #new_notification {
+      color: #50B948; font-family: SingleSleeve; font-style: normal; font-size: 0.7em; margin: 0 auto;
+    }
 		h2, h3 {
 			font-family: SingleSleeve;
 		}
@@ -399,6 +402,13 @@ margin-top: -105px;
         color: white;
         @include stroke(3, #FF7F81);
 			}
+      a.disabled {
+        color: gray;
+        text-decoration: none;
+      }
+      a.disabled:hover {
+        text-shadow: none;
+      }
 			margin: 10px;
 			margin-bottom: 20px;
 			display: flex;
@@ -454,6 +464,9 @@ margin-top: -105px;
 				.right {
 					width: calc(100% - 140px - 40px);
 				}
+
+        #new_notification { font-size: 0.9em; text-align: center; margin-right: 20px;}
+
 			}
 		}
 	}

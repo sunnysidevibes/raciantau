@@ -30,7 +30,7 @@ layout: default
         <a title="Previous" href="{{ prev.url }}">
           <i id="prev_arrow" class="fa fa-angle-left {% if prev %}active{% endif %}"></i>
         </a>
-        <a title="Page List" href="{{ site.url }}/comics/{{ page.collection }}">
+        <a title="Page List">
           {{ page.title | slice: -2, 2 }} / {{ total_str }}
         </a>
         <a title="Next" href="{{ next.url }}">

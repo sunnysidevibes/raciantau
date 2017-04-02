@@ -1,0 +1,10 @@
+---
+layout: page
+story: Mars Freedom Colony
+alt:
+image: /img/content/MFC/01h7P6zTz2Qu.JPG
+thumb_image: /img/content/MFC/01h7P6zTz2Qu.JPG
+icon_image: /img/content/STANDARD.png
+date: 2017-04-03 09:00:00 US/Eastern
+---
+Welcome to the first page of our Phase 2 Capstone, "MARS FREEDOM COLONY"! Get out those brillantine and dime cigars, folks, because there ain't no Monday in <em>our</em> Sunday clothes!

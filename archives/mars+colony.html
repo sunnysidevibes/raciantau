@@ -1,0 +1,7 @@
+---
+layout: default
+permalink: /archives/Mars+Freedom+Colony/
+---
+{% assign stories = site.stories | where_exp: 'story', "story.title == 'Mars Freedom Colony'" %}
+{% assign story = stories[0] %}
+{% include archive.html %}
