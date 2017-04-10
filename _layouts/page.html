@@ -14,7 +14,9 @@ layout: default
 
 		{% if allnext.first %}
 		{% else %}
-			{% assign allnext = future %}
+			{% if future.first.story == page.story %}
+				{% assign allnext = future %}
+			{% endif %}
 		{% endif %}
 		
         {% assign first = allprev.first %}
@@ -40,10 +42,10 @@ layout: default
         <a title="Page List">
           {{ page.title | slice: -2, 2 }} / {{ total_str }}
         </a>
-        <a title="Next" href="{{ next.url }}">
+        <a title="Next" {% if next %} href="{{ next.url }}" {% endif %}>
           <i id="next_arrow" class="fa fa-angle-right {% if next %}active{% endif %}"></i>
         </a>
-        <a title="Latest" href="{{ last.url }}">
+        <a title="Latest" {% if last %} href="{{ last.url }}" {% endif %} >
           <i id="last_arrow" class="fa fa-angle-double-right {% if last %}active{% endif %}"></i>
         </a>
     </div>
