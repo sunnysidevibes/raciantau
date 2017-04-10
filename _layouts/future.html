@@ -1,0 +1,116 @@
+---
+layout: default
+---
+<section id="main">
+        {% assign posts = site.comics | where_exp: "item", "item.story == page.story" %}
+        {% assign total = posts.size + 1 %}
+        {% capture total_str %}
+        {% if total < 10 %}0{% endif %}{{ total }}
+        {% endcapture %}
+		
+        {% capture page_str %}
+        {% if total < 10 %}0{% endif %}{{ total }}
+        {% endcapture %}
+
+        {% assign allprev = posts | where_exp: "item", "item.title != 'future'" %}
+
+        {% assign first = allprev.first %}
+        {% assign prev = allprev.last %}
+
+    <div id="art">
+      <a href="http://patreon.com/fabelaro"><img src="/img/re-design/future.jpg"  /></a>
+      {% include ad-skyscraper.html side="left" id="pw_adbox_79458_3_0" %}
+      {% include ad-skyscraper.html side="right" id="pw_adbox_79458_3_1" %}
+    </div>
+
+    <div id="navigation" class="">
+
+        <a href="{{ first.url }}">
+          <i id="first_arrow" title="First" class="fa fa-angle-double-left {% if first %}active{% endif %}"></i>
+        </a>
+        <a title="Previous" href="{{ prev.url }}">
+          <i id="prev_arrow" class="fa fa-angle-left {% if prev %}active{% endif %}"></i>
+        </a>
+        <a title="Page List">
+          {{ page_str }} / {{ total_str }}
+        </a>
+        <a title="Next" href="{{ next.url }}">
+          <i id="next_arrow" class="fa fa-angle-right {% if next %}active{% endif %}"></i>
+        </a>
+        <a title="Latest" href="{{ last.url }}">
+          <i id="last_arrow" class="fa fa-angle-double-right {% if last %}active{% endif %}"></i>
+        </a>
+    </div>
+
+    {% include ads01.html %}
+    {% include ad-mobile.html id="pw_adbox_79419_6_0" %}
+
+
+  <div class="flow">
+
+      {% assign match = site.stories | where_exp: 'item', 'item.title == page.story' %}
+      {% assign story = match.first %}
+
+    <div class="commentary">
+
+    <div class="article">
+      <div class="side">
+        <h1>READ THE NEXT UPDATE TODAY</h1>
+        <a href="{{ page.url }}#disqus_thread">Comments</a>
+      </div>
+      <div class="content">
+      <img src="{{ page.icon_image }}" />{{ page.content }}</div>
+    </div>
+
+
+    <div class="post_nav">
+      {% if prev %}
+      <a  id="prev" href="{{prev.url}}" >Previous</a>
+      {% endif %}
+      {% if next %}
+      <a  id="next" href="{{next.url}}" >Next</a>
+      {% endif %}
+    </div>
+
+
+  </div>
+
+        <div id="sidebar">
+          <div class="sidebar_col">
+                    <img class="archive_icon" src="{{ story.icon_image }}" />
+
+
+        <div class="box blurb">
+          {{ story.desc_html | safeHTML }}
+          <a href="/archives/{{story.title | url_encode}}">All Pages</a>
+        </div>
+  <a href="http://www.patreon.com/fabelaro"><img width="250px" src="/img/re-design/PATREON_BEAR2.png" /></a>
+      </div>
+
+                          {% include signup.html %}
+            </div>
+  </div>
+</section>
+
+  <div id="disqus_thread"></div>
+
+<script id="dsq-count-scr" src="//raciantau.disqus.com/count.js" async></script>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://raciantau.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

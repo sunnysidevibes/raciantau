@@ -3,18 +3,26 @@ layout: default
 ---
 <section id="main">
         {% assign posts = site.comics | where_exp: "item", "item.story == page.story" %}
-        {% assign total = posts | size %}
+        {% assign total = posts.size %}
         {% capture total_str %}
         {% if total < 10 %}0{% endif %}{{ total }}
         {% endcapture %}
 
         {% assign allprev = posts | where_exp: "item", "item.date < page.date" %}
-        {% assign allnext = posts | where_exp: "item", "item.date > page.date" %}
+        {% assign allnext = posts | where_exp: "item", "item.date > page.date" | where_exp: "item", "item.title != 'future'" %}
+		{% assign future = site.comics | where_exp: "item", "item.title == 'future'" %}
 
+		{% if allnext.first %}
+		{% else %}
+		boo
+			{% assign allnext = future %}
+		{% endif %}
+		
         {% assign first = allprev.first %}
         {% assign prev = allprev.last %}
         {% assign next = allnext.first %}
         {% assign last = allnext.last %}
+		
 
     <div id="art">
       <img title="{{ page.alt }}" src="{{ page.image }}"  />
@@ -55,7 +63,7 @@ layout: default
     <div class="article">
       <div class="side">
         <h1>{{ page.date | date: "%A %b %d, %y" }}</h1>
-        <a href="{{ page.url }}#disqus_thread">Second article</a>
+        <a href="{{ page.url }}#disqus_thread">Comments</a>
       </div>
       <div class="content">
       <img src="{{ page.icon_image }}" />{{ page.content }}</div>
