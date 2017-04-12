@@ -2,10 +2,10 @@
 layout: page
 story: Mars Freedom Colony
 alt:
-image: /img/content/MFC/04wXlRoXCqXd.JPG
-thumb_image: /img/content/MFC/04wXlRoXCqXd.JPG
+image: /img/content/MFC/05PTiXKVCCov.JPG
+thumb_image: /img/content/MFC/05PTiXKVCCov.JPG
 icon_image: /img/content/STANDARD.png
-date: 2017-04-10 09:00:00 US/Eastern
+date: 2017-04-12 09:00:00 US/Eastern
 ---
 Ah, space. Some call it the final frontier.
 
