@@ -26,7 +26,9 @@ layout: default
 		
 
     <div id="art">
-      <img id="artimg" title="{{ page.alt }}" src="{{ page.image }}"  />
+	  <object id="artimg" data="{{ page.image }}" type="image/png">
+	    <img src="https://appharbor.com/assets/images/stackoverflow-logo.png" />
+	  </object>
       {% include ad-skyscraper.html side="left" id="pw_adbox_79458_3_0" %}
       {% include ad-skyscraper.html side="right" id="pw_adbox_79458_3_1" %}
     </div>
