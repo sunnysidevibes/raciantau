@@ -6,6 +6,7 @@ image: /img/content/COLLISION2016_04JPG.JPG
 thumb_image: /img/content/thumbs/COLLISION2016_04JPG.JPG
 icon_image: /img/content/STANDARD.png
 date: 2016-10-20 00:00:00
+redirect_from: "/archives/0030"
 ---
 
 

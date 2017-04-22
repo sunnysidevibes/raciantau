@@ -6,6 +6,7 @@ image: /img/content/Battlemon-09JPG.jpg
 thumb_image: /img/content/thumbs/Battlemon-09JPG.jpg
 icon_image: /img/content/GROSSOUT.png
 date: 2016-08-16 00:00:00
+redirect_from: "/archives/0009"
 ---
 
 I literally hate the writing for the Battlemon Variety Hour <em>so <b>much.</b></em>

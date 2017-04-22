@@ -6,6 +6,7 @@ image: /img/content/SENSELESS_TOWN_07JPG.JPG
 thumb_image: /img/content/SENSELESS_TOWN_07JPG.JPG
 icon_image: /img/content/HAPPY.png
 date: 2017-02-06 11:00:00 -0500
+redirect_from: "/archives/0068"
 ---
 
 

@@ -6,6 +6,7 @@ image: /img/content/battlemon-02jpg.jpg
 thumb_image: /img/content/thumbs/Battlemon-02JPG.jpg
 icon_image: /img/content/STANDARD.png
 date: 2016-07-21 00:00:00
+redirect_from: "/archives/0002"
 ---
 
 

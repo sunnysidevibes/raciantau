@@ -6,6 +6,7 @@ image: /img/content/Battlemon-17JPG.jpg
 thumb_image: /img/content/thumbs/Battlemon-17JPG.jpg
 icon_image: /img/content/STANDARD.png
 date: 2016-09-20 00:00:00
+redirect_from: "/archives/0017"
 ---
 
 After a week off to get settled in some new digs, Battlemon is back with another one of those rhyming pages. It's a little annoying to be incapable of not thinking about George Lucas when thinking about rhyming, yeah? But hey, life is a series of disappointments and then you die, so.

@@ -6,6 +6,7 @@ image: /img/content/Battlemon-16JPG.jpg
 thumb_image: /img/content/thumbs/Battlemon-16JPG.jpg
 icon_image: /img/content/BLUSHY.png
 date: 2016-09-08 00:00:00
+redirect_from: "/archives/0016"
 ---
 
 I’ve been scripting ahead in <em>RACIANTAU</em> and I’ve got to tell you, it feels really good to step back and work on “Battlemon” after some of what I’ve written. “Battlemon” is simple, sweet-ish and largely unassuming in a way that later scripts are <em>decidedly</em> not.

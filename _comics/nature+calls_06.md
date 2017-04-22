@@ -6,6 +6,7 @@ image: /img/content/nature-calls-06jpg.JPG
 thumb_image: /img/content/nature-calls-06jpg.JPG
 icon_image: /img/content/GRUMPY.png
 date: 2016-12-15 00:00:00
+redirect_from: "/archives/0054"
 ---
 
 

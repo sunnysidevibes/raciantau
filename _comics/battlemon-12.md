@@ -6,6 +6,7 @@ image: /img/content/Battlemon-12JPG.jpg
 thumb_image: /img/content/thumbs/Battlemon-12JPG.jpg
 icon_image: /img/content/STANDARD.png
 date: 2016-08-25 00:00:00
+redirect_from: "/archives/0012"
 ---
 
 Holy shit, it's Antau! Technically this is the second time we're seeing him, since any observant ... observer might've noticed he was the coworker telling Racia to go speak with their boss, back on Page 5.

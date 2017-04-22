@@ -6,6 +6,7 @@ image: /img/content/HSRI/HHFmmaoVQIr0S8lr.jpg
 thumb_image: /img/content/HSRI/HHFmmaoVQIr0S8lr.jpg
 icon_image: /img/content/STANDARD.png
 date: 2017-03-31 09:00:00 US/Eastern
+redirect_from: "/archives/0091"
 ---
 What goes around comes around.
 

@@ -6,6 +6,7 @@ image: /img/content/HSRI/8oItngDAmrl6M2M7.JPG
 thumb_image: /img/content/HSRI/8oItngDAmrl6M2M7.JPG
 icon_image: /img/content/STANDARD.png
 date: 2017-03-20 09:00:00 US/Eastern
+redirect_from: "/archives/0086"
 ---
 Poor future-Antau. Why's everyone else always so self-obsessed, right?
 

@@ -6,6 +6,7 @@ image: /img/content/Battlemon-24JPG.jpg
 thumb_image: /img/content/thumbs/Battlemon-24JPG.jpg
 icon_image: /img/content/STANDARD.png
 date: 2016-10-13 00:00:00
+redirect_from: "/archives/0024"
 ---
 
 Doing some <em>fancy visual things</em> in that “first panel,” hunh? More than most pages I'm convinced this one stands on its own rather well, so I'll try to avoid commenting too much on it.

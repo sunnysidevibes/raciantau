@@ -6,6 +6,7 @@ image: /img/content/cabin-fever-09jpg.jpg
 thumb_image: /img/content/cabin-fever-09jpg.jpg
 icon_image: /img/content/STANDARD.png
 date: 2016-11-19 00:00:00
+redirect_from: "/archives/0045"
 ---
 
 

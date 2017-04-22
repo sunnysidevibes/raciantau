@@ -6,6 +6,7 @@ image: /img/content/Battlemon-13JPG.jpg
 thumb_image: /img/content/thumbs/Battlemon-13JPG.jpg
 icon_image: /img/content/STANDARD.png
 date: 2016-08-30 00:00:00
+redirect_from: "/archives/0013"
 ---
 
 There's an old saw, right, that most people are probably familiar with, goes like, "Perfection is finally attained not when there is no longer anything to add, but when there is no longer anything to take away." I heard some variation on that theme some time back and was really bothered by it, because my own personal philosophy suggested there was no way that wasn't true but my artistic experience suggested I had no idea how to actually execute that idea.

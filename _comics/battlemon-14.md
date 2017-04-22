@@ -6,6 +6,7 @@ image: /img/content/Battlemon-14JPG.jpg
 thumb_image: /img/content/thumbs/Battlemon-14JPG.jpg
 icon_image: /img/content/SCARED.png
 date: 2016-09-01 00:00:00
+redirect_from: "/archives/0014"
 ---
 
 Gawd Racia we had such a good thing going with those dialogue-free pages and you just had to RUIN IT, didn't you, RUIN IT WITH YOUR RELATIONSHIP WITH YOUR BUNNERS.

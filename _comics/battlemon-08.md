@@ -6,6 +6,7 @@ image: /img/content/Battlemon-08JPG.jpg
 thumb_image: /img/content/thumbs/Battlemon-08JPG.jpg
 icon_image: /img/content/BOOHOO.png
 date: 2016-08-11 00:00:00
+redirect_from: "/archives/0008"
 ---
 
 I don't really go bowling so I had to look up what a good score was and adjust downward for a "realistic" skill level for Racia. Secretly, I'm guessing that Racia did much the same thing in her copious amounts of free time.

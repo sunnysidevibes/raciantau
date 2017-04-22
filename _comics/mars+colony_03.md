@@ -6,6 +6,7 @@ image: /img/content/MFC/03gKFvObDot3.JPG
 thumb_image: /img/content/MFC/03gKFvObDot3.JPG
 icon_image: /img/content/STANDARD.png
 date: 2017-04-07 09:00:00 US/Eastern
+redirect_from: "/archives/0095"
 ---
 Sooo .............
 

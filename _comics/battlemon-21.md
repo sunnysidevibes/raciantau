@@ -6,6 +6,7 @@ image: /img/content/Battlemon-21JPG.jpg
 thumb_image: /img/content/thumbs/Battlemon-21JPG.jpg
 icon_image: /img/content/BLUSHY.png
 date: 2016-10-04 00:00:00
+redirect_from: "/archives/0021"
 ---
 
 This page was one of the first ideas I had for “Battlemon,” and I've always loved how it came out – the angle, the anatomy. The page's art was actually some of the first I finished while working on this story but I've never actually seen the need to come back and make any adjustments. It just works.

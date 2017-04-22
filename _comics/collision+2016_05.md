@@ -6,6 +6,7 @@ image: /img/content/COLLISION2016_05JPG.JPG
 thumb_image: /img/content/thumbs/COLLISION2016_05JPG.JPG
 icon_image: /img/content/HAPPY.png
 date: 2016-10-21 00:00:00
+redirect_from: "/archives/0031"
 ---
 
 

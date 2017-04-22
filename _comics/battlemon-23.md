@@ -6,6 +6,7 @@ image: /img/content/Battlemon-23JPG.jpg
 thumb_image: /img/content/thumbs/Battlemon-23JPG.jpg
 icon_image: /img/content/STANDARD.png
 date: 2016-10-08 00:00:00
+redirect_from: "/archives/0023"
 ---
 
 The reason I specified last page (Page 22) was the “last full-rhyme page of 'Battlemon'” is because I consider this page to be a <em>“slant-rhyme”</em>. We've seen the action on this page twice before, and the last time we saw it, it <em>did</em> rhyme. This time we're seeing it from Bunners' perspective.

@@ -6,6 +6,7 @@ image: /img/content/Battlemon-06JPG.jpg
 thumb_image: /img/content/thumbs/Battlemon-06JPG.jpg
 icon_image: /img/content/STANDARD.png
 date: 2016-08-04 00:00:00
+redirect_from: "/archives/0006"
 ---
 
 It's weird that living things like Pokemon (and now, apparently, Battlemon) can be so easily converted into data and stored on computers, isn't it? Doesn't really make a whole lot of sense.

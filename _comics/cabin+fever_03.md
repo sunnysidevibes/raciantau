@@ -6,6 +6,7 @@ image: /img/content/CABIN_FEVER_03JPG.jpg
 thumb_image: /img/content/thumbs/CABIN_FEVER_03JPG.jpg
 icon_image: /img/content/THOUGHTFUL.png
 date: 2016-11-04 00:00:00
+redirect_from: "/archives/0039"
 ---
 
 

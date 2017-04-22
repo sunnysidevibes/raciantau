@@ -6,6 +6,7 @@ image: /img/content/Battlemon-25JPG.jpg
 thumb_image: /img/content/thumbs/Battlemon-25JPG.jpg
 icon_image: /img/content/BLUSHY.png
 date: 2016-10-18 00:00:00
+redirect_from: "/archives/0025"
 ---
 
 This page updated with the page after it, so make sure you read that one, too! This is it, the last full page; the next page finishes up the story, and I think it's important (or else I wouldn't have included it), but this is the last page of real “action” in the story.

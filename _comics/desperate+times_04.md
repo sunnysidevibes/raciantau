@@ -6,6 +6,7 @@ image: /img/content/DESPERATE TIMES 04.jpg
 thumb_image: /img/content/DESPERATE TIMES 04.jpg
 icon_image: /img/content/STANDARD.png
 date: 2017-01-12 13:55:00
+redirect_from: "/archives/0059"
 ---
 
 

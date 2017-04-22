@@ -6,6 +6,7 @@ image: /img/content/SENSELESS_TOWN_01JPG.JPG
 thumb_image: /img/content/SENSELESS_TOWN_01JPG.JPG
 icon_image: /img/content/STANDARD.png
 date: 2017-01-23 03:00:00
+redirect_from: "/archives/0062"
 ---
 
 

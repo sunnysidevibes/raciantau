@@ -6,6 +6,7 @@ image: /img/content/Battlemon-26JPG.jpg
 thumb_image: /img/content/thumbs/Battlemon-26JPG.jpg
 icon_image: /img/content/SHAFTTILT.png
 date: 2016-10-18 00:00:01
+redirect_from: "/archives/0026"
 ---
 
 

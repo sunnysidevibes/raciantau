@@ -6,6 +6,7 @@ image: /img/content/Battlemon-22JPG.jpg
 thumb_image: /img/content/thumbs/Battlemon-22JPG.jpg
 icon_image: /img/content/ANGRY.png
 date: 2016-10-06 00:00:00
+redirect_from: "/archives/0022"
 ---
 
 The last full-rhyme page of “Battlemon.” I came up with the idea for this story largely in one depressed flash of inspiration and in my mind's eye saw it run over the course of about twenty minutes as though it were an animated special, which I think explains why there are so many visual callbacks. That sort of thing would be very striking over the course of twenty minutes. Heck, it's visually striking over the course of these 25 pages, but it's harder to recognize that until you can sit down and read the whole thing in one go. We're only three more updates away from that world, though!

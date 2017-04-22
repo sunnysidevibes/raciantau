@@ -6,6 +6,7 @@ image: /img/content/Battlemon-20JPG.jpg
 thumb_image: /img/content/thumbs/Battlemon-20JPG.jpg
 icon_image: /img/content/STANDARD.png
 date: 2016-09-29 00:00:00
+redirect_from: "/archives/0020"
 ---
 
 I don't really have much to say about this page beyond, “Look how adorable our two leading ladies are.” Hrm. Lemme come up with a more substantive topic.

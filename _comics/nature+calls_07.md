@@ -6,6 +6,7 @@ image: /img/content/nature-calls-07jpg.jpg
 thumb_image: /img/content/nature-calls-07jpg.jpg
 icon_image: /img/content/STANDARD.png
 date: 2016-12-19 00:00:00
+redirect_from: "/archives/0055"
 ---
 
 

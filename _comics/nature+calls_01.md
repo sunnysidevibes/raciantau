@@ -6,6 +6,7 @@ image: /img/content/nature-calls-01jpg.JPG
 thumb_image: /img/content/nature-calls-01jpg.JPG
 icon_image: /img/content/HAPPY.png
 date: 2016-11-28 12:00:00
+redirect_from: "/archives/0049"
 ---
 
 

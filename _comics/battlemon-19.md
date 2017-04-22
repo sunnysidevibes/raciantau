@@ -6,6 +6,7 @@ image: /img/content/Battlemon-19JPG.jpg
 thumb_image: /img/content/thumbs/Battlemon-19JPG.jpg
 icon_image: /img/content/STANDARD.png
 date: 2016-09-27 00:00:00
+redirect_from: "/archives/0019"
 ---
 
 Some behind-the-scenes artistic notes:

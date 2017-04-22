@@ -6,6 +6,7 @@ image: /img/content/cabin-fever-10jpg.jpg
 thumb_image: /img/content/cabin-fever-10jpg.jpg
 icon_image: /img/content/HAPPY.png
 date: 2016-11-21 00:00:00
+redirect_from: "/archives/0046"
 ---
 
 

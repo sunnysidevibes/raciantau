@@ -6,6 +6,7 @@ image: /img/content/Battlemon-15JPG.jpg
 thumb_image: /img/content/thumbs/Battlemon-15JPG.jpg
 icon_image: /img/content/HAMMER.png
 date: 2016-09-06 00:00:00
+redirect_from: "/archives/0015"
 ---
 
 Don't have much to say about this page. Don't want to. Ought to stand on its own.

@@ -6,6 +6,7 @@ image: /img/content/Battlemon-10JPG.jpg
 thumb_image: /img/content/thumbs/Battlemon-10JPG.jpg
 icon_image: /img/content/ANGRY.png
 date: 2016-08-18 00:00:00
+redirect_from: "/archives/0010"
 ---
 
 The original plan for night and otherwise dark scenes was to have white outlines around objects, and as you can see throughout this page we largely stuck with that plan, but I'm also a huge fan of what Racia's hair looks like against a solid black background.

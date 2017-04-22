@@ -6,6 +6,7 @@ image: /img/content/Battlemon-07JPG.jpg
 thumb_image: /img/content/thumbs/Battlemon-07JPG.jpg
 icon_image: /img/content/STANDARD.png
 date: 2016-08-09 00:00:00
+redirect_from: "/archives/0007"
 ---
 
 I shouldn't have to spell this out for anyone, but "Nuzzledarns" are the all-black-with-white-defining-lines Pluto looking things. "Ratkas" are the blind swordsman mice. Oh; that's a little wooden stick the Ratka's swinging in the first panel.

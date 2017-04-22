@@ -6,6 +6,7 @@ image: /img/content/nature-calls-03jpg.jpg
 thumb_image: /img/content/nature-calls-03jpg.jpg
 icon_image: /img/content/THOUGHTFUL.png
 date: 2016-12-05 00:00:00
+redirect_from: "/archives/0051"
 ---
 
 

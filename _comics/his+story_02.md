@@ -6,6 +6,7 @@ image: /img/content/HSRI/22BEilHG3rFGdPhp.JPG
 thumb_image: /img/content/HSRI/22BEilHG3rFGdPhp.JPG
 icon_image: /img/content/STANDARD.png
 date: 2017-03-01 09:00:00 -0500
+redirect_from: "/archives/0078"
 ---
 
 The term "Dooglord" is actually a relic of some earlier drafts of this story which survived a lot of the changes we made in the interest of streamlining things because it still works. You can find out more about that sort of thing on our [patreon page!](https://www.patreon.com/fabelaro)
