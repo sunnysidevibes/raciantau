@@ -4,7 +4,7 @@ story: Mars Freedom Colony
 alt:
 image: /img/content/MFC/158RWA1p9JWa.JPG
 thumb_image: /img/content/MFC/158RWA1p9JWa.JPG
-icon_image: /img/content/THOUGHTFUL.png
+icon_image: /img/content/HAPPY.png
 date: 2017-05-05 09:00:00 US/Eastern
 redirect_from: "/archives/0107"
 ---
