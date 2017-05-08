@@ -11,3 +11,4 @@ redirect_from: "/archives/0108"
 Welcome to Part Two of "MARS FREEDOM COLONY," titled "SUB SOLE" and closing off this story's subtitle, "NIHIL NOVI SUB SOLE," or "NOTHING NEW UNDER THE SUN." We hope you look forward to reading this as much as we do to sharing it!
 
 Behind the scenes, this page was called "Racia accuses the sun."
+
