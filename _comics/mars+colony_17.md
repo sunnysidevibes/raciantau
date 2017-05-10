@@ -9,3 +9,4 @@ date: 2017-05-10 09:00:00 US/Eastern
 redirect_from: "/archives/0108"
 ---
 The scripts for "SUB SOLE" were still being ironed out as recently as a week ago. There have been a lot of changes, and you can see more behind-the-scenes info at our [Patreon page](https://www.patreon.com/fabelaro) but an interesting one to start with is that originally, Racia and Antau were humans, not robots!
+
