@@ -11,3 +11,4 @@ redirect_from: "/archives/0114"
 I called this "the shit page."
 
 I've been thinking about ways we'd offer a censored version of the comic, like, alongside or secondary to the main product, but pages like this, where the emotional outburst is sort of the whole point, make it a difficult issue to get around.
+
