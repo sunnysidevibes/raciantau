@@ -8,7 +8,7 @@ layout: default
         {% if total < 10 %}0{% endif %}{{ total }}
         {% endcapture %}
 
-        {% assign allprev = posts | where_exp: "item", "item.date < page.date" %}
+        {% assign allprev = posts | where_exp: "item", "item.date < page.date" | where_exp: "item", "item.title != 'future'"%}
         {% assign allnext = posts | where_exp: "item", "item.date > page.date" | where_exp: "item", "item.title != 'future'" %}
 		{% assign future = site.comics | where_exp: "item", "item.title == 'future'" %}
 
