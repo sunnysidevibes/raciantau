@@ -15,36 +15,18 @@
     <link rel="stylesheet" href="/css/main.css" type="text/css">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/slicknav.min.css" />
     <script type="text/javascript">
 
-      function show_menu() {
-        $('#menu').css('display', 'block');
-        $('.wrap').css('margin-top', '343px');
-        $('#banner').css('margin-top', '-343px');
-      }
-
-      $(function (){
-        document.onkeydown = checkKey;
-
-        function checkKey(e) {
-            e = e || window.event;
-            if (e.keyCode == '37') {
-               document.getElementById('prev').click();
-            }
-            else if (e.keyCode == '39') {
-               document.getElementById('next').click();
-            }
-        }
-
-      });
     </script>
 <script>
 (function(d,t,p){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='http'+(d.location.protocol=='https:'?'s':'')+'://www.comic-rocket.com/metrics.js#'+(p||"");s.parentNode.insertBefore(g,s);
 })(document,'script','key=f33v');
 </script>
 <script async src="https://www.comic-rocket.com/metrics.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>"pMiXeJsrvG4K"</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="/css/jquery.slicknav.min.js"></script>
+<script>"pMiXeJsrvG4K"</script>
   </head>
   <body>
     {% include banner.html %}
@@ -54,6 +36,30 @@
       </div>
     </div>
     {% include footer.html %}
+
+<script>
+	$(function(){
+		$('#menu').slicknav({
+      label: '',
+      brand: ' ',
+       prependTo:'#mobileMenu'
+     });
+	});
+  $(function (){
+    document.onkeydown = checkKey;
+
+    function checkKey(e) {
+        e = e || window.event;
+        if (e.keyCode == '37') {
+           document.getElementById('prev_arrow').click();
+        }
+        else if (e.keyCode == '39') {
+           document.getElementById('next_arrow').click();
+        }
+    }
+
+  });
+</script>
     <!-- Google Code for Remarketing Tag -->
 <!--------------------------------------------------
 Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
@@ -88,12 +94,12 @@ var google_remarketing_only = true;
 <script type="text/javascript">
         function showMailingPopUp() {
         document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-       require(["mojo/signup-forms/Loader"], function(L) { 
-         L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"e5f51c7612149afbe5207ea47","lid":"14d96ec3ca"}) 
+       require(["mojo/signup-forms/Loader"], function(L) {
+         L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"e5f51c7612149afbe5207ea47","lid":"14d96ec3ca"})
        })
       };
       document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
-</script>      
+</script>
 <!-- Project Wonderful Ad Box Loader -->
 <script type="text/javascript">
    (function(){function pw_load(){

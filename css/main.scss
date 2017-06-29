@@ -149,8 +149,11 @@ body {
   width: 100%;
 
   #home {
+    @include media(">=desktop") {
+      display: inline-block;
+    }
+    display: none;
     position: relative;
-    display: inline-block;
     vertical-align: middle;
 
       #logo {
@@ -161,9 +164,6 @@ body {
         background-size: contain;
         background-position: left;
         background-repeat: no-repeat;
-      @include media("<300px") {
-        width: 100px;
-      }
 
       }
 
@@ -172,15 +172,109 @@ body {
       }
   }
 
+    #menu {
+      display: none;
+    }
+    .slicknav_menu {
+      margin-right: 10px;
+      color: white;
+      background-color: #FF7F81;
+      vertical-align: middle;
+      height: auto;
+      ul {
+        padding-top: 10px;
+        color: #FF7F81;
+        font-family: "SingleSleeve";
+        font-size: 2em;
+        @include stroke(2,white);
+        a { color: #FF7F81; }
+        li {
+          display: flex;
+          justify-content: center;
+        }
+      }
+      .slicknav_brand {
+        line-height: 50px;
+        display: inline;
+        height: 50px;
+		    margin-left: 20px;
+        width: 200px;
+        background-image: url("/img/LOGOwhite.png");
+        background-size: contain;
+        background-position: left;
+        background-repeat: no-repeat;
+
+      }
+
+      a:focus .slicknav_brand {
+        background-image: url("/img/re-design/LOGOpinkwhite.png");
+      }
+
+      .slicknav_btn {
+      line-height: 50px;
+      display: inline;
+      }
+      .slicknav_btn.slicknav_collapsed {
+        background-color: #ed6365;
+        color: #FF7F81;
+        .slicknav_icon-bar {
+          background-color: white;
+        }
+      }
+
+      .slicknav_btn.slicknav_open {
+        background-color: white;//#ed6365;
+        color: #FF7F81;
+        .slicknav_icon-bar {
+          background-color: #FF7F81;
+          box-shadow: 0 1px 0 #ed6365;
+        }
+      }
+
+      @include media(">=desktop") {
+        display: none;
+      }
+      .social {
+        a { color: white; display: inline-block; padding: 0 5px; margin: 0 5px; height: 35px;}
+        div.icon {
+          display: inline-block;
+          width: 35px;
+          height: 35px;
+        }
+        .instagram {
+          background-image: url("/img/INSTAGRAMwhite.png");
+          background-size: contain;
+        }
+        .instagram:hover {
+          background-image: url("/img/re-design/INSTAGRAMpinkwhite.png");
+        }
+        .twitter {
+          background-image: url("/img/TWITTERwhite.png");
+          background-size: contain;
+        }
+        .twitter:hover {
+          background-image: url("/img/re-design/TWITTERpinkwhite.png");
+        }
+        .patreon {
+          background-image: url("/img/PATREONwhite.png");
+          background-size: contain;
+        }
+        .patreon:hover {
+          background-image: url("/img/re-design/PATREONpinkwhite.png");
+        }
+    	a { line-height: normal; }
+      }
+    }
 
     .updates {
+      display: none;
       vertical-align: middle;
-    @include media(">=desktop") {
-      display: inline-block;
-    }
-    margin-right: 20px;
-	line-height: 0.8;
-    float: right;
+      @include media(">=desktop") {
+        display: inline-block;
+      }
+      margin-right: 20px;
+	    line-height: 0.8;
+      float: right;
       color: white;
       text-align: center;
       font-family: "SingleSleeve";
@@ -229,7 +323,7 @@ body {
       display: inline-block;
     }
     display: none;
-  vertical-align: middle;
+    vertical-align: middle;
     color: white;
     font-family: "SingleSleeve";
     font-size: 3em;
@@ -274,30 +368,6 @@ margin-top: -105px;
 	    color: white;
 	    text-shadow: none;
 	}
-}
-#menu {
-  background-color: #FF7F81;
-  display: none;
-  z-index: 100;
-  padding: 15px;
-
-  .link {
-    display: block;
-    color: white;
-    font-family: "SingleSleeve";
-    font-size: 3.5em;
-    margin: 0 0 0 30px;
-  }
-
-  a:hover {
-    color: #FF7F81;
-    @include stroke(3,#FFFFFF);
-  }
-
-  .link.active {
-    color: #FF7F81;
-    @include stroke(3,#FFFFFF);
-  }
 }
 
 .home {

@@ -9,13 +9,27 @@
   <a class="link" href='/#stories'><div>Stories</div></a>
   <a class="link" href='/store#!/MARS-FREEDOM-COLONY-Zine/p/86085846/category=0'><div>Shop</div></a>
   <div class="social">
-    <a href="https://twitter.com/racia_antau"><div class="icon" id="twitter"> </div></a>
-    <a href="https://www.instagram.com/smsgomez/"><div class="icon" id="instagram"> </div></a>
-    <a href="https://www.patreon.com/fabelaro"><div class="icon" id="patreon"> </div></a>
+    <a href="https://twitter.com/racia_antau"><div class="icon twitter"> </div></a>
+    <a href="https://www.instagram.com/lazysquire/"><div class="icon instagram"> </div></a>
+    <a href="https://www.patreon.com/fabelaro"><div class="icon patreon"> </div></a>
   </div>
-      <div class="updates">
-        Updates<br />M W F!
-      </div>
+  <div class="updates">
+    Updates<br />M W F!
+  </div>
+  <ul id="menu">
+  	<li>
+      <a class="{% if page.url contains site.comic.last.url %}active{% endif %}" href='{{site.comics.last.url}}'><div>Latest!</div></a>
+      <a href='/#stories'><div>Stories</div></a>
+      <a href='/store#!/MARS-FREEDOM-COLONY-Zine/p/86085846/category=0'><div>Shop</div></a>
+    </li>
+    <li class="social">
+      <a href="https://twitter.com/racia_antau"><div class="icon twitter"> </div></a>
+      <a href="https://www.instagram.com/lazysquire/"><div class="icon instagram"> </div></a>
+      <a href="https://www.patreon.com/fabelaro"><div class="icon patreon"> </div></a>
+    </li>
+
+  </ul>
+  <div id="mobileMenu"></div>
 
   </div>
 <div class="alert">
