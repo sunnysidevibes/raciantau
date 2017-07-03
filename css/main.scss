@@ -134,9 +134,15 @@ body {
 
 #banner.nav-up {
   top: -86px;
+  @include media(">=desktop") {
+    top: 0;
+  }
 }
 #banner.nav-up.open  {
   top: -320px;
+  @include media(">=desktop") {
+    top: 0;
+  }
 }
 #banner {
   top: 0;
