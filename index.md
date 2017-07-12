@@ -2,7 +2,7 @@
 _hide_content: true
 layout: home
 redirect_from: "/archives"
-image: "/img/re-design/PATREON_banner_PART_1.png"
+image: "/img/slider/SITE_banner.png"
 stories:
   - Nature Calls
   - Cabin Fever
