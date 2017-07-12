@@ -112,13 +112,14 @@ body {
 
 .wrap {
   margin: 0 auto;
-  margin-top: 115px;
+  margin-top: 110px;
 
   @include media(">=tablet", "landscape") {
   }
   @include media(">=desktop") {
 	width: calc(100% - 400px);
     max-width: 756px;
+    margin-top: 140px;
   }
 }
 
@@ -397,6 +398,63 @@ body {
 	    color: white;
 	    text-shadow: none;
 	}
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #FF8080;
+}
+.slick-dots li button::before, .slick-dots li.slick-active button::before {
+  color: #FF8080;
+}
+
+#slider img {
+  width: 99%;
+  margin: auto;
+}
+
+.overlay {
+  position:absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 175px;
+  @include media(">=tablet") {
+    height: 400px;
+  }
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#featured_msg {
+  position:absolute;
+  left: 0;
+  width: 100%;
+  top: 50px;
+  height: 175px;
+  font-size: 3em;
+  @include media(">=tablet") {
+    top:140px;
+    height: 400px;
+    font-size: 5em;
+  }
+  text-align: center;
+  font-family: "SingleSleeve";
+  @include stroke(3, #FF7F81);
+  color: white;
+  span {
+    font-size: 0.5em;
+    margin-top: -40px;
+    @include stroke(1, white);
+    color: black;
+  }
+}
+
+#featured {
+  height: 175px;
+  @include media(">=tablet") {
+    height: 400px;
+  }
+  background-color: white;
+  background-size: 120%;
 }
 
 .home {

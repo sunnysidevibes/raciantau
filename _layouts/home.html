@@ -3,42 +3,26 @@ layout: default
 ---
 
 <div class="home">
-<div class="intro">
-      {% include ad-skyscraper.html side="left" id="pw_adbox_79458_3_0" %}
-      {% include ad-skyscraper.html side="right" id="pw_adbox_79458_3_1" %}
-	<img id="titlecard" lt="RACIANTAU" src="/img/re-design/protagonists.png" />
-	<p>A Comic Anthology On:</p>
-	<div class="themes">
-		<div class="squares">
-			<div>
-				<div class="theme black"><span>Violence</span></div>
-				<img src="/img/re-design/violence.png" />
-			</div>
-			<div>
-				<div class="theme pink"><span>Impermanence</span></div>
-				<img src="/img/re-design/impermanence.png" />
-			</div>
-			<div>
-				<div class="theme black"><span>Isolation</span></div>
-				<img src="/img/re-design/isolation.png" />
-			</div>
-			<div>
-				<div class="theme pink"><span>The Future of<br />Our Species</span></div>
-				<img src="/img/re-design/species.png" />
-			</div>
-		</div>
-
-		<a name="stories"></a>
-		<div class="void">
-			<span>& The Void Which Consumes All Things</span>
-		</div>
-	</div>
-	</div>
-
+  <div class="intro">
+    {% include ad-skyscraper.html side="left" id="pw_adbox_79458_3_0" %}
+    {% include ad-skyscraper.html side="right" id="pw_adbox_79458_3_1" %}
+    <div id="slider">
+      <div> <img src="/img/slider/SITE_banner.png" /> </div>
+      <div>
+        <a href="{{site.comics.last.url}}">
+          <div style="position:relative; background-color:white;">
+            <div class="overlay"> </div>
+            <div id="featured_msg"> Read Our Latest Page! <br /> <span>Updated {{site.comics.last.date | date: "%b %d" }}</span> </div>
+            <div id="featured" style="background-position:center; background-image: url({{site.comics.last.image}});"> </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 
 	<div class="archives">
-		<div class="phase_cont">
-			<h2>- Phase III: Ethics -</h2>
+		<div class="Anthology_cont">
+			<h2>- Anthology III: Ethics -</h2>
 			<div class="story">
 				<div class="left">
 					<h3 class="icons" >
@@ -58,8 +42,8 @@ layout: default
 			</div>
     </div>
 {% include ads01.html %}
-		<div class="phase_cont">
-			<h2>- Phase II: Civics -</h2>
+		<div class="Anthology_cont">
+			<h2>- Anthology II: Civics -</h2>
       <div class="story">
 				<div class="left">
 					<h3 class="icons" >
@@ -130,8 +114,8 @@ layout: default
 			</div>
 		</div>
     {% include ads01.html %}
-		<div class="phase_cont">
-			<h2>- Phase I: Protasis -</h2>
+		<div class="Anthology_cont">
+			<h2>- Anthology I: Protasis -</h2>
 			<div class="story">
 				<div class="left">
 					<h3 class="icons" >
