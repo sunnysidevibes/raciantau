@@ -6,10 +6,10 @@ layout: default
   <div class="intro">
     {% include ad-skyscraper.html side="left" id="pw_adbox_79458_3_0" %}
     {% include ad-skyscraper.html side="right" id="pw_adbox_79458_3_1" %}
-    <div id="slider">
+    <div id="slider" style="position:relative;">
       <div> <img src="/img/slider/SITE_banner.png" /> </div>
       <div>
-        <a href="{{site.comics.last.url}}">
+        <a href="{{site.comics.last.url}}" >
           <div style="position:relative; background-color:white;">
             <div class="overlay"> </div>
             <div id="featured_msg"> Read Our Latest Page! <br /> <span>Updated {{site.comics.last.date | date: "%b %d" }}</span> </div>
