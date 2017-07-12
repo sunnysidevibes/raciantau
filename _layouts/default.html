@@ -15,7 +15,7 @@
     <meta name="twitter:site" content="@racia_antau">
     <meta name="twitter:creator" content="@lazysquire">
     <meta name="twitter:title" content="RACIANTAU{% if page.story %} :: {{page.story}} {% endif %}">
-    <meta name="twitter:description" content="{{page.content}}">
+    <meta name="twitter:description" content="{{page.content | xml_escape | markdownify}}">
     <meta name="twitter:image" content="{{site.url}}{{page.image}}">
 
     {% feed_meta %}
