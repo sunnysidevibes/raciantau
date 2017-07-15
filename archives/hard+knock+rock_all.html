@@ -1,8 +1,8 @@
 ---
 layout: default
-permalink: /archives/A+Wake_all/
+permalink: /archives/Hard+Knock+Rock_all/
 ---
-{% assign pages = site.comics | where_exp: 'page', "page.story == 'A Wake'" | where_exp: "item", "item.title != 'future'" %}
+{% assign pages = site.comics | where_exp: 'page', "page.story == 'Hard Knock Rock'" | where_exp: "item", "item.title != 'future'"  %}
 {% include ads01.html %}
 {% for page in pages %}
     <div id="art">

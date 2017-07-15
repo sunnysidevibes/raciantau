@@ -1,7 +1,7 @@
 ---
 layout: future
 title: future
-story: A Wake
+story: Hard Knock Rock
 image: /img/content/Battlemon-01JPG.jpg
 icon_image: /img/content/BLUSHY.png
 date: 2016-01-01
