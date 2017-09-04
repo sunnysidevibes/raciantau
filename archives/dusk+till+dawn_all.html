@@ -1,0 +1,11 @@
+---
+layout: default
+permalink: /archives/Dusk+Till+Dawn_all/
+---
+{% assign pages = site.comics | where_exp: 'page', "page.story == 'Dusk Till Dawn'" | where_exp: "item", "item.title != 'future'"  %}
+{% include ads01.html %}
+{% for page in pages %}
+    <div id="art">
+      <img title="{{ page.alt }}" src="{{ page.image }}"  />
+    </div>
+{% endfor %}
