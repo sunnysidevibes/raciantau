@@ -230,20 +230,105 @@ image: "/img/slider/SITE_banner.png"
 <h2>XVI</h2>
 <p>If people can be aligned and tranquil,</p>
 <p>Their skin will be ample and smooth,</p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+<p>Their ears and eyes will be acute and clear,</p>
+<p>Their muscles will be supple and their bones will be strong.</p>
+<p>They will then be able to hold up the Great Circle [of the heavens]</p>
+<p>And tread firmly over the Great Square [of the earth].</p>
+<p>They will mirror things with great purity.</p>
+<p>And will perceive things with great clarity.</p>
+<p>Reverently be aware [of the Way] and do not waver,</p>
+<p>And you will daily renew your inner power,</p>
+<p>Thoroughly understand all under the heavens,</p>
+<p>And exhasut everything within the Four Directions.</p>
+<p>To reverently bring forth the effulgence [of the Way]:</p>
+<p>This is called "inwared attainment."</p>
+<p>If you do this but fail to return to it,</p>
+<p>This will cause a wavering in your vitality.</p>
+
+<h2>XVII</h2>
+<p>For all [to practice] this Way;</p>
+<p>You must coil, you must contract,</p>
+<p>You must unciol, you must expand,</p>
+<p>You must be firm, you must be regular [in this practice]</p>
+<p>Hold fast to this excellent [practice]; do not let go of it.</p>
+<p>Chase away the excessive; abandon the trivial.</p>
+<p>And when you reach its ultimate limit</p>
+<p>You will return to the Way and its inner power.</p>
+
+<h2>XVIII</h2>
+<p>When there is a mind that is unimpaired within you,</p>
+<p>It cannot be hidden.</p>
+<p>It will be known in your countenance,</p>
+<p>And seen in your skin color.</p>
+<p>If with this good flow of vital energy you encounter others,</p>
+<p>They will be kinder to you than your own brethren.</p>
+<p>But if with a bad flow of vital energy you encounter others,</p>
+<p>They will harm you with their weapons.</p>
+<p>[This is because] the wordles pronouncement</p>
+<p>Is more rapid than the drumming of thunder.</p>
+<p>The perceptible form of the mind's vital energy</p>
+<p>Is brighter than the sun and moon,</p>
+<p>And more apparent than the concern of parents.</p>
+<p>Rewards are not sufficient to encourage the good;</p>
+<p>Punishments are not sufficient to discourage the bad.</p>
+<p>Yet once this flow of vital energy is achieved,</p>
+<p>All under the heavens will submit.</p>
+<p>And once the mind is made stable,</p>
+<p>All under the heavens will listen.</p>
+
+<h2>XIX</h2>
+<p>By concentrating your vital breath as if numinous,</p>
+<p>The myriad things will all be contained within you.</p>
+<p>Can you concentrate? Can you unite with them?</p>
+<p>Can you not resort to divining by tortoise or milfoil</p>
+<p>Yet know bad and good fortune?</p>
+<p>Can you stop? Can you cease?</p>
+<p>Can you not seek it in others,</p>
+<p>Yet attain it within yourself?</p>
+<p>You think and think about it,</p>
+<p>And think still further about it.</p>
+<p>You think, yet still cannot penetrate it.</p>
+<p>While the ghostly and numinous will penetrate it,</p>
+<p>It is not due to the power of the ghostly and numinous,</p>
+<p>But to the utmost refinement of your essential vital breath.</p>
+<p>When the four limbs are aligned</p>
+<p>And the blood and vital breath are tranquil,</p>
+<p>Unify your awareness, concentrate your mind,</p>
+<p>Then your eyes and ears will not be overstimulated.</p>
+<p>And even the far-off will seem close at hand.</p>
+
+<h2>XX</h2>
+<p>Deep thinking generates knowledge.</p>
+<p>Idleness and carelessness generate worry.</p>
+<p>Cruelty and arrogance generate resentment.</p>
+<p>Worry and grief generate illness.</p>
+<p>When illness reaches a distressing degree, you die.</p>
+<p>When you think about something and don't let fo of it,</p>
+<p>Internally you will be distressed, externally you will be weak.</p>
+<p>Do not plan things out in advance</p>
+<p>Or else your vitality will cede its dwelling.</p>
+<br />
+<p>In eating, it is beset not to fill up;</p>
+<p>In thinking, it is best no to overdo.</p>
+<p>Limit these to the appropriate degree</p>
+<p>And you will naturally reach it [vitality].</p>
+
+<h2>XXI</h2>
+<p>As for the life of all human beings:</p>
+<p>The heavens bring forth their vital essence,</p>
+<p>The earth brings forth their bodies.</p>
+<p>These two combine to make a person.</p>
+<p>When they are in harmony there is vitality;</p>
+<p>When they are not in harmony there is no vitality.</p>
+<p>If we examine the Way of harmonizing them,</p>
+<p>Its essentials are not visible,</p>
+<p>Its signs are not numerous.</p>
+<p>Just let a balanced and aligned [breath] fill your chest</p>
+<p>And it will swirl and blend within your mind,</p>
+<p>This confers longevity.</p>
+<p>When joy and anger are not limited,</p>
+<p>You should make a plan [to limit them].</p>
+<p>Restrict the five sense-desires;</p>
+<p>Cast awat these dual misfortunes.</p>
+<p>Be not joyous, be not angry,</p>
+<p>Just let a balanced and aligned [breathing] fill your chest.</p>
