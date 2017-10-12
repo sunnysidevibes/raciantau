@@ -1,7 +1,7 @@
 ---
 _hide_content: true
 layout: default
-image: "/img/slider/SITE_banner.png"
+image: "/android-chrome-256x256.png"
 ---
 
 <div style='margin: 20px;'>
