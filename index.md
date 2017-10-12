@@ -7,4 +7,4 @@ stories:
   - Nature Calls
   - Cabin Fever
 ---
-A comic anthology on VIOLENCE, IMPERMANENCE, ISOLATION, the FUTURE OF OUR SPECIES, & the VOID WHICH CONSUMES ALL THINGS.
+A disjointed narrative where two kids try to make sense out of a senseless world and their role in it. This webcomic anthology features VIOLENCE, IMPERMANENCE, ISOLATION, the FUTURE OF OUR SPECIES, & the VOID WHICH CONSUMES ALL THINGS. Updates MONDAY & THURSDAY.
