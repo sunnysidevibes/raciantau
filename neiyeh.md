@@ -113,3 +113,18 @@ image: "/img/slider/SITE_banner.png"
 <p>Shifts with things but doesn't change places with them.</p>
 
 <h2>VIII</h2>
+<p>If you can be aligned and be tranquil,</p>
+<p>Only then can you be stable.</p>
+<p>With a stable mind at your core,</p>
+<p>With the eyes and ears acute and clear,</p>
+<p>And with the four limbs firm and fixed,</p>
+<p>You can thereby make a lodging place for the vital essence.</p>
+<p>The vital essence: it is the essence of the vital energy.</p>
+<p>When the vital energy is guided, it [the vital essence] is generated,</p>
+<p>But when it is generated, there is thought,</p>
+<p>When there is thought, there is knowledge,</p>
+<p>But when there is knowledge, the you must stop.</p>
+<p>Whenever the forms of the mind have excessive knowledge,</p>
+<p>You lose your vitality.</p>
+
+<h2>IX</h2>
