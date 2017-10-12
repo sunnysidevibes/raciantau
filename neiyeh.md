@@ -51,7 +51,7 @@ image: "/img/slider/SITE_banner.png"
 
 <h2>IV</h2>
 <p>Clear! as though right by your side.</p>
-<p><Vague! as though it will not be attained.</p>
+<p>Vague! as though it will not be attained.</p>
 <p>Indiscernable! as though beyond the limitless.</p>
 <p>The test of this is not far off:</p>
 <p>Daily we make use of its inner power.</p>
