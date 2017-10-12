@@ -4,7 +4,8 @@ layout: default
 image: "/img/slider/SITE_banner.png"
 ---
 
-<h2 style='font-family:"SingleSleeve";text-align:center;'>Nei-Yeh</h2>
+<div style='margin: 20px;'>
+<h2 style='font-family:"SingleSleeve";font-size:48pt;text-align:center;'>Nei-Yeh</h2>
 <h3>Translation by Harold T. Roth</h3>
 <h2>I</h2>
 <p>The vital essence of all things:</p>
@@ -31,3 +32,5 @@ image: "/img/slider/SITE_banner.png"
 <p>This is called "developing inner power."</p>
 <p>When inner power develops and wisdom emerges,</p>
 <p>The myriad things will, to the last one, be grasped.</p>
+
+</div>
