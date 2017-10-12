@@ -4,7 +4,7 @@ layout: default
 image: "/img/slider/SITE_banner.png"
 ---
 
-<h2 style="font-family:single-sleeve;text-align:center;">Nei-Yeh</h2>
+<h2 style='font-family:"SingleSleeve";text-align:center;'>Nei-Yeh</h2>
 <h3>Translation by Harold T. Roth</h3>
 <h2>I</h2>
 <p>The vital essence of all things:</p>
