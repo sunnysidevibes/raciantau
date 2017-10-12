@@ -69,4 +69,18 @@ image: "/img/slider/SITE_banner.png"
 <p>We call it "the Way."</p>
   
 <h2>V</h2>
-</div>
+<p>The Way has no fixed position;</p>
+<p>It abides within the excellent mind.</p>
+<p>When the mind is tranquil and the vital breath is regular,</p>
+<p>The Way can thereby be halted.</p>
+<p>That Way is not distant from us;</p>
+<p>When people attain it they are sustained</p>
+<p>That Way is not separated from us;</p>
+<p>When people accord with it they are harmonious.</p>
+<br />
+<p>Therefore: Concentrated! as though you could be roped together with it.</p>
+<p>Indiscernable! as though beyond all locations.</p>
+<p>The true state of that Way:</p>
+<p>How could it be conceived of and pronounced upon?</p>
+<p>Cultivate you mind, make your thoughts tranquil,</p>
+<p>And the Way can thereby be attained.</p>
