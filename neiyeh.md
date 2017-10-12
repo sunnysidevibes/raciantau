@@ -2,7 +2,7 @@
 _hide_content: true
 layout: default
 image: "/android-chrome-256x256.png"
-title: Nei-Yeh Translation by Harold D. Roth
+story: Nei-Yeh Translation by Harold D. Roth
 ---
 
 <div style='margin: 20px;'>
