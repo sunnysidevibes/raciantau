@@ -139,3 +139,111 @@ image: "/img/slider/SITE_banner.png"
 <p>Because they grasp the guiding principle of the One.</p>
 
 <h2>X</h2>
+<p>With a well-ordered mind within you,</p>
+<p>Well-ordered words issue forth from your mouth,</p>
+<p>And well-ordered tasks are imposed upon others.</p>
+<p>Then all under the heavens will be well ordered.</p>
+<br />
+<p>"When one word is grasped,</p>
+<p>All under the heavens will submit.</p>
+<p>When one word is fixed,</p>
+<p>All under the heavens will listen."</p>
+<br />
+<p>It is this [word "Way"] to which the saying refers.</p>
+
+<h2>XI</h2>
+<p>When your body is not aligned,</p>
+<p>The inner power will not come.</p>
+<p>When you are not tranquil within,</p>
+<p>Your mind will not be well ordered.</p>
+<p>Align your body, assist the inner power,</p>
+<p>Then it will gradually com on its own.</p>
+
+<h2>XII</h2>
+<p>The numinous [mind]: no one knows its limit;</p>
+<p>It intuitively knows the myriad things.</p>
+<p>Hold it within you, do not let it waver.</p>
+<p>To not disrupt your senses with external things,</p>
+<p>To not disrupt your mind with your sense:</p>
+<p>This is called "grasping it wihtin you."</p>
+
+<h2>XIII</h2>
+<p>There is numinous [mind] naturally residing within;</p>
+<p>One moment it goes, the next it comes,</p>
+<p>And no one is able to conceive of it.</p>
+<p>If you lost it you are inevitable disordered;</p>
+<p>If you attain it you are inevitable well ordered.</p>
+<p>Diligently clean out its lodging place</p>
+<p>And its vital essence will naturally arrive.</p>
+<p>Still your attempts to imagine and conceive of it.</p>
+<p>Relax your efforts to reflect on and control it.</p>
+<p>Be reverent and and diligent</p>
+<p>And its vital essence will naturally stabilize.</p>
+<p>Grasp it and don't let go.</p>
+<p>The the eyes and ears won't overflow</p>
+<p>And the mind will have nothing else to seek.</p>
+<p>When a properly aligned mind resides within you,</p>
+<p>The myriad things will be seen in their proper perspective.</p>
+
+<h2>XIV</h2>
+<p>The Way fills the entire world.</p>
+<p>It is everywhere that people are,</p>
+<p>But people are unable to understand this.</p>
+<p>When you are released by this one word:</p>
+<p>You reach up to the heavens above;</p>
+<p>You stretch down to the earth below;</p>
+<p>You pervadethe nine inhabited regions.</p>
+<p>What does it mean to be released by it?</p>
+<p>The answer resides in the calmness of the mind.</p>
+<p>When your mind is clam, your senses are calmed.</p>
+<p>What makes them well ordered is the mind.</p>
+<p>By means of thhe mind you store the mind:</p>
+<p>Within the mind there is yet another mind.</p>
+<p>That mind within the mind: it is an awareness that precedes words.</p>
+<p>Only after there is awareness does it take shape;</p>
+<p>Only after it takes shape is there a word.</p>
+<p>Only after there is a word is it implemented;</p>
+<p>Only after it is implemented is there order.</p>
+<p>Without order, you will always be chaotic.</p>
+<p>If chaotic, you die.</p>
+
+<h2>XV</h2>
+<p>For those who preserve and naturally generate wital essence</p>
+<p>On the outside a clamness will flourish.</p>
+<p>Stored inside, we take it to be the well spring.</p>
+<p>Floodlike, it harmonizes and equalizes</p>
+<p>And we take it to be the fount of the vital energy.</p>
+<p>When the fount is not dried up,</p>
+<p>The four limbs are firm.</p>
+<p>When the spring is not drained,</p>
+<p>Vital evergy freely circulates through the nine apertures.</p>
+<p>You can then exhaust the heavens and the earth</p>
+<p>And spread over the four seas.</p>
+<p>When you have no delusions within you,</p>
+<p>Externally there will be no disasters.</p>
+<p>Those who keep their minds unimpaired within,</p>
+<p>Externally keep their bodies unimpaired,</p>
+<p>Who do not encounter heavenly disasters</p>
+<p>Or meet with harm at the hands of others,</p>
+<p>Call them Sages.</p>
+
+<h2>XVI</h2>
+<p>If people can be aligned and tranquil,</p>
+<p>Their skin will be ample and smooth,</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
