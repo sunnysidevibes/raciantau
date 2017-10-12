@@ -8,7 +8,7 @@ image: "/img/slider/SITE_banner.png"
 
 <h2 style='font-family:"SingleSleeve";font-size:48pt;text-align:center;'>Nei-Yeh</h2>
 <h3>Translation by <a href="https://vivo.brown.edu/display/hroth">Harold T. Roth</a></h3>
-<h4>If you liked this work, consider purchasing <a href="https://www.goodreads.com/book/show/1630616.Original_Tao">the original published work</a> which includes excellent commentary.</h4>
+<h4>If you enjoyed this translation, consider purchasing <a href="https://www.goodreads.com/book/show/1630616.Original_Tao">the original published work</a> which includes excellent commentary.</h4>
 
 <h2>I</h2>
 <p>The vital essence of all things:</p>
