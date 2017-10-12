@@ -128,3 +128,14 @@ image: "/img/slider/SITE_banner.png"
 <p>You lose your vitality.</p>
 
 <h2>IX</h2>
+<p>Those who can trasnform even a single thing, call them "numinous";</p>
+<p>Those who can alter even a single situation, call them "wise."</p>
+<p>But to transform without expending vital energy; to alter without expending wisdom:</p>
+<p>Only exemplary persons who hold fastto the One are able to do this.</p>
+<p>Hold fast to the One; do not lost it,</p>
+<p>And you will be able to master the myriad things.</p>
+<p>Exemplary persons act upon things,</p>
+<p>And are not acted upon by them,</p>
+<p>Because they grasp the guiding principle of the One.</p>
+
+<h2>X</h2>
