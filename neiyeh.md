@@ -2,12 +2,13 @@
 _hide_content: true
 layout: default
 image: "/android-chrome-256x256.png"
+title: Nei-Yeh Translation by Harold D. Roth
 ---
 
 <div style='margin: 20px;'>
 
 <h2 style='font-family:"SingleSleeve";font-size:48pt;text-align:center;'>Nei-Yeh</h2>
-<h3>Translation by <a href="https://vivo.brown.edu/display/hroth">Harold T. Roth</a></h3>
+<h3>Translation by <a href="https://vivo.brown.edu/display/hroth">Harold D. Roth</a></h3>
 <h4>If you enjoyed this translation, consider purchasing <a href="https://www.goodreads.com/book/show/1630616.Original_Tao">the original published work</a> which includes excellent commentary.</h4>
 
 <h2>I</h2>
