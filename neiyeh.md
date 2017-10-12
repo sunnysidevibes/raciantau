@@ -332,3 +332,83 @@ image: "/img/slider/SITE_banner.png"
 <p>Cast awat these dual misfortunes.</p>
 <p>Be not joyous, be not angry,</p>
 <p>Just let a balanced and aligned [breathing] fill your chest.</p>
+
+<h2>XXII</h2>
+<h4>(Lines 5+ probably later Confucian additions)</h4>
+<p>As for the vitality of all human beings:</p>
+<p>It inevitably occurs because of balanced and aligned [breathing].</p>
+<p>The reason for its loss</p>
+<p>Is inevitably pleasure, anger, worry and anxiety.</p>
+<p>Therefore, to bring your anger to a halt, there is nothing better than poetry;</p>
+<p>To cast off worry there is nothing better than music;</p>
+<p>To limit music there is nothing better than the rites;</p>
+<p>To hold onto the rites there is nothing better than reverence;</p>
+<p>To hold onto reverence there is nothing better than tranquility.</p>
+<p>When you are inwardly tranquil and outwardly reverent</p>
+<p>You are able to return to your innate nature</p>
+<p>And this nature will become greatly stable.</p>
+
+<h2>XXIII</h2>
+<p>For all the Way of eating is that:</p>
+<p>Overfilling yourself with food will impair your vital energy</p>
+<p>And cause your body to deteriorate.</p>
+<p>Overrestricting your concumption causes the bones to wither</p>
+<p>And the blood to congeal.</p>
+<p>The mean between overfilling and overrestricting:</p>
+<p>This is called "harmonious completion."</p>
+<p>It is where the vital essence lodges</p>
+<p>And knowledge is generated.</p>
+<p>When hunger and fullness lose their proper balance,</p>
+<p>You make a plan to correct this.</p>
+<p>When full, move quickly;</p>
+<p>When hungry, neglect your thoughts;</p>
+<p>When old forget worry.</p>
+<p>If when full you don't move quickly,</p>
+<p>Vital energy will not circulate to your limbs</p>
+<p>If when hungry you don't neglect thoughts of food,</p>
+<p>When you finally eat you will not stop.</p>
+<p>If when old you don't forget your worries,</p>
+<p>The fount of your vital energy will rapidly drain out.</p>
+
+<h2>XXIV</h2>
+<p>When you enlarge your mind and let go of it,</p>
+<p>When you relax your vital breath and expand it,</p>
+<p>When your body is calm and unmoving,</p>
+<p>And you can maintain the One and discard the myriad disturbances:</p>
+<p>You will see profit and not be enticed by it,</p>
+<p>You will see harm and not be firghtened by it.</p>
+<p>Relaxed and unwound, yet acutely sensitive,</p>
+<p>In solitude you delight in your own person.</p>
+<p>This is called "revolving the vital breath":</p>
+<p>Your thoughts and deeds seem heavenly</p>
+
+<h2>XXV</h2>
+<p>The vitality of all people</p>
+<p>Inevitably comes FROM THEIR PEACE OF MIND.</p>
+<p>When anxious you lose this guiding thread;</p>
+<p>When angry, you lose this basic point.</p>
+<p>When you are anxious or sad, pleased or angry,</p>
+<p>The Way has no place within you to settle.</p>
+<p>Love and desire: still them!</p>
+<p>Folly and disturbance: correct them!</p>
+<p>Do not push it! do not pull it!</p>
+<p>Good fortune will naturally return to you,</p>
+<p>And that Way will naturally come to you</p>
+<p>So you can rely on and take counsel from it.</p>
+<p>If you are tranquil then you will attain it;</p>
+<p>If you are agitated then you will lose it.</p>
+
+<h2>XXVI</h2>
+<p>That mysterious vital energy within the mind:</p>
+<p>One moment it arrives, the next it departs.</p>
+<p>So fine, there is nothing within it;</p>
+<p>So vast, there is nothing outside it.</p>
+<p>We lose it</p>
+<p>Because of the harm caused by mental agitation.</p>
+<p>When the mind can hold on to tranquility,</p>
+<p>They Way will become naturally stabilized.</p>
+<p>For people who have attained the Way</p>
+<p>It permeates their pore and saturates their hair.</p>
+<p>Within their chest, they remain unvanquished.</p>
+<p>[Follow] this Way of restricting sense-desires</p>
+<p>And the myriad things will not cause you harm.</p>
