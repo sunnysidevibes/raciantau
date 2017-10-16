@@ -133,7 +133,7 @@ story: Nei-Yeh Translation by Harold D. Roth
 <p>Those who can trasnform even a single thing, call them "numinous";</p>
 <p>Those who can alter even a single situation, call them "wise."</p>
 <p>But to transform without expending vital energy; to alter without expending wisdom:</p>
-<p>Only exemplary persons who hold fastto the One are able to do this.</p>
+<p>Only exemplary persons who hold fast to the One are able to do this.</p>
 <p>Hold fast to the One; do not lost it,</p>
 <p>And you will be able to master the myriad things.</p>
 <p>Exemplary persons act upon things,</p>
@@ -159,7 +159,7 @@ story: Nei-Yeh Translation by Harold D. Roth
 <p>When you are not tranquil within,</p>
 <p>Your mind will not be well ordered.</p>
 <p>Align your body, assist the inner power,</p>
-<p>Then it will gradually com on its own.</p>
+<p>Then it will gradually come on its own.</p>
 
 <h2>XII</h2>
 <p>The numinous [mind]: no one knows its limit;</p>
