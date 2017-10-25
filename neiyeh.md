@@ -43,8 +43,8 @@ story: Nei-Yeh Translation by Harold D. Roth
 <p>Are naturally infused and filled with it [the vital essence],</p>
 <p>Are naturally generated and developed [because of] it.</p>
 <p>It is lost</p>
-<p>Inevitably because of sorrow, happiness, joy, anger, desrie, and profit-seeking.</p>
-<p>If you are able to cast off sorrow, happiness, joy, anger, desrie, and profit-seeking,</p>
+<p>Inevitably because of sorrow, happiness, joy, anger, desire, and profit-seeking.</p>
+<p>If you are able to cast off sorrow, happiness, joy, anger, desire, and profit-seeking,</p>
 <p>Your mind will just revert to equanimity.</p>
 <p>The true condition of the mind</p>
 <p>Is that it finds calmness beneficial and, by it, attains repose.</p>
@@ -54,7 +54,7 @@ story: Nei-Yeh Translation by Harold D. Roth
 <h2>IV</h2>
 <p>Clear! as though right by your side.</p>
 <p>Vague! as though it will not be attained.</p>
-<p>Indiscernable! as though beyond the limitless.</p>
+<p>Indiscernible! as though beyond the limitless.</p>
 <p>The test of this is not far off:</p>
 <p>Daily we make use of its inner power.</p>
 <p>The Way is what infuses the body,</p>
@@ -81,7 +81,7 @@ story: Nei-Yeh Translation by Harold D. Roth
 <p>When people accord with it they are harmonious.</p>
 <br />
 <p>Therefore: Concentrated! as though you could be roped together with it.</p>
-<p>Indiscernable! as though beyond all locations.</p>
+<p>Indiscernible! as though beyond all locations.</p>
 <p>The true state of that Way:</p>
 <p>How could it be conceived of and pronounced upon?</p>
 <p>Cultivate you mind, make your thoughts tranquil,</p>
@@ -107,7 +107,7 @@ story: Nei-Yeh Translation by Harold D. Roth
 <p>For the heavens, the ruling principle  is to be aligned.</p>
 <p>For the earth, the ruling principle is to be level.</p>
 <p>For the human beings, the ruling principle is to be tranquil.</p>
-<p>Spring, autum, winter, and summer are the seasons of the heavens.</p>
+<p>Spring, autumn, winter, and summer are the seasons of the heavens.</p>
 <p>Mountains, hills, rivers, and valleys are the resources of the earth.</p>
 <p>Pleasure and anger, accepting and rejecting are the devices of human beings.</p>
 <p>Therefore, the Sage:</p>
@@ -130,7 +130,7 @@ story: Nei-Yeh Translation by Harold D. Roth
 <p>You lose your vitality.</p>
 
 <h2>IX</h2>
-<p>Those who can trasnform even a single thing, call them "numinous";</p>
+<p>Those who can transform even a single thing, call them "numinous";</p>
 <p>Those who can alter even a single situation, call them "wise."</p>
 <p>But to transform without expending vital energy; to alter without expending wisdom:</p>
 <p>Only exemplary persons who hold fast to the One are able to do this.</p>
@@ -167,7 +167,7 @@ story: Nei-Yeh Translation by Harold D. Roth
 <p>Hold it within you, do not let it waver.</p>
 <p>To not disrupt your senses with external things,</p>
 <p>To not disrupt your mind with your sense:</p>
-<p>This is called "grasping it wihtin you."</p>
+<p>This is called "grasping it within you."</p>
 
 <h2>XIII</h2>
 <p>There is numinous [mind] naturally residing within;</p>
@@ -194,12 +194,12 @@ story: Nei-Yeh Translation by Harold D. Roth
 <p>When you are released by this one word:</p>
 <p>You reach up to the heavens above;</p>
 <p>You stretch down to the earth below;</p>
-<p>You pervadethe nine inhabited regions.</p>
+<p>You pervade the nine inhabited regions.</p>
 <p>What does it mean to be released by it?</p>
 <p>The answer resides in the calmness of the mind.</p>
 <p>When your mind is clam, your senses are calmed.</p>
 <p>What makes them well ordered is the mind.</p>
-<p>By means of thhe mind you store the mind:</p>
+<p>By means of the mind you store the mind:</p>
 <p>Within the mind there is yet another mind.</p>
 <p>That mind within the mind: it is an awareness that precedes words.</p>
 <p>Only after there is awareness does it take shape;</p>
@@ -210,15 +210,15 @@ story: Nei-Yeh Translation by Harold D. Roth
 <p>If chaotic, you die.</p>
 
 <h2>XV</h2>
-<p>For those who preserve and naturally generate wital essence</p>
-<p>On the outside a clamness will flourish.</p>
+<p>For those who preserve and naturally generate vital essence</p>
+<p>On the outside a calmness will flourish.</p>
 <p>Stored inside, we take it to be the well spring.</p>
 <p>Floodlike, it harmonizes and equalizes</p>
 <p>And we take it to be the fount of the vital energy.</p>
 <p>When the fount is not dried up,</p>
 <p>The four limbs are firm.</p>
 <p>When the spring is not drained,</p>
-<p>Vital evergy freely circulates through the nine apertures.</p>
+<p>Vital energy freely circulates through the nine apertures.</p>
 <p>You can then exhaust the heavens and the earth</p>
 <p>And spread over the four seas.</p>
 <p>When you have no delusions within you,</p>
@@ -241,16 +241,16 @@ story: Nei-Yeh Translation by Harold D. Roth
 <p>Reverently be aware [of the Way] and do not waver,</p>
 <p>And you will daily renew your inner power,</p>
 <p>Thoroughly understand all under the heavens,</p>
-<p>And exhasut everything within the Four Directions.</p>
+<p>And exhaust everything within the Four Directions.</p>
 <p>To reverently bring forth the effulgence [of the Way]:</p>
-<p>This is called "inwared attainment."</p>
+<p>This is called "inward attainment."</p>
 <p>If you do this but fail to return to it,</p>
 <p>This will cause a wavering in your vitality.</p>
 
 <h2>XVII</h2>
 <p>For all [to practice] this Way;</p>
 <p>You must coil, you must contract,</p>
-<p>You must unciol, you must expand,</p>
+<p>You must uncoil, you must expand,</p>
 <p>You must be firm, you must be regular [in this practice]</p>
 <p>Hold fast to this excellent [practice]; do not let go of it.</p>
 <p>Chase away the excessive; abandon the trivial.</p>
@@ -266,7 +266,7 @@ story: Nei-Yeh Translation by Harold D. Roth
 <p>They will be kinder to you than your own brethren.</p>
 <p>But if with a bad flow of vital energy you encounter others,</p>
 <p>They will harm you with their weapons.</p>
-<p>[This is because] the wordles pronouncement</p>
+<p>[This is because] the wordless pronouncement</p>
 <p>Is more rapid than the drumming of thunder.</p>
 <p>The perceptible form of the mind's vital energy</p>
 <p>Is brighter than the sun and moon,</p>
@@ -305,7 +305,7 @@ story: Nei-Yeh Translation by Harold D. Roth
 <p>Cruelty and arrogance generate resentment.</p>
 <p>Worry and grief generate illness.</p>
 <p>When illness reaches a distressing degree, you die.</p>
-<p>When you think about something and don't let fo of it,</p>
+<p>When you think about something and don't let go of it,</p>
 <p>Internally you will be distressed, externally you will be weak.</p>
 <p>Do not plan things out in advance</p>
 <p>Or else your vitality will cede its dwelling.</p>
@@ -331,7 +331,7 @@ story: Nei-Yeh Translation by Harold D. Roth
 <p>When joy and anger are not limited,</p>
 <p>You should make a plan [to limit them].</p>
 <p>Restrict the five sense-desires;</p>
-<p>Cast awat these dual misfortunes.</p>
+<p>Cast away these dual misfortunes.</p>
 <p>Be not joyous, be not angry,</p>
 <p>Just let a balanced and aligned [breathing] fill your chest.</p>
 
@@ -354,7 +354,7 @@ story: Nei-Yeh Translation by Harold D. Roth
 <p>For all the Way of eating is that:</p>
 <p>Overfilling yourself with food will impair your vital energy</p>
 <p>And cause your body to deteriorate.</p>
-<p>Overrestricting your concumption causes the bones to wither</p>
+<p>Overrestricting your consumption causes the bones to wither</p>
 <p>And the blood to congeal.</p>
 <p>The mean between overfilling and overrestricting:</p>
 <p>This is called "harmonious completion."</p>
@@ -378,7 +378,7 @@ story: Nei-Yeh Translation by Harold D. Roth
 <p>When your body is calm and unmoving,</p>
 <p>And you can maintain the One and discard the myriad disturbances:</p>
 <p>You will see profit and not be enticed by it,</p>
-<p>You will see harm and not be firghtened by it.</p>
+<p>You will see harm and not be frightened by it.</p>
 <p>Relaxed and unwound, yet acutely sensitive,</p>
 <p>In solitude you delight in your own person.</p>
 <p>This is called "revolving the vital breath":</p>
