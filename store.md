@@ -1,5 +1,6 @@
 ---
 _hide_content: true
+image: /img/slider/mfc_banner.jpg
 layout: default
 ---
 
