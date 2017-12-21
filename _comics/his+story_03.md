@@ -1,6 +1,6 @@
 ---
 layout: page
-story: HIS STORY REPEATS ITSELF
+story: His Story Repeats Itself
 alt:
 image: /img/content/HSRI/7xPlstj2l2DGSXqh.JPG
 thumb_image: /img/content/HSRI/7xPlstj2l2DGSXqh.JPG

@@ -1,6 +1,9 @@
 ---
 _hide_content: true
 title: Desperate Times
+anthology: Protasis
+chapter: 01
+order: 05
 character: RACIANTAU
 icon_image: /img/content/ICON01e-DESPERATE-TIMES.png
 banner_image: /img/content/TITLE_-_DESPERATE_TIMES.png

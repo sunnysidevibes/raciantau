@@ -1,0 +1,208 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+@font-face {
+  font-family: "SingleSleeve";
+  src: url(../fonts/sing_14l.ttf) format("truetype");
+}
+/// Stroke font-character
+/// @param  {Integer} $stroke - Stroke width
+/// @param  {Color}   $color  - Stroke color
+/// @return {List}            - text-shadow list
+@function stroke($stroke, $color) {
+  $shadow: ();
+  $from: $stroke*-1;
+  @for $i from $from through $stroke {
+   @for $j from $from through $stroke {
+      $shadow: append($shadow, $i*1px $j*1px 0 $color, comma);
+    }
+  }
+  @return $shadow;
+}
+/// Stroke font-character
+/// @param  {Integer} $stroke - Stroke width
+/// @param  {Color}   $color  - Stroke color
+/// @return {Style}           - text-shadow
+@mixin stroke($stroke, $color) {
+  text-shadow: stroke($stroke, $color);
+}
+
+@mixin rotate() {
+
+    -webkit-transform: rotate(90deg);
+    -webkit-transform-origin: left top;
+    -moz-transform: rotate(90deg);
+    -moz-transform-origin: left top;
+    -ms-transform: rotate(90deg);
+    -ms-transform-origin: left top;
+    -o-transform: rotate(90deg);
+    -o-transform-origin: left top;
+    transform: rotate(90deg);
+    transform-origin: left top;
+
+    padding-left: 20px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    white-space: nowrap;
+}
+
+@import "include_media";
+
+// Our variables
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    755px;
+
+$on-palm:          600px;
+$on-laptop:        755px;
+
+$breakpoints: (
+  'tiny': 300px,
+  'phone': 360px,
+  'tablet': 768px,
+  'desktop': 1024px
+  );
+// Minima also includes a mixin for defining media queries.
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+a {
+  color: #FF7F81;
+}
+
+
+div {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  min-width: 300px;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: white;
+  font-family: "Montserrat";
+}
+
+#disqus_thread {
+	margin: 20px;
+}
+
+
+
+.home {
+	width: 100%;
+	margin: 50px;
+}
+
+.nav {
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	#logo {
+		height: 50px;
+		position: relative;
+		margin-right: 20px;
+		width: 100%;
+		background-image: url("/img/LOGOwhitepink.png");
+		background-size: contain;
+		background-position: right;
+		background-repeat: no-repeat;
+
+	}
+	#stories {
+		margin-top: 20px;
+		text-align: right;
+		.anthology {
+			margin-top: 10px;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+	}
+}
+
+#main {
+	margin: 0 auto;
+	margin-left: 50px;
+	width: 756px;
+}
+
+#art {
+  position: relative;
+  .artimg {
+    display: block;
+    width: calc(100% - 10px);
+    border: 5px solid #FF7F81;
+  }
+.artimg.refresh {
+    height: 831.109px;
+	}
+
+  .adbox {
+    img {
+      border: none;
+      width: auto;
+    }
+  }
+
+}
+
+
+#navigation {
+  width: auto;
+  background-color: #FF7F81;
+  color: white;
+  padding: 15px 10px;
+
+  display: flex;
+  display: -webkit-flex;
+
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+
+}
+
+#navigation a {
+  font-family: "SingleSleeve";
+  line-height: 1;
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+}
+
+#navigation i {
+  font-size: 40px;
+  color: #E47F81;
+  cursor: default;
+}
+
+#navigation i.active {
+  color: white;
+  cursor: pointer;
+}
+
+#navigation i.active:hover {
+  color: #fbb5a1;
+}

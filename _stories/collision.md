@@ -1,6 +1,9 @@
 ---
 _hide_content: true
 title: Collision 2016
+anthology: Protasis
+chapter: 01
+order: 02
 character: Antau
 icon_image: /img/icons/collision.png
 banner_image: /img/banners/collision.png

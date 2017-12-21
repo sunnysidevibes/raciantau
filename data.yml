@@ -1,0 +1,16 @@
+anthologies:
+	- title: Protasis
+	  order: 01
+      stories:
+		- title: Battlemon
+		  order: 01
+		  character: Racia
+		  icon_image: /img/icons/battlemon.png
+		  desc_html: 'In a cheap but legally permissible knockoff world in the style of <em>Pokemon</em> or <em>Monster Rancher</em> we peek into the shared lives of a young woman (Racia) and her Battlemon partner (Bunners) as they navigate the expectations society has of them and they have of each other. 26 pages.'
+        - title: Desperate Times
+          anthology: Protasis
+          order: 05
+          character: RACIANTAU
+          icon_image: /img/content/ICON01e-DESPERATE-TIMES.png
+          desc_html: '<p>Stranded in the woods after an upriver trip gone wrong, Scouts Racia and Antau struggle to find their way back to civilization. Tensions rise as the sun sets. 6 pages. </p>'
+          
