@@ -3,7 +3,7 @@ _hide_content: true
 title: Cabin Fever
 anthology: Protasis
 chapter: 01
-order: 03
+order: 01
 character: Racia
 icon_image: /img/content/icon03-cabin-fever.png
 banner_image: /img/content/title---cabin-fever.png

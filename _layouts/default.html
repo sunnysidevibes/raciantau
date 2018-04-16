@@ -17,7 +17,7 @@
     <meta name="twitter:title" content="RACIANTAU{% if page.story %} :: {{page.story}} {% endif %}">
     <meta name="twitter:description" content="{{page.content | xml_escape }}">
     <meta name="twitter:image" content="{{site.url}}{{page.image}}">
-	  
+
     <meta name="og:image" content="{{site.url}}{{page.image}}">
 
     {% feed_meta %}
@@ -32,12 +32,8 @@
 
   </head>
   <body>
-    <div id="main">
-      <div class="wrap">
         {{content}}
-      </div>
-    </div>
-	
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="/css/jquery.slicknav.min.js"></script>
 <script type="text/javascript" src="/css/slick/slick.min.js"></script>

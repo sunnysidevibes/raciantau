@@ -3,112 +3,89 @@ layout: default
 ---
 
 <div class="home">
-	<div class="nav">
-		<div id="logo"></div>
-		<div id="stories">
-		{% assign anthologies = site.data.anthologies | sort: 'order' %}
-		{% for anthology in anthologies %}
-			<div class="anthology">{{anthology.title}}</div>
-			{% assign stories = anthology.stories | sort: 'order' %}
-			{% for story in stories %}
-				{{ story.title }}<br />
+
+	{% assign posts = site.comics | where_exp: "item", "item.story == site.comics.last.story" %}
+	{% assign total = posts.size %}
+	{% capture total_str %}
+	{% if total < 10 %}0{% endif %}{{ total }}
+	{% endcapture %}
+
+	{% assign allprev = posts | where_exp: "item", "item.date < site.comics.last.date" | where_exp: "item", "item.title != 'future'"%}
+	{% assign allnext = posts | where_exp: "item", "item.date > site.comics.last.date" | where_exp: "item", "item.title != 'future'" %}
+	{% assign future = site.comics | where_exp: "item", "item.title == 'future'" %}
+
+	{% if allnext.first %}
+	{% else %}
+		{% if future.first.story == site.comics.last.story %}
+			{% assign allnext = future %}
+		{% endif %}
+	{% endif %}
+
+	{% assign first = allprev.first %}
+	{% assign prev = allprev.last %}
+	{% assign next = allnext.first %}
+	{% assign last = allnext.last %}
+
+	{% assign post = site.comics.last %}
+
+		<div id="detail">
+			{% assign anthologies = site.data.anthologies | sort: 'order' %}
+			{% for anthology in anthologies %}
+				{% assign match = anthology.stories | where_exp: 'item', 'item.title == post.story' %}
+				{% if match.first %}{% assign story = match.first %}{% endif %}
 			{% endfor %}
-		{% endfor %}
-		</div>
-	</div>
-	
-	<section id="main">
-			{% assign posts = site.comics | where_exp: "item", "item.story == site.comics.last.story" %}
-			{% assign total = posts.size %}
-			{% capture total_str %}
-			{% if total < 10 %}0{% endif %}{{ total }}
-			{% endcapture %}
 
-			{% assign allprev = posts | where_exp: "item", "item.date < site.comics.last.date" | where_exp: "item", "item.title != 'future'"%}
-			{% assign allnext = posts | where_exp: "item", "item.date > site.comics.last.date" | where_exp: "item", "item.title != 'future'" %}
-			{% assign future = site.comics | where_exp: "item", "item.title == 'future'" %}
-
-			{% if allnext.first %}
-			{% else %}
-				{% if future.first.story == site.comics.last.story %}
-					{% assign allnext = future %}
-				{% endif %}
-			{% endif %}
-
-			{% assign first = allprev.first %}
-			{% assign prev = allprev.last %}
-			{% assign next = allnext.first %}
-			{% assign last = allnext.last %}
-
-
-		<div id="navigation" class="">
-
-			<a href="{{ first.url }}">
-			  <i id="first_arrow" title="First" class="fa fa-angle-double-left {% if first %}active{% endif %}"></i>
-			</a>
-			<a title="Previous" href="{{ prev.url }}">
-			  <i id="prev_arrow" class="fa fa-angle-left {% if prev %}active{% endif %}"></i>
-			</a>
-			<a title="Page List">
-			  {{ site.comics.last.title | slice: -2, 2 }} / {{ total_str }}
-			</a>
-			<a title="Next" {% if next %} href="{{ next.url }}" {% endif %}>
-			  <i id="next_arrow" class="fa fa-angle-right {% if next %}active{% endif %}"></i>
-			</a>
-			<a title="Latest" {% if last %} href="{{ last.url }}" {% endif %} >
-			  <i id="last_arrow" class="fa fa-angle-double-right {% if last %}active{% endif %}"></i>
-			</a>
-		</div>
-		
-		<div id="art">
-		  <object class="artimg" data="{{ site.comics.last.image }}" type="image/jpg">
-			<img class="artimg refresh" src="/img/re-design/sorry.jpg" />
-		  </object>
-		</div>
-
-		<div id="navigation" class="">
-
-			<a href="{{ first.url }}">
-			  <i id="first_arrow" title="First" class="fa fa-angle-double-left {% if first %}active{% endif %}"></i>
-			</a>
-			<a title="Previous" href="{{ prev.url }}">
-			  <i id="prev_arrow" class="fa fa-angle-left {% if prev %}active{% endif %}"></i>
-			</a>
-			<a title="Page List">
-			  {{ site.comics.last.title | slice: -2, 2 }} / {{ total_str }}
-			</a>
-			<a title="Next" {% if next %} href="{{ next.url }}" {% endif %}>
-			  <i id="next_arrow" class="fa fa-angle-right {% if next %}active{% endif %}"></i>
-			</a>
-			<a title="Latest" {% if last %} href="{{ last.url }}" {% endif %} >
-			  <i id="last_arrow" class="fa fa-angle-double-right {% if last %}active{% endif %}"></i>
-			</a>
-		</div>
-	</section>
-
-<!-- 	<div id="stories" class="archives">
-		<div class="Anthology_cont">
-			<h2>- Anthology III: Ethics -</h2>
 			<div class="story">
-				<div class="left">
-					<h3 class="icons" >
-						<img class="icon" src="/img/re-design/ICON0A_RACIA.png" />
-						<img class="icon" src="/img/re-design/ICON0A_ANTAU.png" />
-					</h3>
-					<a href="/comics/dusk+till+dawn_01"><img class="clip" src="/img/re-design/screenshot.png" /></a>
-          <div id="new_notification">Updates M & Th!</div>
-					<h4>35 Pages</h4>
-				</div>
 				<div class="right">
-					<h3><a href="/comics/dusk+till+dawn_01">Dusk Till Dawn</a>
-						<img class="icon" src="/img/re-design/ICON0A_RACIA.png" />
-						<img class="icon" src="/img/re-design/ICON0A_ANTAU.png" />
-					</h3>
-					<h4>35 Pages</h4>
-					<p>War rages across the Rockhopper Asteroids! Under the light of a dying sun, the sister societies of Dusk and Dawn are locked in unending battle. Suddenly, on the horizon, a solitary starsmith (Undetu) arrives. Can he convince the warring states to put aside their differences long enough to save them all? Do they even want to be saved?</p>
+						<h3>
+							{{ story.title }}
+	            <br />
+	            {% capture character %} {{ story.character  | downcase }} {% endcapture %}
+							{% if character contains "racia" %}<img class="icon" src="/img/re-design/ICON0A_RACIA.png" />{% endif %}
+							{% if character contains "antau" %}<img class="icon" src="/img/re-design/ICON0A_ANTAU.png" />{% endif %}
+						</h3>
+						<p>{{ story.desc_html }}</p>
+						<img class="clip" src="{{story.icon_image}}"/>
 				</div>
 			</div>
-			
 		</div>
-	</div> -->
+	<div class="nav">
+			<div id="logo"></div>
+			<div id="stories">
+			{% assign anthologies = site.data.anthologies | sort: 'order' %}
+			{% for anthology in anthologies %}
+				<div class="anthology">{{anthology.title}}</div>
+				{% assign stories = anthology.stories | sort: 'order' %}
+				{% for story in stories %}
+					<a {% if post.story == story.title %}class="active"{% endif %} href="{{story.first_page}}">{{ story.title }}</a><br />
+				{% endfor %}
+			{% endfor %}
+			</div>
+	</div>
+	<section id="main">
+	<div id="art">
+		<object class="artimg" data="{{ post.image }}" type="image/jpg">
+		<img class="artimg refresh" src="/img/re-design/sorry.jpg" />
+		</object>
+	</div>
+	<div id="navigation" class="">
+		<div class="inset">
+			<a href="{{ first.url }}">
+				<i id="first_arrow" title="First" class="fa fa-angle-double-left {% if first %}active{% endif %}"></i>
+			</a>
+			<a title="Previous" href="{{ prev.url }}">
+				<i id="prev_arrow" class="fa fa-angle-left {% if prev %}active{% endif %}"></i>
+			</a>
+			<a title="Page List">
+				{{ site.comics.last.title | slice: -2, 2 }} / {{ total_str }}
+			</a>
+			<a title="Next" {% if next %} href="{{ next.url }}" {% endif %}>
+				<i id="next_arrow" class="fa fa-angle-right {% if next %}active{% endif %}"></i>
+			</a>
+			<a title="Latest" {% if last %} href="{{ last.url }}" {% endif %} >
+				<i id="last_arrow" class="fa fa-angle-double-right {% if last %}active{% endif %}"></i>
+			</a>
+		</div>
+	</div>
+	</section>
 </div>
