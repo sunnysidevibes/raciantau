@@ -4,64 +4,44 @@ layout: default
 
 <div class="home">
 
-	{% assign posts = site.comics | where_exp: "item", "item.story == site.comics.last.story" %}
-	{% assign total = posts.size %}
-	{% capture total_str %}
-	{% if total < 10 %}0{% endif %}{{ total }}
-	{% endcapture %}
+	{% assign posts = site.comics | where_exp: "item", "item.story == page.story" %}
+	{% assign allprev = posts | where_exp: "item", "item.date < page.date" %}
+	{% assign allnext = posts | where_exp: "item", "item.date > page.date" %}
 
-	{% assign allprev = posts | where_exp: "item", "item.date < site.comics.last.date" | where_exp: "item", "item.title != 'future'"%}
-	{% assign allnext = posts | where_exp: "item", "item.date > site.comics.last.date" | where_exp: "item", "item.title != 'future'" %}
-	{% assign future = site.comics | where_exp: "item", "item.title == 'future'" %}
+	{% assign prev_page = allprev.last %}
+	{% assign next_page = allnext.first %}
 
-	{% if allnext.first %}
+  {% assign stories = site.data.stories | sort: 'order' %}
+  {% assign story_this = stories | where_exp: "item", "item.title == page.story" %}
+  {% assign story_this = story_this.first %}
+  
+  {% assign stories_prev = stories | where_exp: "item", "item.order < story_this.order" %}
+  {% assign stories_next = stories | where_exp: "item", "item.order > story_this.order" %}
+
+  {% assign story_prev = stories_prev.last %}
+  {% assign story_next = stories_next.first %}
+
+  {% assign next_story = story_next %}
+  {% assign prev_story = story_prev %}
+
+  {% if prev_page %}
+    {% assign prev_story = story_this %}
+  {% else %}
+    {% assign posts = site.comics | where_exp: "item", "item.story == prev_story.title" %}
+    {% assign prev_page = posts.last %}
+  {% endif %}
+
+	{% if next_page %}
 	{% else %}
-		{% if future.first.story == site.comics.last.story %}
-			{% assign allnext = future %}
-		{% endif %}
+    {% assign next_page = next_story.first_page %}
 	{% endif %}
 
-	{% assign first = allprev.first %}
-	{% assign prev = allprev.last %}
-	{% assign next = allnext.first %}
-	{% assign last = allnext.last %}
 
-	{% assign post = site.comics.last %}
 
-		<div id="detail">
-			{% assign anthologies = site.data.anthologies | sort: 'order' %}
-			{% for anthology in anthologies %}
-				{% assign match = anthology.stories | where_exp: 'item', 'item.title == post.story' %}
-				{% if match.first %}{% assign story = match.first %}{% endif %}
-			{% endfor %}
+	{% assign post = page %}
 
-			<div class="story">
-				<div class="right">
-						<h3>
-							{{ story.title }}
-	            <br />
-	            {% capture character %} {{ story.character  | downcase }} {% endcapture %}
-							{% if character contains "racia" %}<img class="icon" src="/img/re-design/ICON0A_RACIA.png" />{% endif %}
-							{% if character contains "antau" %}<img class="icon" src="/img/re-design/ICON0A_ANTAU.png" />{% endif %}
-						</h3>
-						<p>{{ story.desc_html }}</p>
-						<img class="clip" src="{{story.icon_image}}"/>
-				</div>
-			</div>
-		</div>
-	<div class="nav">
-			<div id="logo"></div>
-			<div id="stories">
-			{% assign anthologies = site.data.anthologies | sort: 'order' %}
-			{% for anthology in anthologies %}
-				<div class="anthology">{{anthology.title}}</div>
-				{% assign stories = anthology.stories | sort: 'order' %}
-				{% for story in stories %}
-					<a {% if post.story == story.title %}class="active"{% endif %} href="{{story.first_page}}">{{ story.title }}</a><br />
-				{% endfor %}
-			{% endfor %}
-			</div>
-	</div>
+
+
 	<section id="main">
 	<div id="art">
 		<object class="artimg" data="{{ post.image }}" type="image/jpg">
@@ -70,22 +50,55 @@ layout: default
 	</div>
 	<div id="navigation" class="">
 		<div class="inset">
-			<a href="{{ first.url }}">
-				<i id="first_arrow" title="First" class="fa fa-angle-double-left {% if first %}active{% endif %}"></i>
+			<a title="Previous Story" {% if prev_story %} href="{{ prev_story.first_page }}" {% endif %}>
+				<i id="first_arrow" title="First" class="fa fa-angle-double-left {% if prev_story %}active{% endif %}"></i>
 			</a>
-			<a title="Previous" href="{{ prev.url }}">
-				<i id="prev_arrow" class="fa fa-angle-left {% if prev %}active{% endif %}"></i>
+			<a title="Previous" {% if prev_page %} href="{{ prev_page.url }}" {% endif %}>
+				<i id="prev_arrow" class="fa fa-angle-left {% if prev_page %}active{% endif %}"></i>
 			</a>
-			<a title="Page List">
-				{{ site.comics.last.title | slice: -2, 2 }} / {{ total_str }}
+			<a title="Next" {% if next_page %} href="{{ next_page.url }}" {% endif %}>
+				<i id="next_arrow" class="fa fa-angle-right {% if next_page %}active{% endif %}"></i>
 			</a>
-			<a title="Next" {% if next %} href="{{ next.url }}" {% endif %}>
-				<i id="next_arrow" class="fa fa-angle-right {% if next %}active{% endif %}"></i>
-			</a>
-			<a title="Latest" {% if last %} href="{{ last.url }}" {% endif %} >
-				<i id="last_arrow" class="fa fa-angle-double-right {% if last %}active{% endif %}"></i>
+			<a title="Next Story" {% if next_story %} href="{{ next_story.first_page }}" {% endif %} >
+				<i id="last_arrow" class="fa fa-angle-double-right {% if next_story %}active{% endif %}"></i>
 			</a>
 		</div>
 	</div>
-	</section>
+	</section>	
+	<div id="detail">
+    {% assign match = site.data.stories | where_exp: 'item', 'item.title == post.story' %}
+    {% if match.first %}{% assign story = match.first %}{% endif %}
+		<div class="nav">
+				<div id="header">
+					<div id="button">
+						<i title="Menu" class="fa fa-bars"></i>
+					</div>
+					<div id="logo"></div>
+				</div>
+				<div id="stories">
+				{% assign stories = site.data.stories | sort: 'order' %}
+				{% for story in stories %}
+          {% if story.anthology == anthology %}
+          {% else %}
+            {% assign anthology = story.anthology %}
+            <div class="anthology">{{anthology}}</div>
+          {% endif %}
+						<a {% if post.story == story.title %}class="active"{% endif %} href="{{story.first_page}}">{{ story.title }}</a><br />
+				{% endfor %}
+				</div>
+		</div>
+		<div class="story">
+			<div class="right">
+					<h3>
+						{{ story.title }}
+            <br />
+            {% capture character %} {{ story.character  | downcase }} {% endcapture %}
+						{% if character contains "racia" %}<img class="icon" src="/img/re-design/ICON0A_RACIA.png" />{% endif %}
+						{% if character contains "antau" %}<img class="icon" src="/img/re-design/ICON0A_ANTAU.png" />{% endif %}
+					</h3>
+					<p>{{ story.desc_html }}</p>
+					<img class="clip" src="{{story.icon_image}}"/>
+			</div>
+		</div>
+	</div>
 </div>
