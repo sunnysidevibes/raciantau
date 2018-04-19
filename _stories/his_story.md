@@ -1,6 +1,6 @@
 ---
 _hide_content: true
-title: HIS STORY REPEATS ITSELF
+title: His Story Repeats Itself
 character: Antau
 icon_image: /img/icons/ICON02b_HIS_STORY.png
 poster_image: /img/POSTER02b_HIS_STORY.png

@@ -1,6 +1,9 @@
 ---
 _hide_content: true
 title: Battlemon
+anthology: Protasis
+chapter: 01
+order: 03
 character: Racia
 icon_image: /img/icons/battlemon.png
 banner_image: /img/banners/battlemon.png

@@ -1,106 +1,140 @@
 ---
 layout: default
 ---
-<section id="main">
-        {% assign posts = site.comics | where_exp: "item", "item.story == page.story" %}
-        {% assign total = posts.size %}
-        {% capture total_str %}
-        {% if total < 10 %}0{% endif %}{{ total }}
-        {% endcapture %}
 
-        {% assign allprev = posts | where_exp: "item", "item.date < page.date" | where_exp: "item", "item.title != 'future'"%}
-        {% assign allnext = posts | where_exp: "item", "item.date > page.date" | where_exp: "item", "item.title != 'future'" %}
-		{% assign future = site.comics | where_exp: "item", "item.title == 'future'" %}
+<div class="home">
 
-		{% if allnext.first %}
-		{% else %}
-			{% if future.first.story == page.story %}
-				{% assign allnext = future %}
-			{% endif %}
-		{% endif %}
+	{% assign posts = site.comics | where_exp: "item", "item.story == page.story" %}
+	{% assign allprev = posts | where_exp: "item", "item.date < page.date" %}
+	{% assign allnext = posts | where_exp: "item", "item.date > page.date" %}
+  {% assign total = posts.size %}
+       {% capture total_str %}
+       {% if total < 10 %}0{% endif %}{{ total }}
+  {% endcapture %}
 
-        {% assign first = allprev.first %}
-        {% assign prev = allprev.last %}
-        {% assign next = allnext.first %}
-        {% assign last = allnext.last %}
+	{% assign prev_page = allprev.last %}
+	{% assign next_page = allnext.first %}
 
+  {% assign stories = site.data.stories | sort: 'order' %}
+  {% assign story_this = stories | where_exp: "item", "item.title == page.story" %}
+  {% assign story_this = story_this.first %}
+  
+  {% assign stories_prev = stories | where_exp: "item", "item.order < story_this.order" %}
+  {% assign stories_next = stories | where_exp: "item", "item.order > story_this.order" %}
 
-    <div id="art">
-	  <object class="artimg" data="{{ page.image }}" type="image/jpg">
-	    <img class="artimg refresh" src="/img/re-design/sorry.jpg" />
-	  </object>
-    </div>
+  {% assign story_prev = stories_prev.last %}
+  {% assign story_next = stories_next.first %}
 
-    <div id="navigation" class="">
+  {% assign next_story = story_next %}
+  {% assign prev_story = story_prev %}
 
-        <a href="{{ first.url }}">
-          <i id="first_arrow" title="First" class="fa fa-angle-double-left {% if first %}active{% endif %}"></i>
-        </a>
-        <a title="Previous" href="{{ prev.url }}">
-          <i id="prev_arrow" class="fa fa-angle-left {% if prev %}active{% endif %}"></i>
-        </a>
-        <a title="Page List">
-          {{ page.title | slice: -2, 2 }} / {{ total_str }}
-        </a>
-        <a title="Next" {% if next %} href="{{ next.url }}" {% endif %}>
-          <i id="next_arrow" class="fa fa-angle-right {% if next %}active{% endif %}"></i>
-        </a>
-        <a title="Latest" {% if last %} href="{{ last.url }}" {% endif %} >
-          <i id="last_arrow" class="fa fa-angle-double-right {% if last %}active{% endif %}"></i>
-        </a>
-    </div>
+  {% if prev_page %}
+    {% assign prev_story = story_this %}
+  {% else %}
+    {% assign posts = site.comics | where_exp: "item", "item.story == prev_story.title" %}
+    {% assign prev_page = posts.last %}
+  {% endif %}
 
-  <div class="flow">
-
-      {% assign match = site.stories | where_exp: 'item', 'item.title == page.story' %}
-      {% assign story = match.first %}
-
-    <div class="commentary">
-
-    <div class="article">
-      <div class="side">
-        <h1>{{ page.date | date: "%A %b %d, %y" }}</h1>
-        <a href="{{ page.url }}#disqus_thread">Comments</a>
-      </div>
-      <div class="content">
-      <img src="{{ page.icon_image }}" />{{ page.content }}</div>
-    </div>
+	{% if next_page %}
+	{% else %}
+    {% assign posts = site.comics | where_exp: "item", "item.story == next_story.title" %}
+    {% assign next_page = posts.first %}
+	{% endif %}
 
 
-    <div class="post_nav">
-      {% if prev %}
-      <a  id="prev" href="{{prev.url}}" >Previous</a>
-      {% endif %}
-      {% if next %}
-      <a  id="next" href="{{next.url}}" >Next</a>
-      {% endif %}
-    </div>
+	{% assign post = page %}
+ 
 
-
+	<section id="main">
+   <div id="header">
+    <div id="logo"></div>
+    <li class="social">
+      <a href="https://twitter.com/lazysquire"><div class="icon twitter"></div></a>
+      <a href="https://www.instagram.com/lazysquire/"><div class="icon instagram"></div></a>
+      <a href="https://www.patreon.com/lazysquire"><div class="icon patreon"></div></a>
+    </li>
   </div>
 
-        <div id="sidebar">
-          <div class="sidebar_col">
-                    <img class="archive_icon" src="{{ story.icon_image }}" />
-
-
-        <div class="box blurb">
-          {{ story.desc_html | safeHTML }}
-          <a href="/archives/{{story.title | url_encode}}">All Pages</a>
+	<div id="art">
+		<object class="artimg" data="{{ post.image }}" type="image/jpg">
+		<img class="artimg refresh" src="/img/re-design/sorry.jpg" />
+		</object>
+	</div>
+	
+	<div id="navigation" class="">
+		<div class="inset">
+			<a title="Previous Story" {% if prev_story %} class="{% if prev_story %}active{% endif %}" href="{{ prev_story.first_page }}" {% endif %}>
+				<i id="first_arrow" title="First" class="fa fa-angle-double-left "></i>
+        <p> Previous Story </p>
+			</a>
+			<a title="Previous" {% if prev_page %} class="{% if prev_page %}active{% endif %}" href="{{ prev_page.url }}" {% endif %}>
+				<i id="prev_arrow" class="fa fa-angle-left "></i>
+        <p> Previous Page </p>
+			</a>
+        <div id="buttontop" class="button" onClick="myFunction()">
+          <i title="Menu" class="fa fa-info"></i>
         </div>
-  <a href="http://www.patreon.com/lazysquire"><img width="250px" src="/img/re-design/PATREON_BEAR2.png" /></a>
-      </div>
-
-                          {% include signup.html %}
+			<a title="Next" {% if next_page %} class="{% if next_page %}active{% endif %}" href="{{ next_page.url }}" {% endif %}>
+				<i id="next_arrow" class="fa fa-angle-right "></i>
+        <p> Next Page </p>
+			</a>
+			<a title="Next Story" {% if next_story %} class="{% if next_story %}active{% endif %}" href="{{ next_story.first_page }}" {% endif %} >
+				<i id="last_arrow" class="fa fa-angle-double-right "></i>
+        <p> Next Story </p>
+			</a>
+		</div>
+	</div>
+  <div id="detail">
+    {% assign match = site.data.stories | where_exp: 'item', 'item.title == post.story' %}
+    {% if match.first %}{% assign story = match.first %}{% endif %}
+		<div class="nav">
+        <img src="/img/LOGOwhitepink.png" />
+				<div id="stories">
+				{% assign stories = site.data.stories | sort: 'order' %}
+				{% for story in stories %}
+          {% if story.anthology == anthology %}
+          {% else %}
+            {% assign anthology = story.anthology %}
+            <div class="anthology">{{story.anthology}}</div>
+          {% endif %}
+						<a {% if post.story == story.title %}class="active"{% endif %} href="{{story.first_page}}">{{ story.title }}</a><br />
+				{% endfor %}
+				</div>
+		</div>
+		<div id="story" class="show">
+			<div class="right">
+					<h3>
+						{{ story.title }}
+					</h3>
+					<img class="icon" src="{{story.icon_image}}"/>
+          {% capture character %} {{ story.character  | downcase }} {% endcapture %}
+          {% if character contains "racia" %}<img class="icon" src="/img/re-design/ICON0A_RACIA.png" />{% endif %}
+          {% if character contains "antau" %}<img class="icon" src="/img/re-design/ICON0A_ANTAU.png" />{% endif %}
+					<p>{{ story.desc_html }}</p>
+          
+          <div class="commentary">
+           <div class="article">
+              <div class="side">
+                <h1>{{ page.date | date: "%A %b %d, %y" }}</h1>
+                <p>Page <b>{{ page.title | slice: -2, 2 }}</b> of <b>{{ total_str }}</b> pages.</p>
+                <a href="{{ page.url }}#disqus_thread">Comments</a>
+              </div>
+              <div class="content">
+              <img src="{{ page.icon_image }}" />{{ page.content }}</div>
             </div>
-  </div>
-</section>
+            </div>
+			</div>
+		</div>
+	</div>
+    
+ <div id="disqus_thread"></div>
+	</section>	
 
-  <div id="disqus_thread"></div>
+</div>
+
 
 <script id="dsq-count-scr" src="//raciantau.disqus.com/count.js" async></script>
 <script>
-
 /**
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
