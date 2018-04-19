@@ -117,12 +117,12 @@ layout: default
           <div class="commentary">
            <div class="article">
               <div class="side">
-                <h1>{{ page.date | date: "%A %b %d, %y" }}</h1>
-                <p>Page <b>{{ page.title | slice: -2, 2 }}</b> of <b>{{ total_str }}</b> pages.</p>
-                <a href="{{ page.url }}#disqus_thread">Comments</a>
+                <h1>{{ post.date | date: "%A %b %d, %y" }}</h1>
+                <p>Page <b>{{ post.title | slice: -2, 2 }}</b> of <b>{{ total_str }}</b> pages.</p>
+                <a href="{{ post.url }}#disqus_thread">Comments</a>
               </div>
               <div class="content">
-              <img src="{{ page.icon_image }}" />{{ page.content }}</div>
+              <img src="{{ post.icon_image }}" />{{ post.content }}</div>
             </div>
             </div>
 			</div>
