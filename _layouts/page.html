@@ -44,42 +44,15 @@ layout: default
 
 	{% assign post = page %}
  
-	<div id="detail">
-    {% assign match = site.data.stories | where_exp: 'item', 'item.title == post.story' %}
-    {% if match.first %}{% assign story = match.first %}{% endif %}
-		<div class="nav">
-				<div id="stories">
-				{% assign stories = site.data.stories | sort: 'order' %}
-				{% for story in stories %}
-          {% if story.anthology == anthology %}
-          {% else %}
-            {% assign anthology = story.anthology %}
-            <div class="anthology">{{anthology}}</div>
-          {% endif %}
-						<a {% if post.story == story.title %}class="active"{% endif %} href="{{story.first_page}}">{{ story.title }}</a><br />
-				{% endfor %}
-				</div>
-		</div>
-		<div id="story" class="show">
-			<div class="right">
-					<h3>
-						{{ story.title }}
-					</h3>
-					<p>{{ story.desc_html }}</p>
-          <p>{{ story.pages }} pages.</p>
-          {% capture character %} {{ story.character  | downcase }} {% endcapture %}
-          {% if character contains "racia" %}<img class="icon" src="/img/re-design/ICON0A_RACIA.png" />{% endif %}
-          {% if character contains "antau" %}<img class="icon" src="/img/re-design/ICON0A_ANTAU.png" />{% endif %}
-					<img class="clip" src="{{story.icon_image}}"/>
-			</div>
-		</div>
-	</div>
+
 	<section id="main">
    <div id="header">
     <div id="logo"></div>
-    <div id="button" onClick="myFunction()">
-      <i title="Menu" class="fa fa-bars"></i>
-    </div>
+    <li class="social">
+      <a href="https://twitter.com/lazysquire"><div class="icon twitter"></div></a>
+      <a href="https://www.instagram.com/lazysquire/"><div class="icon instagram"></div></a>
+      <a href="https://www.patreon.com/lazysquire"><div class="icon patreon"></div></a>
+    </li>
   </div>
 
 	<div id="art">
@@ -87,6 +60,7 @@ layout: default
 		<img class="artimg refresh" src="/img/re-design/sorry.jpg" />
 		</object>
 	</div>
+	
 	<div id="navigation" class="">
 		<div class="inset">
 			<a title="Previous Story" {% if prev_story %} class="{% if prev_story %}active{% endif %}" href="{{ prev_story.first_page }}" {% endif %}>
@@ -97,9 +71,9 @@ layout: default
 				<i id="prev_arrow" class="fa fa-angle-left "></i>
         <p> Previous Page </p>
 			</a>
-      <a title="Page List">
-          {{ page.title | slice: -2, 2 }} / {{ total_str }}
-      </a>
+        <div id="buttontop" class="button" onClick="myFunction()">
+          <i title="Menu" class="fa fa-info"></i>
+        </div>
 			<a title="Next" {% if next_page %} class="{% if next_page %}active{% endif %}" href="{{ next_page.url }}" {% endif %}>
 				<i id="next_arrow" class="fa fa-angle-right "></i>
         <p> Next Page </p>
@@ -110,16 +84,71 @@ layout: default
 			</a>
 		</div>
 	</div>
+  <div id="detail">
+    {% assign match = site.data.stories | where_exp: 'item', 'item.title == post.story' %}
+    {% if match.first %}{% assign story = match.first %}{% endif %}
+		<div class="nav">
+        <img src="/img/LOGOwhitepink.png" />
+				<div id="stories">
+				{% assign stories = site.data.stories | sort: 'order' %}
+				{% for story in stories %}
+          {% if story.anthology == anthology %}
+          {% else %}
+            {% assign anthology = story.anthology %}
+            <div class="anthology">{{story.anthology}}</div>
+          {% endif %}
+						<a {% if post.story == story.title %}class="active"{% endif %} href="{{story.first_page}}">{{ story.title }}</a><br />
+				{% endfor %}
+				</div>
+		</div>
+		<div id="story" class="show">
+			<div class="right">
+					<h3>
+						{{ story.title }}
+					</h3>
+					<img class="icon" src="{{story.icon_image}}"/>
+          {% capture character %} {{ story.character  | downcase }} {% endcapture %}
+          {% if character contains "racia" %}<img class="icon" src="/img/re-design/ICON0A_RACIA.png" />{% endif %}
+          {% if character contains "antau" %}<img class="icon" src="/img/re-design/ICON0A_ANTAU.png" />{% endif %}
+					<p>{{ story.desc_html }}</p>
+          
+          <div class="commentary">
+           <div class="article">
+              <div class="side">
+                <h1>{{ page.date | date: "%A %b %d, %y" }}</h1>
+                <p>Page <b>{{ page.title | slice: -2, 2 }}</b> of <b>{{ total_str }}</b> pages.</p>
+                <a href="{{ page.url }}#disqus_thread">Comments</a>
+              </div>
+              <div class="content">
+              <img src="{{ page.icon_image }}" />{{ page.content }}</div>
+            </div>
+            </div>
+			</div>
+		</div>
+	</div>
+    
+ <div id="disqus_thread"></div>
 	</section>	
 
 </div>
 
 
-<script>/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("stories").classList.toggle("show");
-}
-
-
+<script id="dsq-count-scr" src="//raciantau.disqus.com/count.js" async></script>
+<script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://raciantau.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
 </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

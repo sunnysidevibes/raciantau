@@ -126,16 +126,26 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
+  
+  @include media("<=tablet") {
+     min-width: auto;
+     margin-top: 5px;
+  }
 }
 
  
 #header {
   position: sticky;
   z-index: 100;
-  top: 0;
+  top: 20px;
   height: 85px;
   width: 100%;
   
+  @include media("<=tablet") {
+    top: 5px;
+  }
+    
   #logo {
     margin: auto;
     height: 70px;
@@ -148,69 +158,84 @@ html, body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-  }
-  
-  #button {
-    top: 50%;
-    left: 0;
-    position: absolute;
-    transform: translateY(-50%);
-    margin: auto 15px;
-    padding: 7px 10px;
-    color: white;
-    background-color: #FF7F81;
-    border-radius: 5px;
-    cursor: pointer;
-    i {
-      font-size: 1.4em; 
+    
+    @include media("<=tablet") {
+      width: 200px;
+      height: 50px;
     }
   }
+  
 }
   
   
-.nav {
-  flex-shrink: 0;
-  box-sizing: border-box;
- 
-	#stories {
-		text-align: left;
-    overflow: hidden;
-    padding: 15px;
-    
-   display:none;
-    
-		.anthology {
-			margin-top: 10px;
-			font-weight: bold;
-			text-decoration: underline;
-		}
-    a {
-      color: black;
-      text-decoration: none;
-    }
-    a:hover, a.active {
-      color: #FF7F81;
-      text-decoration: underline;
-    }
-	}
-  #stories.show {display:block;}
-}
+
 
 #detail {
-  display:none;
-  flex-shrink: 0;
-  width: 320px;
-  padding: 10px;
-  height: calc(100% - 10px);
-  #story.show {display:block;}
+  position: sticky;
+  top: 0;
+  display:flex;
+  flex-direction: row;
+  padding: 20px;
+  background-color: white;
+  
+  @include media("<=tablet") {
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+  }
+  
+  .nav {
+    width: 250px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    text-align: right;
+    padding: 20px;
+    
+    @include media("<=tablet") {
+      text-align: center;
+      order: 2;
+    }
+    
+    img { 
+      height: 57px;
+      margin-bottom: 15px;
+    }
+    
+    #stories {
+      overflow: hidden;
+      
+      .anthology {
+        margin: 20px 0 0 0;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+      .anthology:first-of-type {
+        margin-top: 0;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      a:hover, a.active {
+        color: #FF7F81;
+        text-decoration: underline;
+      }
+    }
+    #stories.show {display:block;}
+  }
   #story {
-    display: none;
-    text-align: center;
-    margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: solid 1px #FF7F81;
 
+    @include media("<=tablet") {
+      padding-left: 0;
+      border-left: none;
+      order: 1;
+    }
+    
     h3{
       margin: 0;
-      margin: 15px;
+      margin: 15px 0;
       font-family: "SingleSleeve";
       font-size: 3em;
       text-align: left;
@@ -228,21 +253,16 @@ html, body {
       text-align: right;
     }
     .icon {
-      display: block;
       vertical-align: baseline;
       width: auto;
       height: 3em;
-      padding-top: 5px;
-      padding-left: 15px;
-    }
-    .fabelo {
+      margin-bottom: 15px;
+      margin-right: 10px;
     }
     p {
       text-align: left;
-      padding: 0 15px;
       margin: 0;
       margin-bottom: 10px;
-      background-color: white;
     }
   }
 }
@@ -255,10 +275,15 @@ html, body {
 
 #art {
   position: relative;
-  min-height: calc(100% - 70px);
+  padding-bottom: 20px;
+  
+  @include media("<=tablet") {
+    padding-bottom: auto;
+  }
+  
   .artimg {
     display: block;
-    width: calc(100% - 10px);
+    width: 100%;
   }
   .artimg.refresh {
     height: 831.109px;
@@ -272,6 +297,36 @@ html, body {
   position: sticky;
   bottom: 0;
 
+  @include media("<=tablet") {
+    padding: 5px 2px;
+  }
+  
+  @include media("<=tablet", "landscape") {
+    padding: 5px 2px;
+    position: relative;
+    bottom: auto;
+  }
+  
+  .button {
+    margin: auto 15px;
+    padding: 5px 5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: white;
+    background-color: #FF7F81;
+    border-radius: 5px;
+    cursor: pointer;
+    i {
+      font-size: 1.4em; 
+      cursor: pointer;
+    }
+  }
+  
+  #buttontop {
+    color: #FF7F81;
+    background-color: white;
+  }
   .inset {
     margin: auto;
     display: flex;
@@ -302,6 +357,10 @@ html, body {
       color: #FF7F81;
       @include stroke(2,#FFFFFF);
       opacity: 0;
+      
+      @include media("<=tablet") {
+        display:none;
+      }
     }
   }
   a.active:hover p {
@@ -323,4 +382,119 @@ html, body {
   .active:hover {
     color: #fbb5a1;
   }
+  
+}
+
+  .social {
+  
+    @include media("<=tablet") {
+     display: none;
+    }
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    right: 0;
+    list-style-type: none;
+        a { color: #FF7F81; display: inline-block; padding: 0 5px; margin: 0 5px; height: 35px;}
+        div.icon {
+          display: inline-block;
+          width: 35px;
+          height: 35px;
+        }
+        .instagram {
+          background-image: url("/img/re-design/INSTAGRAMpinkwhite.png");
+          background-size: contain;
+        }
+        .instagram:hover {
+          background-image: url("/img/INSTAGRAMwhitepink.png");
+        }
+        .twitter {
+          background-image: url("/img/re-design/TWITTERpinkwhite.png");
+          background-size: contain;
+        }
+        .twitter:hover {
+          background-image: url("/img/TWITTERwhitepink.png");
+        }
+        .patreon {
+          background-image: url("/img/re-design/PATREONpinkwhite.png");
+          background-size: contain;
+        }
+        .patreon:hover {
+          background-image: url("/img/PATREONwhitepink.png");
+        }
+    	a { line-height: normal; }
+}
+      
+     
+.article {
+  position: relative;
+  overflow: auto;
+
+  h1 {
+    font-family: "SingleSleeve";
+    color: #FF7F81;
+    text-align: left;
+    font-size: 2.5em;
+    margin: 0px;
+    margin-bottom: -5px;
+  }
+  h2 {
+    font-size: 2em;
+    font-family: "SingleSleeve";
+    margin: 0;
+    margin-bottom: -10px;
+  }
+  h3 {
+    font-size: 2em;
+    font-family: "SingleSleeve";
+    margin: 0;
+    color: gray;
+  }
+  img {
+    max-width: 80%;
+  }
+  img.thumb {
+    float: right;
+    margin: 10px;
+    width: 75px;
+    @include media(">=desktop") {
+      float: left;
+      margin: 30px;
+      width: 150px;
+    }
+  }
+  img.thumb.small {
+    @include media(">=desktop") {
+      width: 100px;
+    }
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.commentary {
+  background-color: white;
+  flex-grow: 2;
+  .side {
+      margin-right: 30px;
+  }
+
+  img {
+    width: 120px;
+    margin-left: 5px;
+    margin-right: 0;
+    @include media(">=desktop") {
+      margin-right: 30px;
+    }
+  }
+
+  p {
+    margin-top: 0;
+    font-family: "Montserrat";
+  }
+
+  .article h1 { color: black; }
+  .article .side {  margin-bottom: 30px; }
+  .content img { float: left; }
 }

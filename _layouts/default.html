@@ -40,6 +40,12 @@
 <script async src="https://www.comic-rocket.com/metrics.js"></script>
 <script>
 	
+  function myFunction() {
+      $('html, body').animate({
+          scrollTop: $("#art").offset().top + $("#art").outerHeight()
+      }, 500, "swing");
+  }
+  
   $(function (){
     document.onkeydown = checkKey;
 
@@ -63,7 +69,7 @@
 
     $(window).scroll(function(event){
         didScroll = true;
-        $("#logo").css("opacity", 1 - $(window).scrollTop() / 50);
+        $("#header").css("opacity", 1 - $(window).scrollTop() / 50);
         $("#logo").css("height", 70 - $(window).scrollTop() + "px");
     });
 
