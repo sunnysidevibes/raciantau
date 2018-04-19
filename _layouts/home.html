@@ -4,15 +4,24 @@ layout: default
 
 <div class="home">
 
-	{% assign posts = site.comics | where_exp: "item", "item.story == page.story" %}
-	{% assign allprev = posts | where_exp: "item", "item.date < page.date" %}
-	{% assign allnext = posts | where_exp: "item", "item.date > page.date" %}
+	{% assign post = site.comics.last %}
+  
+	{% assign posts = site.comics | where_exp: "item", "item.story == post.story" %}
+	{% assign allprev = posts | where_exp: "item", "item.date < post.date" %}
+  {% assign total = posts.size %}
+       {% capture total_str %}
+       {% if total < 10 %}0{% endif %}{{ total }}
+  {% endcapture %}
 
-	{% assign prev_page = allprev.last %}
+	{% assign post = allprev.first %}
+  
+	{% assign posts = site.comics | where_exp: "item", "item.story == post.story" %}
+	{% assign allnext = posts | where_exp: "item", "item.date > post.date" %}
 	{% assign next_page = allnext.first %}
 
+  
   {% assign stories = site.data.stories | sort: 'order' %}
-  {% assign story_this = stories | where_exp: "item", "item.title == page.story" %}
+  {% assign story_this = stories | where_exp: "item", "item.title == post.story" %}
   {% assign story_this = story_this.first %}
   
   {% assign stories_prev = stories | where_exp: "item", "item.order < story_this.order" %}
@@ -38,9 +47,6 @@ layout: default
 
 
 
-	{% assign post = page %}
-
-
 
 	<section id="main">
 	<div id="art">
@@ -56,6 +62,9 @@ layout: default
 			<a title="Previous" {% if prev_page %} href="{{ prev_page.url }}" {% endif %}>
 				<i id="prev_arrow" class="fa fa-angle-left {% if prev_page %}active{% endif %}"></i>
 			</a>
+      <a title="Page List">
+          {{ post.title | slice: -2, 2 }} / {{ total_str }}
+      </a>
 			<a title="Next" {% if next_page %} href="{{ next_page.url }}" {% endif %}>
 				<i id="next_arrow" class="fa fa-angle-right {% if next_page %}active{% endif %}"></i>
 			</a>
@@ -70,10 +79,10 @@ layout: default
     {% if match.first %}{% assign story = match.first %}{% endif %}
 		<div class="nav">
 				<div id="header">
-					<div id="button">
+					<div id="logo"></div>
+					<div id="button" onClick="myFunction()">
 						<i title="Menu" class="fa fa-bars"></i>
 					</div>
-					<div id="logo"></div>
 				</div>
 				<div id="stories">
 				{% assign stories = site.data.stories | sort: 'order' %}
@@ -87,18 +96,31 @@ layout: default
 				{% endfor %}
 				</div>
 		</div>
-		<div class="story">
+		<div id="story" class="show">
 			<div class="right">
 					<h3>
 						{{ story.title }}
-            <br />
-            {% capture character %} {{ story.character  | downcase }} {% endcapture %}
-						{% if character contains "racia" %}<img class="icon" src="/img/re-design/ICON0A_RACIA.png" />{% endif %}
-						{% if character contains "antau" %}<img class="icon" src="/img/re-design/ICON0A_ANTAU.png" />{% endif %}
 					</h3>
 					<p>{{ story.desc_html }}</p>
+          <p>{{ story.pages }} pages.</p>
+          {% capture character %} {{ story.character  | downcase }} {% endcapture %}
+          {% if character contains "racia" %}<img class="icon" src="/img/re-design/ICON0A_RACIA.png" />{% endif %}
+          {% if character contains "antau" %}<img class="icon" src="/img/re-design/ICON0A_ANTAU.png" />{% endif %}
 					<img class="clip" src="{{story.icon_image}}"/>
 			</div>
 		</div>
 	</div>
 </div>
+
+
+<script>/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("stories").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+ 
+} 
+</script>

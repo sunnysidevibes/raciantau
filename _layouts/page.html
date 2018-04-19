@@ -37,51 +37,17 @@ layout: default
 
 	{% if next_page %}
 	{% else %}
-    {% assign next_page = next_story.first_page %}
+    {% assign posts = site.comics | where_exp: "item", "item.story == next_story.title" %}
+    {% assign next_page = posts.first %}
 	{% endif %}
 
 
-
 	{% assign post = page %}
-
-
-
-	<section id="main">
-	<div id="art">
-		<object class="artimg" data="{{ post.image }}" type="image/jpg">
-		<img class="artimg refresh" src="/img/re-design/sorry.jpg" />
-		</object>
-	</div>
-	<div id="navigation" class="">
-		<div class="inset">
-			<a title="Previous Story" {% if prev_story %} href="{{ prev_story.first_page }}" {% endif %}>
-				<i id="first_arrow" title="First" class="fa fa-angle-double-left {% if prev_story %}active{% endif %}"></i>
-			</a>
-			<a title="Previous" {% if prev_page %} href="{{ prev_page.url }}" {% endif %}>
-				<i id="prev_arrow" class="fa fa-angle-left {% if prev_page %}active{% endif %}"></i>
-			</a>
-      <a title="Page List">
-          {{ page.title | slice: -2, 2 }} / {{ total_str }}
-      </a>
-			<a title="Next" {% if next_page %} href="{{ next_page.url }}" {% endif %}>
-				<i id="next_arrow" class="fa fa-angle-right {% if next_page %}active{% endif %}"></i>
-			</a>
-			<a title="Next Story" {% if next_story %} href="{{ next_story.first_page }}" {% endif %} >
-				<i id="last_arrow" class="fa fa-angle-double-right {% if next_story %}active{% endif %}"></i>
-			</a>
-		</div>
-	</div>
-	</section>	
+ 
 	<div id="detail">
     {% assign match = site.data.stories | where_exp: 'item', 'item.title == post.story' %}
     {% if match.first %}{% assign story = match.first %}{% endif %}
 		<div class="nav">
-				<div id="header">
-					<div id="logo"></div>
-					<div id="button" onClick="myFunction()">
-						<i title="Menu" class="fa fa-bars"></i>
-					</div>
-				</div>
 				<div id="stories">
 				{% assign stories = site.data.stories | sort: 'order' %}
 				{% for story in stories %}
@@ -108,6 +74,44 @@ layout: default
 			</div>
 		</div>
 	</div>
+	<section id="main">
+   <div id="header">
+    <div id="logo"></div>
+    <div id="button" onClick="myFunction()">
+      <i title="Menu" class="fa fa-bars"></i>
+    </div>
+  </div>
+
+	<div id="art">
+		<object class="artimg" data="{{ post.image }}" type="image/jpg">
+		<img class="artimg refresh" src="/img/re-design/sorry.jpg" />
+		</object>
+	</div>
+	<div id="navigation" class="">
+		<div class="inset">
+			<a title="Previous Story" {% if prev_story %} class="{% if prev_story %}active{% endif %}" href="{{ prev_story.first_page }}" {% endif %}>
+				<i id="first_arrow" title="First" class="fa fa-angle-double-left "></i>
+        <p> Previous Story </p>
+			</a>
+			<a title="Previous" {% if prev_page %} class="{% if prev_page %}active{% endif %}" href="{{ prev_page.url }}" {% endif %}>
+				<i id="prev_arrow" class="fa fa-angle-left "></i>
+        <p> Previous Page </p>
+			</a>
+      <a title="Page List">
+          {{ page.title | slice: -2, 2 }} / {{ total_str }}
+      </a>
+			<a title="Next" {% if next_page %} class="{% if next_page %}active{% endif %}" href="{{ next_page.url }}" {% endif %}>
+				<i id="next_arrow" class="fa fa-angle-right "></i>
+        <p> Next Page </p>
+			</a>
+			<a title="Next Story" {% if next_story %} class="{% if next_story %}active{% endif %}" href="{{ next_story.first_page }}" {% endif %} >
+				<i id="last_arrow" class="fa fa-angle-double-right "></i>
+        <p> Next Story </p>
+			</a>
+		</div>
+	</div>
+	</section>	
+
 </div>
 
 
@@ -117,8 +121,5 @@ function myFunction() {
     document.getElementById("stories").classList.toggle("show");
 }
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
- 
-} 
+
 </script>

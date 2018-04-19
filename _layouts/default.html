@@ -24,9 +24,6 @@
     <title>RACIANTAU{% if page.story %} :: {{page.story}} {% endif %}</title>
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/css/slicknav.min.css" />
-    <link rel="stylesheet" type="text/css" href="/css/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/slick/slick-theme.css"/>
     <link rel="stylesheet" href="/css/styles.css" type="text/css">
 
 
@@ -35,44 +32,14 @@
         {{content}}
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="/css/jquery.slicknav.min.js"></script>
-<script type="text/javascript" src="/css/slick/slick.min.js"></script>
 <script>"pMiXeJsrvG4K"</script>
-<script>
-	$(function(){
-    $('#slider').slick({
-      dots: true,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      arrows: false,
-    });
-  });
-</script>
 <script>
 (function(d,t,p){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='http'+(d.location.protocol=='https:'?'s':'')+'://www.comic-rocket.com/metrics.js#'+(p||"");s.parentNode.insertBefore(g,s);
 })(document,'script','key=f33v');
 </script>
 <script async src="https://www.comic-rocket.com/metrics.js"></script>
 <script>
-	$(function(){
-		$('#menu').slicknav({
-      label: '',
-      brand: ' ',
-      prependTo:'#mobileMenu',
-      init: function() {
-        $('.slicknav_brand').click(function() {
-          window.location.href = "/";
-          console.log("hey");
-        });
-      },
-      beforeOpen: function(trigger) {
-        $('#banner').addClass('open');
-      },
-      beforeClose: function(trigger) {
-        $('#banner').removeClass('open');
-      },
-     });
-	});
+	
   $(function (){
     document.onkeydown = checkKey;
 
@@ -96,6 +63,8 @@
 
     $(window).scroll(function(event){
         didScroll = true;
+        $("#logo").css("opacity", 1 - $(window).scrollTop() / 50);
+        $("#logo").css("height", 70 - $(window).scrollTop() + "px");
     });
 
     setInterval(function() {

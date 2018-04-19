@@ -112,8 +112,6 @@ body {
 
 html, body {
   height: 100%;
-  overflow: hidden;
-  overflow-x: auto;
   margin: 0;
 }
 
@@ -122,48 +120,58 @@ html, body {
 }
 
 .home {
-  width: 100%;
-  min-width: 1000px;
+  max-width: 1100px;
+  min-width: 600px;
   margin: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
 }
 
+ 
+#header {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  height: 85px;
+  width: 100%;
+  
+  #logo {
+    margin: auto;
+    height: 70px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    background-image: url("/img/LOGOwhitepink.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  #button {
+    top: 50%;
+    left: 0;
+    position: absolute;
+    transform: translateY(-50%);
+    margin: auto 15px;
+    padding: 7px 10px;
+    color: white;
+    background-color: #FF7F81;
+    border-radius: 5px;
+    cursor: pointer;
+    i {
+      font-size: 1.4em; 
+    }
+  }
+}
+  
   
 .nav {
   flex-shrink: 0;
   box-sizing: border-box;
-  
-	#header {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-	}
-  
-	#logo {
-    margin: 15px;
-		min-height: 50px;
-		position: relative;
-		width: 150px;
-		background-image: url("/img/LOGOwhitepink.png");
-		background-size: contain;
-		background-position: left;
-		background-repeat: no-repeat;
-	}
-	
-	#button {
-		margin-left: 15px;
-		padding: 7px;
-		color: white;
-		background-color: #FF7F81;
-		border-radius: 5px;
-    cursor: pointer;
-		i {
-			font-size: 1.4em; 
-		}
-	}
+ 
 	#stories {
 		text-align: left;
     overflow: hidden;
@@ -189,10 +197,10 @@ html, body {
 }
 
 #detail {
+  display:none;
   flex-shrink: 0;
   width: 320px;
   padding: 10px;
-  overflow: auto;
   height: calc(100% - 10px);
   #story.show {display:block;}
   #story {
@@ -240,11 +248,8 @@ html, body {
 }
 #main {
   flex-shrink: 1;
-  max-width: 1100px;
-  min-width: 600px;
   height: 100%;
   width: 100%;
-  overflow: auto;
   box-sizing: border-box;
 }
 
@@ -283,6 +288,25 @@ html, body {
     font-size: 40px;
     text-decoration: none;
     color: white;
+    position: relative;
+    text-align: center;
+    p {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+      font-size: 0.7em;
+      transition: opacity 0.5s;
+      color: #FF7F81;
+      @include stroke(2,#FFFFFF);
+      opacity: 0;
+    }
+  }
+  a.active:hover p {
+    opacity: 1;
+    transition: opacity 1s;
   }
 
   i {
@@ -291,7 +315,7 @@ html, body {
     cursor: default;
   }
 
-  i.active {
+  a.active i{
     color: white;
     cursor: pointer;
   }
