@@ -18,7 +18,7 @@ layout: default
   {% assign stories = site.data.stories | sort: 'order' %}
   {% assign story_this = stories | where_exp: "item", "item.title == page.story" %}
   {% assign story_this = story_this.first %}
-  
+
   {% assign stories_prev = stories | where_exp: "item", "item.order < story_this.order" %}
   {% assign stories_next = stories | where_exp: "item", "item.order > story_this.order" %}
 
@@ -43,7 +43,7 @@ layout: default
 
 
 	{% assign post = page %}
- 
+
 
 	<section id="main">
    <div id="header">
@@ -60,7 +60,7 @@ layout: default
 		<img class="artimg refresh" src="/img/re-design/sorry.jpg" />
 		</object>
 	</div>
-	
+
 	<div id="navigation" class="">
 		<div class="inset">
 			<a title="Previous Story" {% if prev_story %} class="{% if prev_story %}active{% endif %}" href="{{ prev_story.first_page }}" {% endif %}>
@@ -72,7 +72,8 @@ layout: default
         <p> Previous Page </p>
 			</a>
         <div id="buttontop" class="button" onClick="myFunction()">
-          <i title="Menu" class="fa fa-info"></i>
+          <i id="goBottom" title="Read Details" class="fa fa-chevron-down"></i>
+          <i id="goTop" title="Read Comic" class="fa fa-chevron-up"></i>
         </div>
 			<a title="Next" {% if next_page %} class="{% if next_page %}active{% endif %}" href="{{ next_page.url }}" {% endif %}>
 				<i id="next_arrow" class="fa fa-angle-right "></i>
@@ -104,7 +105,7 @@ layout: default
 		</div>
 		<div id="story" class="show">
 			<div class="right">
-      
+
           <div class="commentary">
            <div class="article">
               <div class="side">
@@ -114,12 +115,12 @@ layout: default
                 This blurb was written when this comic page first went online. It might not accurately reflect the current state of the RACIANTAU project. Consider it a piece of history.
                 </p>
               </div>
-              <div class="content">              
+              <div class="content">
                 <img src="{{ post.icon_image }}" />
                 {{ post.content }}
               </div>
             </div>
-            
+
 					<h3 style="clear: both;">
 						the story: <span class="title">{{ story.title }}</span>
 					</h3>
@@ -128,31 +129,31 @@ layout: default
           {% capture character %} {{ story.character  | downcase }} {% endcapture %}
           {% if character contains "racia" %}<img class="icon" src="/img/re-design/ICON0A_RACIA.png" />{% endif %}
           {% if character contains "antau" %}<img class="icon" src="/img/re-design/ICON0A_ANTAU.png" />{% endif %}
-          
-            
+
+
             <div>
               <h1>the comic: <span class="title">RACIANTAU</span></h1>
-              <p>An ongoing study in comics, storytelling, and philosophy, RACIANTAU is a comics anthology structured in the form of an essay. 
-              The title of the project (pronounced /rɔsiɑntoʊ/) is a contraction of the names "Racia" and "Antau" &mdash; the two main characters. 
-              The kids try to make sense out of a senseless world of VIOLENCE, IMPERMANENCE, ISOLATION. Anxious about the FUTURE OF OUR SPECIES, 
-              they find themselves face to face with the VOID WHICH CONSUMES ALL THINGS. In each story, one or both of them inch closer towards 
+              <p>An ongoing study in comics, storytelling, and philosophy, RACIANTAU is a comics anthology structured in the form of an essay.
+              The title of the project (pronounced /rɔsiɑntoʊ/) is a contraction of the names "Racia" and "Antau" &mdash; the two main characters.
+              The kids try to make sense out of a senseless world of VIOLENCE, IMPERMANENCE, ISOLATION. Anxious about the FUTURE OF OUR SPECIES,
+              they find themselves face to face with the VOID WHICH CONSUMES ALL THINGS. In each story, one or both of them inch closer towards
               self-realization.</p>
               <br />
-              <p>We're a self-taught comic-making duo with absurd politics and philosophy. We've made every page out of a desire for 
-              exploration and improvement. But if you enjoy what we put forth, your kind words will motivate us (email: hello@raciantau.com). If you want 
+              <p>We're a self-taught comic-making duo with absurd politics and philosophy. We've made every page out of a desire for
+              exploration and improvement. But if you enjoy what we put forth, your kind words will motivate us (email: hello@raciantau.com). If you want
               to read more, <a href="http://patreon.com/lazysquire">please join our fans and become our patron</a>. </p>
               <br />
               <p>Yours,</p>
               <p>Em & Iris</p>
             </div>
             </div>
-            
+
 			</div>
 		</div>
 	</div>
-    
+
  <div id="disqus_thread"></div>
-	</section>	
+	</section>
 
 </div>
 

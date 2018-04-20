@@ -127,26 +127,23 @@ html, body {
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
-  
+
   @include media("<=tablet") {
      min-width: auto;
-     margin-top: 5px;
+     margin-top: 0px;
   }
 }
 
- 
+
 #header {
-  position: sticky;
-  position: -webkit-sticky;
+  position: relative;
   z-index: 100;
-  top: 20px;
   height: 85px;
   width: 100%;
-  
+
   @include media("<=tablet") {
-    top: 5px;
   }
-    
+
   #logo {
     margin: auto;
     height: 70px;
@@ -159,61 +156,59 @@ html, body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    
+
     @include media("<=tablet") {
       width: 200px;
       height: 50px;
     }
   }
-  
+
 }
-  
-  
+
+
 
 
 #detail {
-  position: sticky;
-  position: -webkit-sticky;
   top: 0;
   display:flex;
   flex-direction: row;
   padding: 20px;
   background-color: white;
-    
-  
+
+
   @include media("<=tablet") {
     flex-direction: column;
     align-items: center;
     padding: 0px;
     font-size: 0.75em;
   }
-  
+
   .nav {
     width: 250px;
     flex-shrink: 0;
     box-sizing: border-box;
     text-align: right;
     padding: 20px;
-    
+
     @include media("<=tablet") {
       text-align: center;
       order: 2;
     }
-    
-    img { 
+
+    img {
       height: 57px;
     }
-    
+
     p {
       color: #FF7F81;
       font-weight: lighter;
       margin: 0;
       margin-bottom: 15px;
     }
-    
+
     #stories {
       overflow: hidden;
-      
+
       .anthology {
         margin: 20px 0 0 0;
         font-weight: bold;
@@ -242,14 +237,14 @@ html, body {
       border-left: none;
       order: 1;
     }
-    
+
     h3{
       margin: 0;
       margin: 15px 0;
       font-family: "SingleSleeve";
       font-size: 2em;
       text-align: left;
-      
+
       .title{
         color: white;
         font-size: 1.5em;
@@ -281,18 +276,16 @@ html, body {
 }
 #main {
   flex-shrink: 1;
-  height: 100%;
   width: 100%;
   box-sizing: border-box;
 }
 
 #art {
-  position: relative;
-  
+
   @include media("<=tablet") {
     padding-bottom: auto;
   }
-  
+
   .artimg {
     display: block;
     width: 100%;
@@ -308,18 +301,19 @@ html, body {
   padding: 5px;
   position: sticky;
   position: -webkit-sticky;
+  top: 0;
   bottom: 0;
+  z-index: 100;
 
   @include media("<=tablet") {
     padding: 5px 2px;
   }
-  
+
   @include media("<=tablet", "landscape") {
     padding: 5px 2px;
-    position: relative;
     bottom: auto;
   }
-  
+
   .button {
     margin: auto 15px;
     padding: 3px 3px;
@@ -331,11 +325,17 @@ html, body {
     border-radius: 5px;
     cursor: pointer;
     i {
-      font-size: 1.4em; 
+      font-size: 1.4em;
       cursor: pointer;
     }
+    #goTop {
+      display: none;
+    }
+    #goBottom {
+
+    }
   }
-  
+
   #buttontop {
     color: #FF7F81;
     background-color: white;
@@ -370,7 +370,7 @@ html, body {
       color: #FF7F81;
       @include stroke(2,#FFFFFF);
       opacity: 0;
-      
+
       @include media("<=tablet") {
         display:none;
       }
@@ -395,11 +395,11 @@ html, body {
   .active:hover {
     color: #fbb5a1;
   }
-  
+
 }
 
   .social {
-  
+
     @include media("<=tablet") {
      display: none;
     }
@@ -437,8 +437,8 @@ html, body {
         }
     	a { line-height: normal; }
 }
-      
-     
+
+
 .article {
   position: relative;
 
@@ -465,7 +465,7 @@ html, body {
   p {
     margin: 0;
   }
-  
+
   .notice {
     background-color: rgba(255, 127, 129, 0.5);
     border-radius: 5px;
@@ -489,13 +489,13 @@ html, body {
     font-family: "Montserrat";
   }
 
-  h1 { 
-    color: black; 
-    font-family: "SingleSleeve"; 
+  h1 {
+    color: black;
+    font-family: "SingleSleeve";
     font-size: 2em;
     margin: 0px;
     margin-bottom: 10px;
-    
+
       .title{
         font-size: 1.5em;
         color: white;
@@ -505,8 +505,8 @@ html, body {
   .side h1 {
     margin-bottom: 0;
   }
-  
-  
+
+
   .article .side {  margin-bottom: 30px; }
   .content img { float: left; }
 }
