@@ -89,6 +89,7 @@ layout: default
     {% if match.first %}{% assign story = match.first %}{% endif %}
 		<div class="nav">
         <img src="/img/LOGOwhitepink.png" />
+        <p>("RAH-SEE-ON-TOE")</p>
 				<div id="stories">
 				{% assign stories = site.data.stories | sort: 'order' %}
 				{% for story in stories %}
@@ -103,26 +104,49 @@ layout: default
 		</div>
 		<div id="story" class="show">
 			<div class="right">
-					<h3>
-						{{ story.title }}
+      
+          <div class="commentary">
+           <div class="article">
+              <div class="side">
+                <h1>the page: <span class="title">{{ page.date | date: "%A %b %d, %y" }}</span></h1>
+                <p>Page <b>{{ page.title | slice: -2, 2 }}</b> of <b>{{ total_str }}</b> pages.</p>
+                <p class="notice">
+                This blurb was written when this comic page first went online. It might not accurately reflect the current state of the RACIANTAU project. Consider it a piece of history.
+                </p>
+              </div>
+              <div class="content">              
+                <img src="{{ page.icon_image }}" />
+                {{ page.content }}
+              </div>
+            </div>
+            
+					<h3 style="clear: both;">
+						the story: <span class="title">{{ story.title }}</span>
 					</h3>
+					<p>{{ story.desc_html }}</p>
 					<img class="icon" src="{{story.icon_image}}"/>
           {% capture character %} {{ story.character  | downcase }} {% endcapture %}
           {% if character contains "racia" %}<img class="icon" src="/img/re-design/ICON0A_RACIA.png" />{% endif %}
           {% if character contains "antau" %}<img class="icon" src="/img/re-design/ICON0A_ANTAU.png" />{% endif %}
-					<p>{{ story.desc_html }}</p>
           
-          <div class="commentary">
-           <div class="article">
-              <div class="side">
-                <h1>{{ page.date | date: "%A %b %d, %y" }}</h1>
-                <p>Page <b>{{ page.title | slice: -2, 2 }}</b> of <b>{{ total_str }}</b> pages.</p>
-                <a href="{{ page.url }}#disqus_thread">Comments</a>
-              </div>
-              <div class="content">
-              <img src="{{ page.icon_image }}" />{{ page.content }}</div>
+            
+            <div>
+              <h1>the comic: <span class="title">RACIANTAU</span></h1>
+              <p>An ongoing study in comics, storytelling, and philosophy, RACIANTAU is a comics anthology structured in the form of an essay. 
+              The title of the project (pronounced /rɔsiɑntoʊ/) is a contraction of the names "Racia" and "Antau" &mdash; the two main characters. 
+              The kids try to make sense out of a senseless world of VIOLENCE, IMPERMANENCE, ISOLATION. Anxious about the FUTURE OF OUR SPECIES, 
+              they find themselves face to face with the VOID WHICH CONSUMES ALL THINGS. In each story, one or both of them inch closer towards 
+              self-realization.</p>
+              <br />
+              <p>We're a self-taught comic-making duo with absurd politics and philosophy. We've made every page out of a desire for 
+              exploration and improvement. But if you enjoy what we put forth, your kind words will motivate us (email:hello@raciantau.com). If you want 
+              to read more, <a href="http://patreon.com/lazysquire">please join our fans and become our patrons</a>. </p>
+              <br />
+              <p>Yours,</p>
+              <p>Em & Iris</p>
             </div>
             </div>
+            
 			</div>
 		</div>
 	</div>

@@ -198,6 +198,12 @@ html, body {
     
     img { 
       height: 57px;
+    }
+    
+    p {
+      color: #FF7F81;
+      font-weight: lighter;
+      margin: 0;
       margin-bottom: 15px;
     }
     
@@ -224,11 +230,11 @@ html, body {
     #stories.show {display:block;}
   }
   #story {
-    padding-left: 20px;
+    padding: 20px;
     border-left: solid 1px #FF7F81;
 
     @include media("<=tablet") {
-      padding-left: 0;
+      padding: 10px;
       border-left: none;
       order: 1;
     }
@@ -237,10 +243,14 @@ html, body {
       margin: 0;
       margin: 15px 0;
       font-family: "SingleSleeve";
-      font-size: 3em;
+      font-size: 2em;
       text-align: left;
-      color: white;
-      @include stroke(4,#000000);
+      
+      .title{
+        color: white;
+        font-size: 1.5em;
+        @include stroke(4,#000000);
+      }
     }
     .clip {
       margin: 10px;
@@ -256,13 +266,12 @@ html, body {
       vertical-align: baseline;
       width: auto;
       height: 3em;
-      margin-bottom: 15px;
+      margin-top: 15px;
       margin-right: 10px;
     }
     p {
       text-align: left;
       margin: 0;
-      margin-bottom: 10px;
     }
   }
 }
@@ -293,7 +302,7 @@ html, body {
 #navigation {
   background-color: #FF7F81;
   color: white;
-  padding: 15px 10px;
+  padding: 5px;
   position: sticky;
   bottom: 0;
 
@@ -309,7 +318,7 @@ html, body {
   
   .button {
     margin: auto 15px;
-    padding: 5px 5px;
+    padding: 3px 3px;
     width: 25px;
     height: 25px;
     text-align: center;
@@ -351,7 +360,7 @@ html, body {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 100px;
+      width: 150px;
       font-size: 0.7em;
       transition: opacity 0.5s;
       color: #FF7F81;
@@ -428,15 +437,14 @@ html, body {
      
 .article {
   position: relative;
-  overflow: auto;
 
   h1 {
     font-family: "SingleSleeve";
     color: #FF7F81;
     text-align: left;
-    font-size: 2.5em;
+    font-size: 3em;
     margin: 0px;
-    margin-bottom: -5px;
+    margin-bottom: 5px;
   }
   h2 {
     font-size: 2em;
@@ -450,43 +458,26 @@ html, body {
     margin: 0;
     color: gray;
   }
-  img {
-    max-width: 80%;
-  }
-  img.thumb {
-    float: right;
-    margin: 10px;
-    width: 75px;
-    @include media(">=desktop") {
-      float: left;
-      margin: 30px;
-      width: 150px;
-    }
-  }
-  img.thumb.small {
-    @include media(">=desktop") {
-      width: 100px;
-    }
-  }
   p {
     margin: 0;
+  }
+  
+  .notice {
+    background-color: rgba(255, 127, 129, 0.5);
+    border-radius: 5px;
+    padding: 10px;
   }
 }
 
 .commentary {
   background-color: white;
   flex-grow: 2;
-  .side {
-      margin-right: 30px;
-  }
 
   img {
     width: 120px;
     margin-left: 5px;
     margin-right: 0;
-    @include media(">=desktop") {
-      margin-right: 30px;
-    }
+    margin-right: 30px;
   }
 
   p {
@@ -494,7 +485,28 @@ html, body {
     font-family: "Montserrat";
   }
 
-  .article h1 { color: black; }
+  h1 { 
+    color: black; 
+    font-family: "SingleSleeve"; 
+    font-size: 2em;
+    margin: 0px;
+    margin-bottom: 10px;
+    
+      .title{
+        font-size: 1.5em;
+        color: white;
+        @include stroke(4,#000000);
+      }
+  }
+  .side h1 {
+    margin-bottom: 0;
+  }
+  
+  
   .article .side {  margin-bottom: 30px; }
   .content img { float: left; }
 }
+
+  #detail #story p.notice {
+    margin: 10px;
+  }
