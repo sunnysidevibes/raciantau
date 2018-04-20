@@ -108,15 +108,15 @@ layout: default
           <div class="commentary">
            <div class="article">
               <div class="side">
-                <h1>the page: <span class="title">{{ page.date | date: "%A %b %d, %y" }}</span></h1>
-                <p>Page <b>{{ page.title | slice: -2, 2 }}</b> of <b>{{ total_str }}</b> pages.</p>
+                <h1>the page: <span class="title">{{ post.date | date: "%A %b %d, %y" }}</span></h1>
+                <p>Page <b>{{ post.title | slice: -2, 2 }}</b> of <b>{{ total_str }}</b> pages.</p>
                 <p class="notice">
                 This blurb was written when this comic page first went online. It might not accurately reflect the current state of the RACIANTAU project. Consider it a piece of history.
                 </p>
               </div>
               <div class="content">              
-                <img src="{{ page.icon_image }}" />
-                {{ page.content }}
+                <img src="{{ post.icon_image }}" />
+                {{ post.content }}
               </div>
             </div>
             
