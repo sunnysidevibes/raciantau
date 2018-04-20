@@ -137,6 +137,7 @@ html, body {
  
 #header {
   position: sticky;
+  position: -webkit-sticky;
   z-index: 100;
   top: 20px;
   height: 85px;
@@ -172,6 +173,7 @@ html, body {
 
 #detail {
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
   display:flex;
   flex-direction: row;
@@ -303,6 +305,7 @@ html, body {
   color: white;
   padding: 5px;
   position: sticky;
+  position: -webkit-sticky;
   bottom: 0;
 
   @include media("<=tablet") {
