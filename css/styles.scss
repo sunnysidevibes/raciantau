@@ -192,6 +192,10 @@ html, body {
     @include media("<=tablet") {
       text-align: center;
       order: 2;
+      a {
+        padding: 5px;
+        border: solid 1px #FF8888;
+      }
     }
 
     img {
@@ -221,12 +225,16 @@ html, body {
         display: block;
         padding: 6px;
         margin: 1px;
+        border-radius: 5px;
       }
-      a:hover, a.active {
+      a:hover {
+        padding: 5px;
+        border: solid 1px #FF8888;
+      }
+      a.active {
         color: white;
         text-decoration: underline;
         background-color: #FF8888;
-        border-radius: 5px;
       }
     }
     #stories.show {display:block;}
