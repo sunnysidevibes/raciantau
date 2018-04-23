@@ -1,3 +1,7 @@
 Sitemap: http://raciantau.com/sitemap.xml
 
+
+User-agent: Googlebot-Image
+Disallow: / 
+
 User-agent: *
