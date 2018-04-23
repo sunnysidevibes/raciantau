@@ -1,7 +1,0 @@
----
-layout: default
-permalink: /archives/Nature+Calls/
----
-{% assign stories = site.stories | where_exp: 'story', "story.title == 'Nature Calls'" %}
-{% assign story = stories[0] %}
-{% include archive.html %}

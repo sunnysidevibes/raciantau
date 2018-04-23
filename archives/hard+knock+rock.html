@@ -1,7 +1,0 @@
----
-layout: default
-permalink: /archives/Hard+Knock+Rock/
----
-{% assign stories = site.stories | where_exp: 'story', "story.title == 'Hard Knock Rock'" %}
-{% assign story = stories[0] %}
-{% include archive.html %}

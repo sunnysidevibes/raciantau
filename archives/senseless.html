@@ -1,7 +1,0 @@
----
-layout: default
-permalink: /archives/I+Live+In+A+Senseless+Town/
----
-{% assign stories = site.stories | where_exp: 'story', "story.title == 'I Live In A Senseless Town'" %}
-{% assign story = stories[0] %}
-{% include archive.html %}

@@ -1,7 +1,0 @@
----
-layout: default
-permalink: /archives/Dusk+Till+Dawn/
----
-{% assign stories = site.stories | where_exp: 'story', "story.title == 'Dusk Till Dawn'" %}
-{% assign story = stories[0] %}
-{% include archive.html %}
