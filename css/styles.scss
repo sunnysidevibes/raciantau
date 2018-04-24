@@ -88,7 +88,7 @@ $breakpoints: (
 //     }
 // }
 a {
-  color: #FF7F81;
+  color: #FF8080;
 }
 
 div {
@@ -172,7 +172,6 @@ html, body {
   top: 0;
   display:flex;
   flex-direction: row;
-  padding: 20px;
   background-color: white;
 
 
@@ -184,17 +183,17 @@ html, body {
   }
 
   .nav {
-    width: 250px;
     flex-shrink: 0;
     box-sizing: border-box;
-    padding: 20px 5px;
+    padding: 40px 10px;
+    text-align: center;
+    font-size: .9em;
 
     @include media("<=tablet") {
-      text-align: center;
       order: 2;
       a {
         padding: 5px;
-        border: solid 1px #FF8888;
+        border: solid 1px #FF8080;
       }
     }
 
@@ -203,13 +202,15 @@ html, body {
     }
 
     p {
-      color: #FF7F81;
+      color: #FF8080;
       font-weight: lighter;
       margin: 0;
       margin-bottom: 15px;
     }
 
     #stories {
+      width: 250px;
+      margin: auto;
       overflow: hidden;
 
       .anthology {
@@ -223,25 +224,25 @@ html, body {
       a {
         text-decoration: none;
         display: block;
-        padding: 6px;
+        padding: 4px;
         margin: 1px;
         border-radius: 5px;
       }
       a:hover {
-        padding: 5px;
-        border: solid 1px #FF8888;
+        padding: 3px;
+        border: solid 1px #FF8080;
       }
       a.active {
         color: white;
         text-decoration: underline;
-        background-color: #FF8888;
+        background-color: #FF8080;
       }
     }
     #stories.show {display:block;}
   }
   #story {
-    padding: 20px;
-    border-left: solid 1px #FF7F81;
+    padding: 40px;
+    border-left: solid 1px #FF8080;
 
     @include media("<=tablet") {
       padding: 10px;
@@ -307,7 +308,7 @@ html, body {
 }
 
 #navigation {
-  background-color: #FF7F81;
+  background-color: #FF8080;
   color: white;
   padding: 5px;
   position: sticky;
@@ -332,7 +333,7 @@ html, body {
     height: 25px;
     text-align: center;
     color: white;
-    background-color: #FF7F81;
+    background-color: #FF8080;
     border-radius: 5px;
     cursor: pointer;
     i {
@@ -348,7 +349,7 @@ html, body {
   }
 
   #buttontop {
-    color: #FF7F81;
+    color: #FF8080;
     background-color: white;
   }
   .inset {
@@ -378,7 +379,7 @@ html, body {
       width: 150px;
       font-size: 0.7em;
       transition: opacity 0.5s;
-      color: #FF7F81;
+      color: #FF8080;
       @include stroke(2,#FFFFFF);
       opacity: 0;
 
@@ -419,7 +420,7 @@ html, body {
     top: 50%;
     right: 0;
     list-style-type: none;
-        a { color: #FF7F81; display: inline-block; padding: 0 5px; margin: 0 5px; height: 35px;}
+        a { color: #FF8080; display: inline-block; padding: 0 5px; margin: 0 5px; height: 35px;}
         div.icon {
           display: inline-block;
           width: 35px;
@@ -455,7 +456,7 @@ html, body {
 
   h1 {
     font-family: "SingleSleeve";
-    color: #FF7F81;
+    color: #FF8080;
     text-align: left;
     font-size: 3em;
     margin: 0px;
