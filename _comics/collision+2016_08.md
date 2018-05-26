@@ -2,7 +2,7 @@
 layout: page
 story: Collision 2016
 alt:
-image: /img/content/Collision/COLLISION2016_08JPG.JPG
+image: /img/content/Collision/COLLISION2016_08JPG.jpg
 icon_image: /img/content/STANDARD.png
 date: 2016-10-26 00:00:00
 redirect_from: "/archives/0034"
