@@ -2,8 +2,7 @@
 layout: page
 story: Battlemon
 alt:
-image: /img/content/Battlemon-16JPG.jpg
-thumb_image: /img/content/thumbs/Battlemon-16JPG.jpg
+image: /img/content/Battle/Battlemon-16JPG.jpg
 icon_image: /img/content/BLUSHY.png
 date: 2016-09-08 00:00:00
 redirect_from: "/archives/0016"

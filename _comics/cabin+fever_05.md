@@ -2,8 +2,7 @@
 layout: page
 story: Cabin Fever
 alt:
-image: /img/content/cabin-fever-05jpg.jpg
-thumb_image: /img/content/cabin-fever-05jpg.jpg
+image: /img/content/Cabin/cabin-fever-05jpg.jpg
 icon_image: /img/content/GROSSOUT.png
 date: 2016-11-09 00:00:00
 redirect_from: "/archives/0041"

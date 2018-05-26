@@ -2,8 +2,7 @@
 layout: page
 story: I Live In A Senseless Town
 alt:
-image: /img/content/SENSELESS_TOWN_09JPG.jpg
-thumb_image: /img/content/SENSELESS_TOWN_09JPG.jpg
+image: /img/content/ST/09E0Nmpu9BbM.jpg
 icon_image: /img/content/GROSSOUT.png
 date: 2017-02-10 12:00:00 -0500
 redirect_from: "/archives/0070"

@@ -1,0 +1,86 @@
+- title: Protasis
+  order: 01
+  stories:
+    - title: Battlemon
+      order: 03
+      character: Racia
+      first_page: /comics/battlemon-01/
+      icon_image: /img/icons/battlemon.png
+      clip_image: /img/re-design/battlemon-clip.png
+      desc_html: 'In a cheap but legally permissible knockoff world in the style of <em>Pokemon</em> or <em>Monster Rancher</em> we peek into the shared lives of a young woman (Racia) and her Battlemon partner (Bunners) as they navigate the expectations society has of them and they have of each other. 26 pages.'
+    - title: Desperate Times
+      order: 05
+      character: RACIANTAU
+      first_page: /comics/desperate+times_01/
+      icon_image: /img/content/ICON01e-DESPERATE-TIMES.png
+      clip_image: /img/re-design/times-clip.png
+      desc_html: '<p>Stranded in the woods after an upriver trip gone wrong, Scouts Racia and Antau struggle to find their way back to civilization. Tensions rise as the sun sets. 6 pages. </p>'
+    - title: Nature Calls
+      order: 04
+      character: Antau
+      first_page: /comics/nature+calls_01/
+      icon_image: /img/content/ICON04_NATURE_CALLS.png
+      clip_image: /img/re-design/calls-clip.png
+      desc_html: 'Two wild animals chance upon each other in a small clearing off a quiet mountain trail. Conflict arises from the core of all beings; some business cannot be settled with words. 7 pages.'
+    - title: Cabin Fever
+      order: 01
+      character: Racia
+      first_page: /comics/cabin+fever_01/
+      icon_image: /img/content/icon03-cabin-fever.png
+      clip_image: /img/re-design/cabin-clip.png
+      desc_html: "Racia is in trouble when an otherwordly storm interrupts her flight over the freezing tundra. As passengers are tossed this way and that, Racia's thoughts drift from her present predicament to the horrible possibilities the future may hold. 12 pages."
+    - title: Collision 2016
+      order: 02
+      character: Antau
+      first_page: /comics/collision+2016_01/
+      icon_image: /img/icons/collision.png
+      clip_image: /img/re-design/collision-clip.png
+      desc_html: 'During a chaotic, fraught election season in a world different from but eerily similar to our own, one mercenary consultant-turned-campaign manager (Antau) sees an opportunity to give &ldquo;The People&rdquo; what they want: sweet release, in the form of a Giant Meteor presidency.'
+- title: Civics
+  order: 02
+  stories:
+    - title: I Live In A Senseless Town
+      order: 01
+      character: Racia
+      first_page: /comics/senseless+town_01/
+      icon_image: /img/icons/ICON02a_SENSELESS_TOWN.png
+      clip_image: /img/re-design/senseless-clip.png
+      desc_html: 'Dive into the tortured and erratic mindscape of a young woman (Racia Aster) as she feverishly imagines a bleak future, and the options open to her and her society within it, over the course of one day in a charming cafe in their Senseless Town. 15 pages.'
+    - title: His Story Repeats Itself
+      order: 02
+      character: Antau
+      first_page: /comics/his+story_01/
+      icon_image: /img/icons/ICON02b_HIS_STORY.png
+      clip_image: /img/re-design/his_story-clip.png
+      desc_html: 'Antau finally stars in a full-fledged narrative, a bittersweet postmodern tale of personal branding and self-promotion running aground on the Hegelian <i>Weltgeist</i>. We laugh, we lose, we never learn. 15 pages.'
+    - title: Mars Freedom Colony
+      order: 03
+      character: RACIANTAU
+      first_page: /comics/mars+colony_01/
+      icon_image: /img/icons/ICON02c_MARS_FREEDOM_COLONY.png
+      clip_image: /img/re-design/mars-clip.png
+      desc_html: "Racia and Antau join forces once more in our capstone on civics. In the distant future Earth is so covered in crap no one wants to deal with it anymore, so humanity turns starward to start anew on Mars. Whatever obstacles stand against us we\'ll always look forward and move onward, bouyed by our greatest ideals: ingenuity, community, and above all else, freedom. 30 pages in two parts."
+- title: Ethics
+  order: 03
+  stories:
+    - title: A Wake
+      order: 01
+      character: Racia
+      first_page: /comics/a+wake_01/
+      icon_image: /img/icons/ICON03a_A_WAKE.png
+      clip_image: /img/re-design/a-wake-clip.png
+      desc_html: 'On a night when spirits are said to stalk the land of the living, a young Racia is forced to confront the inevitability of death in a world no longer quite the one she took for granted. The memories may not last, but the lessons will haunt a lifetime.'
+    - title: Hard Knock Rock
+      order: 02
+      character: Antau
+      first_page: /comics/hard+knock+rock_01/
+      icon_image: /img/icons/ICON03b_HARD_KNOCK_ROCK.png
+      clip_image: /img/re-design/hkr-clip.png
+      desc_html: "When the universe delivers Antau a job offer he can't refuse, he'll undertake his most Sisyphean task yet in a bold but misguided attempt to help himself by finally helping others. 15 pages."
+    - title: Dusk Till Dawn
+      order: 03
+      character: RACIANTAU
+      first_page: 
+      icon_image: /img/icons/ICON03c_DUSK_TILL_DAWN.png
+      clip_image: /img/re-design/duskdawn-clip.png
+      desc_html: 'War rages across the Rockhopper Asteroids! Under the light of a dying sun, the sister societies of Dusk and Dawn are locked in unending battle. Suddenly, on the horizon, a solitary starsmith (Undetu) arrives. Can he convince the warring states to put aside their differences long enough to save them all? Do they even want to be saved? 35 pages.'

@@ -2,8 +2,7 @@
 layout: page
 story: I Live In A Senseless Town
 alt:
-image: /img/content/SENSELESS_TOWN_15JPG.jpg
-thumb_image: /img/content/SENSELESS_TOWN_15JPG.jpg
+image: /img/content/ST/15yGskP0KQNA.jpg
 icon_image: /img/content/HAPPY.png
 date: 2017-02-24 09:00:00 -0500
 redirect_from: "/archives/0076"

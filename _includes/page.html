@@ -9,13 +9,13 @@
     </li>
   </div>
 
-	<div id="art">
+	<div id="art" class="spread">
 		<object class="artimg" data="{{ post.image }}" type="image/jpg">
 		<img class="artimg refresh" src="/img/re-design/sorry.jpg" />
 		</object>
 	</div>
 
-	<div id="navigation" class="">
+	<div id="navigation" class="spread">
 		<div class="inset">
 			<a title="Previous Story" {% if prev_story %} class="{% if prev_story %}active{% endif %}" href="{{ prev_story.first_page }}" {% endif %}>
 				<i id="first_arrow" title="First" class="fa fa-angle-double-left "></i>

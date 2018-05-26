@@ -2,8 +2,7 @@
 layout: page
 story: Mars Freedom Colony
 alt:
-image: /img/content/MFC/24955t0UlSrruRf.JPG
-thumb_image: /img/content/MFC/24955t0UlSrruRf.JPG
+image: /img/content/MFC/24KTItIYpejH.jpg
 icon_image: /img/content/STANDARD.png
 date: 2017-05-26 09:00:00 US/Eastern
 redirect_from: "/archives/0116"

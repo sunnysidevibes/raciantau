@@ -88,12 +88,12 @@
   clip_image: /img/re-design/hkr-clip.png
   desc_html: "When the universe delivers Antau a job offer he can't refuse, he'll undertake his most Sisyphean task yet in a bold but misguided attempt to help himself by finally helping others."
   pages: 15
-- title: Dusk Till Dawn
-  order: 11
-  anthology: "Argument: Ethics"
-  character: RACIANTAU
-  first_page: /comics/dusk+till+dawn_01/
-  icon_image: /img/icons/ICON03c_DUSK_TILL_DAWN.png
-  clip_image: /img/re-design/duskdawn-clip.png
-  desc_html: 'War rages across the Rockhopper Asteroids! Under the light of a dying sun, the sister societies of Dusk and Dawn are locked in unending battle. Suddenly, on the horizon, a solitary starsmith (Undetu) arrives. Can he convince the warring states to put aside their differences long enough to save them all? Do they even want to be saved? 35 pages.'
-  pages: 36
+# - title: Dusk Till Dawn
+#   order: 11
+#   anthology: "Argument: Ethics"
+#   character: RACIANTAU
+#   first_page:
+#   icon_image: /img/icons/ICON03c_DUSK_TILL_DAWN.png
+#   clip_image: /img/re-design/duskdawn-clip.png
+#   desc_html: 'War rages across the Rockhopper Asteroids! Under the light of a dying sun, the sister societies of Dusk and Dawn are locked in unending battle. Suddenly, on the horizon, a solitary starsmith (Undetu) arrives. Can he convince the warring states to put aside their differences long enough to save them all? Do they even want to be saved? 35 pages.'
+#   pages: 36

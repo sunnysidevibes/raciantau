@@ -3,7 +3,6 @@ layout: page
 story: Hard Knock Rock
 alt:
 image: /img/content/HKR/15lCDucQGDbR.jpg
-thumb_image: /img/content/HKR/15lCDucQGDbR.jpg
 icon_image: /img/content/STANDARD.png
 date: 2017-08-18 07:00:00 US/Eastern
 redirect_from: "/archives/0151"

@@ -3,7 +3,6 @@ layout: page
 story: A Wake
 alt:
 image: /img/content/AWake/06auAMTznHDR.JPG
-thumb_image: /img/content/AWake/06auAMTznHDR.JPG
 icon_image: /img/content/STANDARD.png
 date: 2017-06-23 09:00:00 US/Eastern
 redirect_from: "/archives/0127"

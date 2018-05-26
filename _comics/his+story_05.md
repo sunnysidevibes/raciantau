@@ -2,8 +2,7 @@
 layout: page
 story: His Story Repeats Itself
 alt:
-image: /img/content/HSRI/aSbj3SK1DTOsar2S.jpg
-thumb_image: /img/content/HSRI/aSbj3SK1DTOsar2S.jpg
+image: /img/content/HSRI/05a4P27OEFLB.jpg
 icon_image: /img/content/STANDARD.png
 date: 2017-03-08 08:00:00 -0500
 redirect_from: "/archives/0081"

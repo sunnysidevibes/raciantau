@@ -2,8 +2,7 @@
 layout: page
 story: Cabin Fever
 alt:
-image: /img/content/CABIN_FEVER_04JPG.jpg
-thumb_image: /img/content/thumbs/CABIN_FEVER_04JPG.jpg
+image: /img/content/Cabin/CABIN_FEVER_04JPG.jpg
 icon_image: /img/content/HAPPY.png
 date: 2016-11-07 12:00:00
 redirect_from: "/archives/0040"

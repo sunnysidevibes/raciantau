@@ -2,8 +2,7 @@
 layout: page
 story: Collision 2016
 alt:
-image: /img/content/COLLISION2016_02JPG.JPG
-thumb_image: /img/content/thumbs/COLLISION2016_02JPG.JPG
+image: /img/content/Collision/COLLISION2016_02JPG.JPG
 icon_image: /img/content/GRUMPY.png
 date: 2016-10-18 00:00:00
 redirect_from: "/archives/0028"
