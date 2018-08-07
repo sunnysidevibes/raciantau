@@ -1,6 +1,7 @@
 ---
 _hide_content: true
 layout: alone
+image: /img/commission/socialmedia.png
 ---
 
 <div id="commissions">
