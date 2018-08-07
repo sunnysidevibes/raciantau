@@ -1,6 +1,6 @@
 ---
 _hide_content: true
-layout: default
+layout: alone
 image: "/neiyeh.PNG"
 story: Nei-Yeh Translation by Harold D. Roth
 ---
@@ -69,7 +69,7 @@ story: Nei-Yeh Translation by Harold D. Roth
 <p>We do not hear its sound,</p>
 <p>Yet we can perceive an order to its accomplishments.</p>
 <p>We call it "the Way."</p>
-  
+
 <h2>V</h2>
 <p>The Way has no fixed position;</p>
 <p>It abides within the excellent mind.</p>
