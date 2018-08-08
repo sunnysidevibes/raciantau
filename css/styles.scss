@@ -553,9 +553,9 @@ html, body {
   text-align: center;
   h4 {margin-bottom: 50px;}
   .gallery {
+    width: 600px;
     display: flex;
     flex-wrap: wrap;
-    width: 600px;
     justify-content: space-around;
     img { padding: 5px; width: 250px; }
     img.sm { width: 150px; }
@@ -568,6 +568,13 @@ html, body {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+    }
+
+    @include media("<=tablet") {
+      width: 100%;
+      img { padding: 5px; width: 250px; }
+      img.sm { width: 150px; }
+      img.lg { width: 100%; }
     }
   }
 }
