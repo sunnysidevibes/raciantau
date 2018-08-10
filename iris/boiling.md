@@ -1,12 +1,12 @@
 ---
 _hide_content: true
-layout: default
+layout: alone
 image: "/boiling.JPG"
 story: Boiling - By Iris Flores
 ---
-<div style='margin: 20px;'>
+<div style='width:800px; margin: 50px;'>
 
-<p style="text-align:center;"><img width="60%" align="middle" src="boiling.JPG" /></p>
+<p style="text-align:center;"><img width="70%" align="middle" src="boiling.JPG" /></p>
 <h2 style='font-family:"SingleSleeve";font-size:48pt;text-align:center;'>Boiling</h2>
 <h3>by Iris Flores</h3>
 <br />
