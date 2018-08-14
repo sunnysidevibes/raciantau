@@ -37,7 +37,7 @@ image: /img/commission/socialmedia.png
     <div>
       <img src="/img/commission/portrait-shaded.png" />
       <img src="/img/commission/portrait-shaded2.png" />
-    <div>
+    </div>
     <h5>+$20 Background</h5>
   </div>
 </div>
