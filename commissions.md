@@ -10,11 +10,11 @@ image: /img/commission/socialmedia.png
 
 <h2>Icons & Avatars</h2>
 <div class="gallery">
-  <div>
+  <div class="tier">
     <h3>Line Art - $20</h3>
     <img class="sm" src="/img/commission/icon-lineart.png" />
   </div>
-  <div>
+  <div class="tier">
     <h3>Colored - $30</h3>
     <img class="sm" src="/img/commission/icon-color.png" />
   </div>
@@ -22,17 +22,17 @@ image: /img/commission/socialmedia.png
 
 <h2>Character Portraits</h2>
 <div class="gallery">
-  <div>
+  <div class="tier">
     <h3>Line Art - $25</h3>
     <img src="/img/commission/portrait-lineart.png" />
     <h5>+$10 Background</h5>
   </div>
-  <div>
+  <div class="tier">
     <h3>Flat Color - $40</h3>
     <img src="/img/commission/portrait-flat.png" />
     <h5>+$20 Background</h5>
   </div>
-  <div>
+  <div class="tier">
     <h3>Shaded Color - $60</h3>
     <div>
       <img class="lg" src="/img/commission/portrait-shaded.png" />
@@ -44,11 +44,11 @@ image: /img/commission/socialmedia.png
 
 <h2>Desktop Backgrounds</h2>
 <div class="gallery">
-  <div>
+  <div class="tier">
     <h3>Single Figure - $115</h3>
     <img class="lg" src="/img/commission/background-single.png" />
   </div>
-  <div>
+  <div class="tier">
     <h3>More Figures - +$40 each</h3>
     <img class="lg" src="/img/commission/background-multi.png" />
   </div>
