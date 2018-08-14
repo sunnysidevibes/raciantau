@@ -32,7 +32,7 @@ image: /img/commission/socialmedia.png
     <img src="/img/commission/portrait-flat.png" />
     <h5>+$20 Background</h5>
   </div>
-  <div class="tier">
+  <div class="long tier">
     <h3>Shaded Color - $60</h3>
     <div>
       <img src="/img/commission/portrait-shaded.png" />
