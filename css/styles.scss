@@ -560,21 +560,25 @@ html, body {
     img { padding: 5px; width: 250px; }
     img.sm { width: 150px; }
     img.lg { width: 600px; }
-    div.tier {
+    a {
       img {
         background-color: #FF8080;
       }
       margin: 10px;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: space-around;
+      align-items: center;
       div {
         display: flex;
+        flex-direction: column;
         align-items: center;
-	justify-content: space-between;
+	      justify-content: space-between;
       }
+      h4 { margin:10px 0 0 0; }
+      p { margin:10px 0 0 0; }
     }
-    div.tier.long {
+    a.long {
       flex-grow: 1;
     }
 
