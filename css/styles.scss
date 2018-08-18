@@ -560,7 +560,7 @@ html, body {
     img { padding: 5px; width: 250px; }
     img.sm { width: 150px; }
     img.lg { width: 600px; }
-    div {
+    div.tier {
       img {
         background-color: #FF8080;
       }
@@ -568,6 +568,14 @@ html, body {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      div {
+        display: flex;
+        align-items: center;
+	justify-content: space-between;
+      }
+    }
+    div.tier.long {
+      flex-grow: 1;
     }
 
     @include media("<=tablet") {
