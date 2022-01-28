@@ -42,7 +42,7 @@ uploads_dir: "img/content"
 future: false
 
 markdown: kramdown
-gems:
+plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
